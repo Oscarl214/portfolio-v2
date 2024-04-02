@@ -1,26 +1,20 @@
 'use client';
 import Image from 'next/image';
 import Logo from '../../public/Logo.svg';
+
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
+
 import {
   AiOutlineInstagram,
   AiOutlineMenu,
   AiOutlineFacebook,
 } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Button } from '@nextui-org/react';
+import Switcher from './switcher';
 
+import React, { useState } from 'react';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
@@ -52,13 +46,7 @@ const Navbar = () => {
             </Link>
 
             <li>
-              <Button
-                size="sm"
-                variant="flat"
-                onClick={() => setTheme('modern')}
-              >
-                Switcher
-              </Button>
+              <Switcher />
             </li>
           </ul>
         </div>
