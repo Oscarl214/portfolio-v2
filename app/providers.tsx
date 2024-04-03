@@ -8,8 +8,8 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     <NextUIProvider>
       <NextThemesProvider
         attribute="class"
-        defaultTheme="dark"
-        themes={['light', 'dark']}
+        defaultTheme="light"
+        themes={['light', 'dark', 'mytheme']}
       >
         {children}
       </NextThemesProvider>

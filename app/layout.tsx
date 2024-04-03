@@ -23,7 +23,7 @@ export default function RootLayout({
           <header>
             <Navbar />
           </header>
-          <main>{children}</main>
+          <main style={{ paddingTop: '7rem' }}>{children}</main>
         </Providers>
       </body>
     </html>

@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
-import Logo from '../../public/Logo.svg';
-
+import LogoLight from '../../public/Logo.svg';
+import LogoDark from '../../public/Logo2.svg';
 import Link from 'next/link';
-
+import { useTheme } from 'next-themes';
 import {
   AiOutlineInstagram,
   AiOutlineMenu,
@@ -13,18 +13,30 @@ import { AiOutlineClose } from 'react-icons/ai';
 import Switcher from './switcher';
 
 import React, { useState } from 'react';
+import { saveAs } from 'file-saver';
+
 const Navbar = () => {
+  const saveFile = () => {
+    saveAs(
+      'https://drive.google.com/file/d/11gU35QzXitGPqcjVjn9fqxWqJb7qwqmJ/view?usp=sharing',
+      'OLResume.pdf'
+    );
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
+  let { theme } = useTheme();
+
+  const logo = theme === 'dark' ? LogoDark : LogoLight;
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="absolute w-full h-24 shadow-xl bg-white">
-      <div className="flex justify-between text-black items-center h-full w-full px-4 2xl:px-16 ">
+    <nav className="absolute w-full h-24 shadow-xl">
+      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16 ">
         <Link href="/">
           <Image
-            src={Logo}
+            src={logo}
             alt="Logo"
             width="65"
             height="75"
@@ -33,22 +45,43 @@ const Navbar = () => {
           />
         </Link>
         <div className="hidden sm:flex">
-          <ul className="hidden sm:flex">
+          <ul className="hidden sm:flex justify-around text-lg">
+            <Link href="/">
+              <li className="ml-10 uppercase hover:border-b hover:border-green-500 border-red ">
+                Home
+              </li>
+            </Link>
             <Link href="/about">
-              <li className="ml-10 uppercase hover:border-b hover:border-rose-500 border-red text-xl">
+              <li className="ml-10 uppercase hover:border-b hover:border-green-500 border-red">
                 About
               </li>
             </Link>
             <Link href="/contact">
-              <li className="ml-10 uppercase hover:border-b hover:border-rose-500 text-xl">
+              <li className="ml-10 uppercase hover:border-b hover:border-green-500 ">
+                Portfolio
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="ml-10 uppercase hover:border-b hover:border-green-500 ">
+                Blog
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="ml-10 uppercase hover:border-b hover:border-green-500 ">
                 Contact
               </li>
             </Link>
 
-            <li>
-              <Switcher />
+            <li
+              className="ml-10 uppercase hover:border-b hover:border-green-500 "
+              onClick={saveFile}
+            >
+              Resume
             </li>
           </ul>
+        </div>
+        <div className="">
+          <Switcher />
         </div>
         <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
           <AiOutlineMenu size={25} />
@@ -69,7 +102,7 @@ const Navbar = () => {
         <ul className="text-2xl mt-[40%] text-black">
           <Link href="/">
             <li
-              className="py-4 cursor-pointer hover:border-b hover:border-rose-500  "
+              className="py-4 cursor-pointer hover:border-b hover:border-green-500  "
               onClick={() => setMenuOpen(false)}
             >
               Home
@@ -77,7 +110,7 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <li
-              className="py-4 cursor-pointer hover:border-b hover:border-rose-500  "
+              className="py-4 cursor-pointer hover:border-b hover:border-green-500  "
               onClick={() => setMenuOpen(false)}
             >
               About
@@ -85,7 +118,7 @@ const Navbar = () => {
           </Link>
           <Link href="/contact">
             <li
-              className="py-4 cursor-pointer hover:border-b hover:border-rose-500  "
+              className="py-4 cursor-pointer hover:border-b hover:border-green-500  "
               onClick={() => setMenuOpen(false)}
             >
               Contact
@@ -106,7 +139,7 @@ const Navbar = () => {
           </div>
           <Link href="/">
             <Image
-              src={Logo}
+              src={logo}
               alt="Logo"
               width="65"
               height="75"
