@@ -8,3 +8,7 @@ body {
 html {
   font-family: OpenSans, sans-serif;
 }
+
+.navbar {
+  position: absolute;
+}

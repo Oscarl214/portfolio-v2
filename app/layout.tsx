@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Providers from './providers';
-import Navbar from './componenets/navbar';
 import { Open_Sans } from 'next/font/google';
-
+import Head from 'next/head';
+import Navigation from './componenets/navbar';
 const Open = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={Open.className}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+        </Head>
         <Providers>
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
+
           <main style={{ paddingTop: '7rem' }}>{children}</main>
         </Providers>
       </body>
