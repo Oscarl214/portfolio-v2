@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Providers from './providers';
-import { Open_Sans } from 'next/font/google';
+import { Open_Sans, Orbitron} from 'next/font/google';
 import Head from 'next/head';
 import Navigation from './componenets/navbar';
-const Open = Open_Sans({ subsets: ['latin'] });
+const Orbi = Orbitron({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={Open.className}>
+      <body className={Orbi.className}>
         <Head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
