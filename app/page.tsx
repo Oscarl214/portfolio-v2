@@ -12,8 +12,7 @@ export default function Home() {
       <div className="flex flex-row justify-around items-center flex-wrap m-5 p-5 ">
         <div>
           <h1 className="text-6xl text-white font-bold text-center">
-            O's <TypingEffect />
-          </h1>
+            O's</h1> <div className="text-6xl text-white font-bold text-center"><TypingEffect /></div>
         </div>
 
         <div className="rounded-full m-5">

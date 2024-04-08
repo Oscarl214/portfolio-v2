@@ -4,6 +4,7 @@ import Providers from './providers';
 import { Open_Sans, Orbitron} from 'next/font/google';
 import Head from 'next/head';
 import Navigation from './componenets/navbar';
+import Footer from './componenets/footer';
 const Orbi = Orbitron({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navigation />
 
           <main style={{ paddingTop: '7rem' }}>{children}</main>
+          <Footer/>
         </Providers>
       </body>
     </html>
