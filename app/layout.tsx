@@ -25,7 +25,6 @@ export default function RootLayout({
         </Head>
         <Providers>
           <Navigation />
-
           <main style={{ paddingTop: '7rem' }}>{children}</main>
           <Footer/>
         </Providers>
