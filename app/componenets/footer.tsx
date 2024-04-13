@@ -1,40 +1,37 @@
-'use client'
-import React, { useState } from 'react'
-import Image from '@/node_modules/next/image';
-import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
-import LogoLight from '../../public/Logo.svg';
-import LogoDark from '../../public/Logo2.svg';
-import { useTheme } from '@/node_modules/next-themes/dist/index';
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
+import LogoLight from '../../public/LogoFooter2W.svg';
+import LogoDark from '../../public/LogoFooterB.svg';
+import { useTheme } from 'next-themes';
 const Footer = () => {
+  let { resolvedTheme } = useTheme();
 
-
-let { theme } = useTheme();
-
-
-const logo = theme === 'dark' ? LogoDark : LogoLight;
+  const logos = resolvedTheme === 'dark' ? LogoLight : LogoDark;
 
   return (
     <div>
-        
-        <ul className='flex flex-row justify-center text-center'>
-            <li >
-            <AiOutlineInstagram className='text-5xl text-green-500 m-2 dark:hover:text-white '/>
-            </li>
-            <li><AiOutlineLinkedin  className='text-5xl text-green-500 m-2 dark:hover:text-white'/></li>
-        </ul>
-        <div className='flex justify-center m-5'>
+      <ul className="flex flex-row justify-center text-center m-4">
+        <li>
+          <AiOutlineInstagram className="text-5xl text-green-500 m-2 dark:hover:text-white " />
+        </li>
+        <li>
+          <AiOutlineLinkedin className="text-5xl text-green-500 m-2 dark:hover:text-white" />
+        </li>
+      </ul>
+      <div className="flex justify-center m-5">
         <Image
-        src={theme === 'dark' ? LogoLight: LogoDark}
-        alt="Logo"
-        width="85"
-        height="85"
-        className="cursor-pointer"
-        priority
+          src={logos}
+          alt="Logo"
+          width="85"
+          height="85"
+          className="cursor-pointer"
+          priority
         />
-        </div>
-     
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

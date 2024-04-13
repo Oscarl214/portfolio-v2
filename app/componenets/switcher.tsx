@@ -2,6 +2,8 @@
 import { Button } from '@nextui-org/react';
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { Switch } from '@nextui-org/react';
+import { FaSun, FaMoon } from 'react-icons/fa6';
 
 const Switcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -22,9 +24,15 @@ const Switcher = () => {
   }
   return (
     <div>
-      <Button size="sm" variant="flat" onClick={() => handleTheme()}>
-        DarkMode
-      </Button>
+      <Switch
+        size="sm"
+        defaultSelected
+        color="default"
+        onClick={() => handleTheme()}
+        thumbIcon={({ isSelected, className }) =>
+          isSelected ? <FaSun className="text-black" /> : <FaMoon />
+        }
+      ></Switch>
     </div>
   );
 };
