@@ -112,55 +112,60 @@ const Navigation = () => {
         <NavbarItem className=" lg:flex sm:flex gap-4">
           <Switcher />
         </NavbarItem>
-        <NavbarItem className=" lg:hidden sm:flex gap-4">
-          <FaFilePdf onClick={saveFile} className="hover:text-green-500" />
-        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu className="flex items-center justify-center">
-  {menuItems.map((item, index) => (
-    <NavbarMenuItem
-      key={`${item}-${index}`}
-      onClick={() => setIsMenuOpen(false)}
-    >
-      {item === 'Home' ? (
-        <Link href="/" as="/">
-          <motion.div
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.25 }}
-            className="p-2 border-b hover:border-green-500"
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem
+            key={`${item}-${index}`}
+            onClick={() => setIsMenuOpen(false)}
           >
-            {item}
-          </motion.div>
-        </Link>
-      ) : (
-        <Link
-          className="w-full"
-          color={
-            index === 2
-              ? 'warning'
-              : index === menuItems.length - 1
-              ? 'danger'
-              : 'foreground'
-          }
-          href={`/${item.toLowerCase()}`}
-        >
-          <motion.div
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.25 }}
-            className="p-2 border-b hover:border-green-500"
-          >
-            {item}
-          </motion.div>
-        </Link>
-      )}
-    </NavbarMenuItem>
-  ))}
-</NavbarMenu>
+            {item === 'Home' ? (
+              <Link href="/" as="/">
+                <motion.div
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{
+                    ease: 'easeInOut',
+                    duration: 0.75,
+                    delay: 0.25,
+                  }}
+                  className="p-2 border-b hover:border-green-500"
+                >
+                  {item}
+                </motion.div>
+              </Link>
+            ) : (
+              <Link
+                className="w-full"
+                color={
+                  index === 2
+                    ? 'warning'
+                    : index === menuItems.length - 1
+                    ? 'danger'
+                    : 'foreground'
+                }
+                href={`/${item.toLowerCase()}`}
+              >
+                <motion.div
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{
+                    ease: 'easeInOut',
+                    duration: 0.75,
+                    delay: 0.25,
+                  }}
+                  className="p-2 border-b hover:border-green-500"
+                >
+                  {item}
+                </motion.div>
+              </Link>
+            )}
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 };
