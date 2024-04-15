@@ -50,6 +50,7 @@ export default function Home() {
                 color="success"
                 variant="bordered"
                 className="hover:text-white"
+                href={'/about'}
               >
                 About
               </Button>
