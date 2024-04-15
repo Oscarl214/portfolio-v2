@@ -1,32 +1,91 @@
 'use client';
 import { Image } from '@nextui-org/react';
 import TypingEffect from './componenets/typing';
-
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { Button } from '@nextui-org/react';
+import { motion } from 'framer-motion';
+import { saveAs } from 'file-saver';
 
 export default function Home() {
-  const [welome, setWelcome] = useState('Welcome');
+  const [welcome, setWelcome] = useState('Welcome');
+  const saveFile = () => {
+    saveAs(
+      'https://drive.google.com/file/d/11gU35QzXitGPqcjVjn9fqxWqJb7qwqmJ/view?usp=sharing',
+      'OLResume.pdf'
+    );
+  };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="flex flex-row justify-around items-center flex-wrap m-5 p-5 ">
-        <div>
-          <h1 className="text-6xl text-white font-bold text-center">
-            O's</h1> <div className="text-6xl text-white font-bold text-center"><TypingEffect /></div>
-        </div>
+    <div>
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-col justify-around items-center flex-wrap m-5 p-5 gap-5">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-6xl text-white font-bold text-center">O's</h1>
+            <div className="text-6xl text-white font-bold text-center">
+              <TypingEffect />
+            </div>
+          </motion.div>
 
-        <div className="rounded-full m-5">
-          <Image isZoomed width={300} alt="Me" src="/Me.JPG" />
+          <motion.div
+            className="rounded-full m-5"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2 }}
+          >
+            <Image isZoomed width={300} alt="Me" src="/Me.JPG" />
+          </motion.div>
+          <motion.div
+            className="flex flex-row justify-center items-center gap-5 hover:text-white"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Link href={'/about'}>
+              <Button
+                color="success"
+                variant="bordered"
+                className="hover:text-white"
+              >
+                About
+              </Button>
+            </Link>
+            <Button
+              color="success"
+              variant="bordered"
+              className="hover:text-white"
+            >
+              <Link href={'/portfolio'}>Portfolio</Link>
+            </Button>
+          </motion.div>
+          <motion.div
+            className="flex flex-col "
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 3 }}
+          >
+            <Button
+              color="success"
+              variant="bordered"
+              className="hover:text-white"
+              onClick={saveFile}
+            >
+              Resume
+            </Button>
+          </motion.div>
+          <video
+            src={require('../public/BG.mp4')}
+            autoPlay
+            muted
+            loop
+            className="video"
+          />
         </div>
       </div>
-
-      <video
-        src={require('../public/BG.mp4')}
-        autoPlay
-        muted
-        loop
-        className="video"
-      />
     </div>
   );
 }
