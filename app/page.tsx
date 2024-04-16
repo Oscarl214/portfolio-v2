@@ -19,14 +19,16 @@ export default function Home() {
   return (
     <div>
       <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col justify-around items-center flex-wrap m-5 p-5 gap-5">
+        <div className="flex flex-col justify-around items-center flex-wrap lg:m-5 lg:p-5 gap-5">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-6xl text-white font-bold text-center">O's</h1>
-            <div className="text-6xl text-white font-bold text-center">
+            <h1 className="lg:text-6xl text-4xl text-white font-bold text-center">
+              O's
+            </h1>
+            <div className="lg:text-6xl text-4xl text-white font-bold text-center">
               <TypingEffect />
             </div>
           </motion.div>
