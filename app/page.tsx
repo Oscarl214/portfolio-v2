@@ -66,7 +66,7 @@ export default function Home() {
             </Button>
           </motion.div>
           <motion.div
-            className="flex flex-col "
+            className="flex flex-col"
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 3 }}

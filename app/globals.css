@@ -9,6 +9,11 @@ html {
   font-family: OpenSans, sans-serif;
 }
 
+main {
+  padding-top: 7rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
 .navbar {
   position: absolute;
 }
@@ -29,9 +34,27 @@ html {
   padding: 20px;
 }
 
-
-.intro{
-  padding-right: 5rem;
-  padding-left:5rem;
+.intro {
+  margin-right: 8rem;
+  margin-left: 8rem;
   line-height: 2rem;
+}
+
+.header {
+  margin: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    padding-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

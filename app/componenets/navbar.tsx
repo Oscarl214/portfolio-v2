@@ -17,7 +17,6 @@ import {
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { saveAs } from 'file-saver';
-
 import { motion } from 'framer-motion';
 import { FaFilePdf } from 'react-icons/fa6';
 
