@@ -28,3 +28,10 @@ html {
   color: white;
   padding: 20px;
 }
+
+
+.intro{
+  padding-right: 5rem;
+  padding-left:5rem;
+  line-height: 2rem;
+}
