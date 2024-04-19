@@ -10,6 +10,9 @@ const Skills = () => {
         <li>
           <span className="icon-[skill-icons--nextjs-dark] text-5xl"></span>
         </li>
+        <li>
+          <span className="icon-[skill-icons--react-dark] text-5xl"></span>
+        </li>
       </ul>
     </div>
   );

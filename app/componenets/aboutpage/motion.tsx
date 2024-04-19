@@ -8,9 +8,9 @@ type MotionProps = {
 export const Motion = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 1, x: -500 }}
-      animate={{ opacity: 1, x: 10 }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 1, x: -20 }}
+      animate={{ opacity: 1, x: 20 }}
+      transition={{ duration: 2 }}
     >
       {children}
     </motion.div>
