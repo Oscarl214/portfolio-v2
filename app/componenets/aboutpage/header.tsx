@@ -19,14 +19,7 @@ const Header = () => {
       typed.destroy();
     };
   }, []);
-  return (
-    <span
-      ref={typingRef}
-      className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500"
-    >
-      ...
-    </span>
-  );
+  return <span ref={typingRef}></span>;
 };
 
 export default Header;
