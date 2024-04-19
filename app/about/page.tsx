@@ -7,7 +7,7 @@ import Skills from '../componenets/aboutpage/skills';
 import { MotionSkills } from '../componenets/aboutpage/motionskills';
 const About = () => {
   return (
-    <div className="flex flex-col justify-around m-10 pages">
+    <div>
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         {' '}
         <Header />
@@ -20,7 +20,7 @@ const About = () => {
         <Skills />
       </MotionSkills>
 
-      <Cube />
+      {/* <Cube /> */}
     </div>
   );
 };
