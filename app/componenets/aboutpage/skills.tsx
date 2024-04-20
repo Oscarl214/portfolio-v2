@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   return (
     <div>
-      <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  ml-8">
+      <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  ml-8 m-10">
         My Skills
       </h2>
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

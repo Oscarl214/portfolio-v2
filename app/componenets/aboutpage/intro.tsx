@@ -11,7 +11,7 @@ const Intro = () => {
         A full-stack developer with 2+ years of experience. I enjoy building
         sites and apps. My focus is React (Next.js).
       </p>
-      <h2 className="lg:text-center lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  m-5">
+      <h2 className="lg:text-center lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold m-8 ">
         OverView
       </h2>
       <p className="lg:text-start  text-start text-md font-sans m-5 mt-1">

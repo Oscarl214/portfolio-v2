@@ -8,7 +8,7 @@ type MotionProps = {
 export const Motion = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 1, x: -100 }}
+      initial={{ opacity: 1, x: -500 }}
       whileInView={{ opacity: 1, x: 15 }}
       transition={{ duration: 1.5 }}
     >

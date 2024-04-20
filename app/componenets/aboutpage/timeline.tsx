@@ -2,11 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Button } from '@nextui-org/react';
+import Link from 'next/link';
 const Timeline = () => {
   return (
     <div>
       <div>
-        <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  ml-8">
+        <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  m-10">
           My Experience
         </h2>
       </div>
@@ -21,7 +23,7 @@ const Timeline = () => {
 
             <div className="timeline-start md:text-end mb-10">
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
-              <time className="font-mono italic m-5">2022</time>
+              <time className="font-mono italic">2022</time>
               <div className="text-lg font-bold text-orange-500">
                 Graduated from The University of Texas
               </div>
@@ -57,8 +59,7 @@ const Timeline = () => {
                 Deloitte partnership by leveraging my coding knowledge to create
                 promotional materials, design webpages, and enhance digital
                 assets. This internship not only deepened my understanding of
-                marketing strategies but also strengthened my coding abilities I
-                would soon after utilize, illustrating the intersection of
+                marketing strategies but also strengthened my coding abilities, illustrating the intersection of
                 marketing and coding in todays digital landscape.
               </p>
               </motion.div>
@@ -73,7 +74,7 @@ const Timeline = () => {
             </div>
             <div className="timeline-start md:text-end mb-10">
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
-              <time className="font-mono italic m-5 md:text-end">2022</time>
+              <time className="font-mono italic md:text-end">2022</time>
               <div className="text-lg font-bold text-blue-500">
                 Full Stack Coding Bootcamp
               </div>
@@ -161,6 +162,15 @@ const Timeline = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className='flex justify-center m-5 '>
+      <Button
+              color="success"
+              variant="bordered"
+              className="hover:text-white"
+            >
+              <Link href={'/portfolio'}>Portfolio</Link>
+            </Button>
       </div>
     </div>
   );
