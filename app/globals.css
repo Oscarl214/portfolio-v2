@@ -55,14 +55,14 @@ timeline {
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
     padding-top: 7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 }
 @media (max-width: 767px) {
   main {
     padding-top: 7rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }

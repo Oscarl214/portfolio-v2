@@ -9,9 +9,9 @@ type MotionProps = {
 export const MotionTime = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ scale: 0.5 }}
-      whileInView={{ scale: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0.5 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
     >
       {children}
     </motion.div>

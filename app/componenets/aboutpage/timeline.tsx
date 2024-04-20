@@ -10,13 +10,17 @@ const Timeline = () => {
           My Experience
         </h2>
       </div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+      <div>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical  lg:mt-10">
+   
           <li className="">
+
             <div className="timeline-middle lg:m-5">
               <span className="icon-[whh--student] h-5 w-5"></span>
             </div>
+
             <div className="timeline-start md:text-end mb-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
               <time className="font-mono italic m-5">2022</time>
               <div className="text-lg font-bold text-orange-500">
                 Graduated from The University of Texas
@@ -26,15 +30,20 @@ const Timeline = () => {
                 Communications and Arts & Entertainment Technologies, where I
                 first got introduced to coding.
               </a>
+              </motion.div>
             </div>
+           
             <hr />
+            
           </li>
+        
           <li>
             <hr />
             <div className="timeline-middle lg:m-5">
               <span className="icon-[logos--oracle] h-5 w-5 lg:h-10 lg:w-10"></span>
             </div>
             <div className="timeline-end md:text-start mb-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
               <time className="font-mono italic">2022</time>
               <div className="text-lg  font-black">
                 Digital Marketing Specialist at{' '}
@@ -52,15 +61,18 @@ const Timeline = () => {
                 would soon after utilize, illustrating the intersection of
                 marketing and coding in todays digital landscape.
               </p>
+              </motion.div>
             </div>
             <hr />
           </li>
+          
           <li>
             <hr />
             <div className="timeline-middle lg:m-5">
               <span className="icon-[material-symbols--code-blocks] h-5 w-5 lg:h-10 lg:w-10"></span>
             </div>
             <div className="timeline-start md:text-end mb-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
               <time className="font-mono italic m-5 md:text-end">2022</time>
               <div className="text-lg font-bold text-blue-500">
                 Full Stack Coding Bootcamp
@@ -80,6 +92,7 @@ const Timeline = () => {
                 applications and full-stack apps using the MERN stack, and
                 gained proficiency in MySQL, Node.js, and GraphQL.
               </p>
+              </motion.div>
             </div>
             <hr />
           </li>
@@ -96,6 +109,7 @@ const Timeline = () => {
               />
             </div>
             <div className="timeline-end mb-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
               <time className="font-mono italic">2023-Present</time>
               <div className="text-lg font-black">
                 Assistant Email Developer at{' '}
@@ -111,6 +125,7 @@ const Timeline = () => {
                 marketing platform end-user expert, and providing guidance
                 around digital channel capabilities.
               </p>
+              </motion.div>
             </div>
             <hr />
           </li>
@@ -127,6 +142,7 @@ const Timeline = () => {
               />
             </div>
             <div className="timeline-start md:text-end mb-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}}>
               <time className="font-mono italic">Present</time>
               <div className="text-lg font-black">
                 {' '}
@@ -141,10 +157,11 @@ const Timeline = () => {
                 experience not only enhances my understanding of marketing but
                 also helps me refine my coding skills.
               </p>
+              </motion.div>
             </div>
           </li>
         </ul>
-      </motion.div>
+      </div>
     </div>
   );
 };

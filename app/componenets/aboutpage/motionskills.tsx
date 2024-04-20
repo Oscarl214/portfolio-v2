@@ -10,8 +10,8 @@ export const MotionSkills = ({ children }: MotionProps) => {
   return (
     <motion.div
       initial={{ opacity: 1, x: 500 }}
-      whileInView={{ opacity: 1, x: 5 }}
-      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, x: 15 }}
+      transition={{ duration: 1 }}
     >
       {children}
     </motion.div>

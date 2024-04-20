@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 const { nextui } = require('@nextui-org/react');
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
