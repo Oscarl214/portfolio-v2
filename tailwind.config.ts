@@ -13,6 +13,7 @@ const config: Config = {
   },
   darkMode: 'class',
   plugins: [
+    require('daisyui'),
     addDynamicIconSelectors(),
     nextui({
       themes: {

@@ -5,6 +5,8 @@ import Header from '../componenets/aboutpage/header';
 import { Motion } from '../componenets/aboutpage/motion';
 import Skills from '../componenets/aboutpage/skills';
 import { MotionSkills } from '../componenets/aboutpage/motionskills';
+import Timeline from '../componenets/aboutpage/timeline';
+import { MotionTime } from '../componenets/aboutpage/timemotion';
 const About = () => {
   return (
     <div>
@@ -19,8 +21,9 @@ const About = () => {
       <MotionSkills>
         <Skills />
       </MotionSkills>
-
-      {/* <Cube /> */}
+      <MotionTime>
+        <Timeline />
+      </MotionTime>
     </div>
   );
 };

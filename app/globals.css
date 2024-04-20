@@ -48,6 +48,10 @@ main {
   margin: 3rem;
 }
 
+timeline {
+  font-size: 1.5rem;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
     padding-top: 7rem;
