@@ -1,15 +1,16 @@
 'use client';
 import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
+
 type MotionProps = {
   children: ReactNode;
 };
 
-export const Motion = ({ children }: MotionProps) => {
+export const CardMotion = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 1, x: -200 }}
-      whileInView={{ opacity: 1, x: 15 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       {children}

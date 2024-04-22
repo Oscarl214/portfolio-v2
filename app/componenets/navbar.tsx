@@ -78,33 +78,35 @@ const Navigation = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4 " justify="center">
+        <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="/">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hover:text-green-500">
           <Link href="/about" aria-current="page">
             About
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="/portfolio">
             Portfolio
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="/blog">
             Blog
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="/contact">
             Contact
           </Link>
         </NavbarItem>
-        <NavbarItem onClick={saveFile}>Resume</NavbarItem>
+        <NavbarItem onClick={saveFile} className="hover:text-green-500">
+          Resume
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
@@ -118,6 +120,7 @@ const Navigation = () => {
           <NavbarMenuItem
             key={`${item}-${index}`}
             onClick={() => setIsMenuOpen(false)}
+            className="hover:text-green-500"
           >
             {item === 'Home' ? (
               <Link href="/" as="/">
