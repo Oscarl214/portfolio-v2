@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Yard Service Site",
-    "description": "This project is a modern web application built using React, TypeScript and Next.js, with styling done using Tailwind CSS. The site is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for a lawn care service, featuring a range of static pages. The site serves as a way for my client to show off his lawn services and to have a method for customers to contact him. ",
+    "description": "This project is a modern web application built using React, TypeScript and Next.js, & Tailwind CSS. The site is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for a lawn care service, featuring a range of static pages.",
     "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/Screenshot+2024-02-08+155400.png",
     "link": "https://yard-service-site.vercel.app/",
     "github": "https://github.com/Oscarl214/Yard-Service-Site",
