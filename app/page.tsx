@@ -51,7 +51,7 @@ export default function Home() {
               <Button
                 color="success"
                 variant="bordered"
-                className="hover:text-green-500 border-text-white text-white"
+                className="hover:text-green-500 border-green-500 text-white"
                 href={'/about'}
               >
                 About
@@ -60,7 +60,7 @@ export default function Home() {
             <Button
               // color="success"
               variant="bordered"
-              className="hover:text-green-500 border-text-white text-white"
+              className="hover:text-green-500 border-green-500 text-white"
             >
               <Link href={'/portfolio'}>Portfolio</Link>
             </Button>
