@@ -21,7 +21,7 @@ const ProjectCard = () => {
           transition={{ duration: 1.5 }}
           key={project.id}
         >
-          <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800 ">
+          <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800 lg:h-96 lg:overflow-auto">
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"

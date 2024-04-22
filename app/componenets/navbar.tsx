@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import LogoLight from '../../public/Logo.svg';
-import LogoDark from '../../public/Logo2.svg';
+import Logo from '../../public/ol-logo.png';
+
 import { useTheme } from 'next-themes';
 import Switcher from './switcher';
 import {
@@ -38,8 +38,6 @@ const Navigation = () => {
   const menuItems = ['Home', 'About', 'Portfolio', 'Blog', 'Contact'];
   let { theme } = useTheme();
 
-  const logo = theme === 'dark' ? LogoDark : LogoLight;
-
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
@@ -54,27 +52,13 @@ const Navigation = () => {
 
       <NavbarContent className="sm:hidden " justify="center">
         <NavbarBrand>
-          <Image
-            src={logo}
-            alt="Logo"
-            width="65"
-            height="75"
-            className="cursor-pointer"
-            priority
-          />
+          <Image src={Logo} alt="Logo" width="45" height="55" priority />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="hidden lg:flex">
-          <Image
-            src={logo}
-            alt="Logo"
-            width="65"
-            height="75"
-            className="cursor-pointer"
-            priority
-          />
+          <Image src={Logo} alt="Logo" width="45" height="55" priority />
         </NavbarBrand>
       </NavbarContent>
 

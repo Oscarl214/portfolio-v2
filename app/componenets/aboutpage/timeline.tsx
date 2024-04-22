@@ -16,10 +16,10 @@ const Timeline = () => {
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical  lg:mt-10">
           <li className="">
             <div className="timeline-middle lg:m-5">
-              <span className="icon-[whh--student] h-5 w-5"></span>
+              <span className="icon-[whh--student] h-10 w-10"></span>
             </div>
 
-            <div className="timeline-start md:text-end mb-10">
+            <div className="lg:timeline-start timeline-end m-5 md:text-end mb-10 ">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -43,9 +43,9 @@ const Timeline = () => {
           <li>
             <hr />
             <div className="timeline-middle lg:m-5">
-              <span className="icon-[logos--oracle] h-5 w-5 lg:h-10 lg:w-10"></span>
+              <span className="icon-[logos--oracle] h-10 w-10 lg:h-10 lg:w-10"></span>
             </div>
-            <div className="timeline-end md:text-start mb-10">
+            <div className="timeline-end m-5 md:text-start mb-10">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -76,9 +76,9 @@ const Timeline = () => {
           <li>
             <hr />
             <div className="timeline-middle lg:m-5">
-              <span className="icon-[material-symbols--code-blocks] h-5 w-5 lg:h-10 lg:w-10"></span>
+              <span className="icon-[material-symbols--code-blocks] h-10 w-10 lg:h-10 lg:w-10"></span>
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div className="lg:timeline-start timeline-end m-5 md:text-end mb-10 ">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -110,17 +110,17 @@ const Timeline = () => {
           </li>
           <li>
             <hr />
-            <div className="timeline-middle lg:m-5">
+            <div className="timeline-middle  lg:m-5">
               <Image
                 src="/abercrombie.svg"
                 alt="Logo"
                 width="65"
                 height="75"
-                className="cursor-pointer h-5 w-5 lg:h-10 lg:w-10"
+                className="cursor-pointer h-10 w-10 lg:h-10 lg:w-10"
                 priority
               />
             </div>
-            <div className="timeline-end mb-10">
+            <div className="timeline-end m-5 mb-10">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -149,15 +149,15 @@ const Timeline = () => {
             <hr />
             <div className="timeline-middle lg:m-5">
               <Image
-                src="/ol-nobg.svg"
+                src="/ol-logo.png"
                 alt="Logo"
-                width="55"
-                height="65"
-                className="cursor-pointer h-5 w-5 lg:h-10 lg:w-10"
+                width="45"
+                height="45"
+                className="cursor-pointer h-10 w-10 lg:h-10 lg:w-10"
                 priority
               />
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div className="lg:timeline-start timeline-end md:text-end m-5 mb-10">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

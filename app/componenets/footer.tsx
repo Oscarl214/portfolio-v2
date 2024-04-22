@@ -2,13 +2,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
-import LogoLight from '../../public/LogoFooter2W.svg';
-import LogoDark from '../../public/LogoFooterB.svg';
+import Logo from '../../public/ol-logo.png';
 import { useTheme } from 'next-themes';
 const Footer = () => {
   let { resolvedTheme } = useTheme();
-
-  const logos = resolvedTheme === 'dark' ? LogoLight : LogoDark;
 
   return (
     <div>
@@ -22,7 +19,7 @@ const Footer = () => {
       </ul>
       <div className="flex justify-center m-5">
         <Image
-          src={logos}
+          src={Logo}
           alt="Logo"
           width="85"
           height="85"
