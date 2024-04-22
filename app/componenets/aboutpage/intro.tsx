@@ -22,6 +22,12 @@ const Intro = () => {
         set and a profound appreciation for crafting efficient, user-friendly
         solutions.
       </p>
+      <p className="lg:text-start  text-start text-md font-sans m-5 mt-1">
+        <i>When Im not coding,</i> I like to go to the gym, hang out with my
+        family, or read/learn about something new. I also love to travel and
+        enjoy experiencing new cultures. I have been to a total of 7 countries
+        so far, my goal is to go to as many countries as I can.
+      </p>
     </div>
   );
 };
