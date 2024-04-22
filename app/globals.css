@@ -48,10 +48,6 @@ main {
   margin: 3rem;
 }
 
-video::-webkit-media-controls-start-playback-button {
-  display: none;
-}
-
 timeline {
   font-size: 1.5rem;
 }

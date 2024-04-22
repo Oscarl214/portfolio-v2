@@ -84,6 +84,7 @@ export default function Home() {
             src={require('../public/BG.mp4')}
             autoPlay
             muted
+            playsInline
             loop
             className="video"
           />
