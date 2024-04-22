@@ -51,16 +51,16 @@ export default function Home() {
               <Button
                 color="success"
                 variant="bordered"
-                className="hover:text-white"
+                className="hover:text-green-500 border-text-white text-white"
                 href={'/about'}
               >
                 About
               </Button>
             </Link>
             <Button
-              color="success"
+              // color="success"
               variant="bordered"
-              className="hover:text-white"
+              className="hover:text-green-500 border-text-white text-white"
             >
               <Link href={'/portfolio'}>Portfolio</Link>
             </Button>
@@ -74,7 +74,7 @@ export default function Home() {
             <Button
               color="success"
               variant="bordered"
-              className="hover:text-white"
+              className="hover:text-green-500 bg-white"
               onClick={saveFile}
             >
               Resume
