@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <div className="flex flex-col justify-center gap-1 lg:intro">
       <h1 className="lg:text-center text-5xl font-extrabold  m-5">
-        HI, I'M <span className="text-green-500 ">OSCAR LEAL</span>
+        HI, IM <span className="text-green-500 ">OSCAR LEAL</span>
       </h1>
       <p className="lg:text-center text-3xl font-extrabold  m-5">
         A full-stack developer with 2+ years of experience. I enjoy building

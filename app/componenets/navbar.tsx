@@ -1,8 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Logo from '../../public/ol-logo.png';
-
-import { useTheme } from 'next-themes';
 import Switcher from './switcher';
 import {
   Navbar,
@@ -36,7 +34,6 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ['Home', 'About', 'Portfolio', 'Blog', 'Contact'];
-  let { theme } = useTheme();
 
   return (
     <Navbar

@@ -26,7 +26,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="lg:text-6xl text-4xl text-white font-bold text-center">
-              O's
+              Os
             </h1>
             <div className="lg:text-6xl text-4xl text-white font-bold text-center">
               <TypingEffect />

@@ -32,7 +32,7 @@ const ProjectCard = () => {
               <CardFooter className="justify-start  w-full gap-3  absolute   z-10">
                 <Tooltip content="Github-Repo">
                   <a href={project.github} target="_blank">
-                    <span className="icon-[whh--github] text-2xl hover:text-green-500"></span>
+                    <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
                   </a>
                 </Tooltip>
                 <Tooltip content="Live Site">

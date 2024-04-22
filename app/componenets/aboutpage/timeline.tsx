@@ -167,7 +167,7 @@ const Timeline = () => {
                 <div className="text-lg font-black">
                   {' '}
                   Free-Lance Developer:{' '}
-                  <a className="text-green-500">O's World</a>
+                  <a className="text-green-500">Os World</a>
                 </div>
                 <p className="font-sans text-md ">
                   In my spare time, I work as a part-time freelance developer,
