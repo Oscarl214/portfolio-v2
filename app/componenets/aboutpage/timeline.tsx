@@ -151,9 +151,9 @@ const Timeline = () => {
               <Image
                 src="/ol-logo.png"
                 alt="Logo"
-                width="45"
-                height="45"
-                className="cursor-pointer h-10 w-10 lg:h-10 lg:w-10"
+                width="35"
+                height="35"
+                className="cursor-pointer h-10 w-10 lg:h-8 lg:w-10"
                 priority
               />
             </div>
