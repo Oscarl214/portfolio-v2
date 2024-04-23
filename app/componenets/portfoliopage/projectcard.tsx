@@ -11,14 +11,15 @@ import { Tooltip } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 import ProjectData from '../../projectdata.json';
 import { Button } from '@nextui-org/react';
+
 const ProjectCard = () => {
   return (
     <div className="flex flex-wrap flex-row gap-4 justify-center">
       {ProjectData.map((project) => (
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
           key={project.id}
         >
           <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-[600px] lg:w-[800px] ">

@@ -9,8 +9,8 @@ type MotionProps = {
 export const CardMotion = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, scale: 1 }}
+      whileInView={{ opacity: 1, scale: 1.1 }}
       transition={{ duration: 1.5 }}
     >
       {children}
