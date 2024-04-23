@@ -182,11 +182,11 @@ const Timeline = () => {
           </li>
         </ul>
       </div>
-      <div className="flex justify-center m-5 ">
+      <div className="flex justify-center m-5 mt-10">
         <Button
           color="success"
           variant="bordered"
-          className="dark:hover:text-white"
+          className="hover:text-green-500 border-green-500 text-white"
         >
           <Link href={'/portfolio'}>Portfolio</Link>
         </Button>

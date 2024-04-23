@@ -21,6 +21,11 @@ const Skills = () => {
             </Tooltip>
           </li>
           <li>
+            <Tooltip content="Express">
+              <span className="icon-[skill-icons--expressjs-dark] dark:icon-[skill-icons--expressjs-light]"></span>
+            </Tooltip>
+          </li>
+          <li>
             <Tooltip content="TypeScript">
               <span className="icon-[logos--typescript-icon]"></span>
             </Tooltip>
@@ -35,7 +40,11 @@ const Skills = () => {
               <span className="icon-[skill-icons--react-dark] dark:icon-[skill-icons--react-light] "></span>
             </Tooltip>
           </li>
-
+          <li>
+            <Tooltip content="GraphQL">
+              <span className="icon-[logos--graphql]"></span>
+            </Tooltip>
+          </li>
           <li>
             <Tooltip content="Tailwind CSS">
               <span className="icon-[skill-icons--tailwindcss-dark] dark:icon-[skill-icons--tailwindcss-light]"></span>
@@ -54,6 +63,11 @@ const Skills = () => {
           <li>
             <Tooltip content="MySQL">
               <span className="icon-[skill-icons--mysql-dark] dark:icon-[skill-icons--mysql-light]"></span>
+            </Tooltip>
+          </li>
+          <li>
+            <Tooltip content="AWS">
+              <span className="icon-[skill-icons--aws-dark]"></span>
             </Tooltip>
           </li>
         </ul>

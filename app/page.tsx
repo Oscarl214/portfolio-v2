@@ -74,7 +74,7 @@ export default function Home() {
             <Button
               color="success"
               variant="bordered"
-              className="hover:text-green-500 bg-white"
+              className="hover:text-black text-green-500 bg-white"
               onClick={saveFile}
             >
               Resume

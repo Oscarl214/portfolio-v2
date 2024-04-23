@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../componenets/portfoliopage/header';
 import ProjectCard from '../componenets/portfoliopage/projectcard';
 import { CardMotion } from '../componenets/portfoliopage/cardmotion';
+import ContactButton from '../componenets/portfoliopage/button';
 const Portfolio = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Portfolio = () => {
       </div>
 
       <ProjectCard />
+      <ContactButton />
     </div>
   );
 };

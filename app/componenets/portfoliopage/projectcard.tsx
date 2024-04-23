@@ -21,13 +21,13 @@ const ProjectCard = () => {
           transition={{ duration: 1.5 }}
           key={project.id}
         >
-          <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800 lg:h-96 lg:overflow-auto">
+          <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-[600px] lg:w-[800px] ">
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
-                className="object-cover rounded-xl"
+                className=" rounded-xl w-full"
                 src={project.image}
-                width={270}
+                width={800}
               />
               <CardFooter className="justify-start  w-full gap-3  absolute   z-10">
                 <Tooltip content="Github-Repo">
