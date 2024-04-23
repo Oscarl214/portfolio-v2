@@ -8,7 +8,7 @@ const Timeline = () => {
   return (
     <div>
       <div>
-        <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  m-10">
+        <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold ml-3 ">
           My Experience
         </h2>
       </div>

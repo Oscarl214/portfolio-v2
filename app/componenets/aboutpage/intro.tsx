@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 const Intro = () => {
   return (
     <div className="flex flex-col justify-center gap-1 lg:intro">
-      <h1 className="lg:text-center text-5xl font-extrabold  m-5">
+      <h1 className="lg:text-center text-5xl font-extrabold ">
         HI, IM <span className="text-green-500 ">OSCAR LEAL</span>
       </h1>
-      <p className="lg:text-center text-3xl font-extrabold  m-5">
+      <p className="lg:text-center text-3xl font-extrabold ">
         A full-stack developer with 2+ years of experience. I enjoy building
         sites and apps. My focus is React (Next.js).
       </p>
-      <h2 className="lg:text-center lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold m-8 ">
+      <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold mt-5 ">
         OverView
       </h2>
-      <p className="lg:text-start  text-start text-md font-sans m-5 mt-1">
+      <p className="lg:text-start  text-start text-md  font-sans mr-4">
         A full time email developer at my current role, and a part-time
         freelance developer, specializing in frameworks like React, Node.js. I
         am a quick learner and work in tune when working with cross functional
@@ -22,7 +22,7 @@ const Intro = () => {
         set and a profound appreciation for crafting efficient, user-friendly
         solutions.
       </p>
-      <p className="lg:text-start  text-start text-md font-sans m-5 mt-1">
+      <p className="lg:text-start  text-start text-md font-sans mr-4 mt-2">
         <i>When Im not coding,</i> I like to go to the gym, hang out with my
         family, or read/learn about something new. I also love to travel and
         enjoy experiencing new cultures. I have been to a total of 7 countries

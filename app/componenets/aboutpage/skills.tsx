@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   return (
     <div>
-      <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold  ml-8 m-10">
+      <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold mt-5 ">
         My Skills
       </h2>
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <ul className="flex flex-row flex-wrap justify-evenly gap-5 text-5xl m-5 pt-5">
+        <ul className="flex flex-row flex-wrap justify-evenly gap-5 text-5xl mt-10 mr-5">
           <li>
             <Tooltip content="JavaScript">
               <span className="icon-[skill-icons--javascript]"></span>

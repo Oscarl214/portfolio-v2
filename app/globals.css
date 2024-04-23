@@ -30,6 +30,9 @@ main {
   object-fit: cover;
 }
 
+.contactborder {
+  border-radius: 5rem;
+}
 .content {
   position: relative;
   z-index: 1;
@@ -62,7 +65,7 @@ timeline {
 @media (max-width: 767px) {
   main {
     padding-top: 7rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
