@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 import { saveAs } from 'file-saver';
-
+import Cube from './componenets/cube';
 export default function Home() {
   const [welcome, setWelcome] = useState('Welcome');
   const saveFile = () => {

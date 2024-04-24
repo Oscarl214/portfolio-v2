@@ -5,10 +5,10 @@ type MotionProps = {
   children: ReactNode;
 };
 
-export const Motion = ({ children }: MotionProps) => {
+export const EarthMotion = ({ children }: MotionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 1, x: -200 }}
+      initial={{ opacity: 1, x: 200 }}
       whileInView={{ opacity: 1, x: 15 }}
       transition={{ duration: 2 }}
     >
