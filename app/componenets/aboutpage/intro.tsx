@@ -14,7 +14,7 @@ const Intro = () => {
       <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold mt-5 ">
         OverView
       </h2>
-      <p className="lg:text-start  text-start text-md  font-sans mr-4">
+      <p className="lg:text-start  text-start text-md  font-sans mr-7">
         A full time email developer at my current role, and a part-time
         freelance developer, specializing in frameworks like React, Node.js. I
         am a quick learner and work in tune when working with cross functional
@@ -22,7 +22,7 @@ const Intro = () => {
         set and a profound appreciation for crafting efficient, user-friendly
         solutions.
       </p>
-      <p className="lg:text-start  text-start text-md font-sans mr-4 mt-2">
+      <p className="lg:text-start  text-start text-md font-sans mr-7  mt-2">
         <i>When Im not coding,</i> I like to go to the gym, hang out with my
         family, or read/learn about something new. I also love to travel and
         enjoy experiencing new cultures. I have been to a total of 7 countries

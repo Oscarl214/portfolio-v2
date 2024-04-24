@@ -2,8 +2,8 @@ import React from 'react';
 import { Button } from '@nextui-org/react';
 const ContactForm = () => {
   return (
-    <div className=" ml-4 m-5 ">
-      <section className="bg-gray-800 dark:bg-gray-800 rounded">
+    <div className="contact-card">
+      <section className=" bg-gray-800 dark:bg-gray-800 rounded">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-dark dark:text-white">
             Contact.
