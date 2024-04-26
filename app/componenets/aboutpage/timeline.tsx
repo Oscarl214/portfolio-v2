@@ -63,10 +63,7 @@ const Timeline = () => {
                   management, collaboration, and creativity. I contributed to
                   the Deloitte partnership by leveraging my coding knowledge to
                   create promotional materials, design webpages, and enhance
-                  digital assets. This internship not only deepened my
-                  understanding of marketing strategies but also strengthened my
-                  coding abilities, illustrating the intersection of marketing
-                  and coding in todays digital landscape.
+                  digital assets. 
                 </p>
               </motion.div>
             </div>
@@ -89,7 +86,7 @@ const Timeline = () => {
                   Full Stack Coding Bootcamp
                 </div>
                 <p className="font-sans text-md">
-                  Following my internship, I graduated and gained a {''}
+                  Following my internship, I gained a {''}
                   <a
                     href="https://www.linkedin.com/in/oscar-l-8371a512a/overlay/1635539465412/single-media-viewer/?profileId=ACoAAB-1PGsB2qxEtcOuY2wAuCKdZMvSUBCD9cM"
                     target="_blank"

@@ -5,10 +5,13 @@ import { EarthMotion } from '../componenets/contactpage/earthmotion';
 import ContactForm from '../componenets/contactpage/contactform';
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center overflow-x-hidden lg:overflow-x-auto h-screen">
+
+
+  
+    <div className="flex justify-center items-center overflow-x-auto lg:overflow-x-visible">
       <div className="flex  flex-wrap-reverse lg:flex-nowrap ">
         <ContactMotion>
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <ContactForm />
           </div>
         </ContactMotion>
@@ -25,7 +28,7 @@ const Contact = () => {
           className="video"
         /> */}
       </div>
-    </div>
+  </div>
   );
 };
 
