@@ -9,23 +9,24 @@ const Footer = () => {
 
   return (
     <div>
-      <ul className="flex flex-row justify-center text-center m-4">
+      <ul className="flex flex-row justify-center text-center m-4 gap-4">
         <li>
-          <AiOutlineInstagram className="lg:text-xl text-3xl text-green-500 m-2 dark:hover:text-white hover:text-black" />
+        <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
         </li>
         <li>
-          <AiOutlineLinkedin className="lg:text-xl text-3xl text-green-500 m-2 hover:text-black dark:hover:text-white" />
+        <span className="icon-[uiw--linkedin] text-2xl  hover:text-green-500"></span>
         </li>
       </ul>
-      <div className="flex justify-center m-5">
+      <div className="flex flex-col text-center justify-center m-5  gap-4 items-center">
         <Image
           src={Logo}
           alt="Logo"
           width="85"
           height="85"
-          className="cursor-pointer"
+          className="cursor-pointer flex text-center justify-center"
           priority
         />
+        <p className='text-xs text-gray-300 font-sans'>Developed with Next Js, Next UI, and Tailwind by Oscar Leal.</p>
       </div>
     </div>
   );
