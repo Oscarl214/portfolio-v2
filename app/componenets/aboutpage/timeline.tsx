@@ -88,7 +88,7 @@ const Timeline = () => {
                 <p className="font-sans text-md">
                   Following my internship, I gained a {''}
                   <a
-                    href="https://drive.google.com/file/d/1ApHq3hPtedXQJRvMUBLMvpttiLvMBEai/view"
+                    href="https://drive.google.com/file/d/1ApHq3hPtedXQJRvMUBLMvpttiLvMBEai/view?usp=sharing"
                     target="_blank"
                     className="hover:text-green-500 underline"
                   >

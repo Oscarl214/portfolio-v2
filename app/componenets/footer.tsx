@@ -11,12 +11,15 @@ const Footer = () => {
     <div>
       <ul className="flex flex-row justify-center text-center m-4 gap-4">
         <li>
-          <a href="https://github.com/Oscarl214">
+          <a href="https://github.com/Oscarl214" target="_blank">
             <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/oscar-l-8371a512a/?profileId=ACoAAB-1PGsB2qxEtcOuY2wAuCKdZMvSUBCD9cM">
+          <a
+            href="https://www.linkedin.com/in/oscar-l-8371a512a/?profileId=ACoAAB-1PGsB2qxEtcOuY2wAuCKdZMvSUBCD9cM"
+            target="_blank"
+          >
             <span className="icon-[uiw--linkedin] text-2xl  hover:text-green-500"></span>
           </a>
         </li>
