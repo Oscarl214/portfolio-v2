@@ -6,7 +6,7 @@ import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 const Timeline = () => {
   return (
-    <div>
+    <div className="mt-5">
       <div>
         <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold ml-3 ">
           My Experience
