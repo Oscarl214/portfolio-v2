@@ -25,10 +25,7 @@ const Navigation = () => {
   };
 
   const saveFile = () => {
-    saveAs(
-      'https://drive.google.com/file/d/11gU35QzXitGPqcjVjn9fqxWqJb7qwqmJ/view?usp=sharing',
-      'OLResume.pdf'
-    );
+    saveAs('/OLResume.pdf', 'OLResume.pdf');
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

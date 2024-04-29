@@ -10,10 +10,7 @@ import Cube from './componenets/cube';
 export default function Home() {
   const [welcome, setWelcome] = useState('Welcome');
   const saveFile = () => {
-    saveAs(
-      'https://drive.google.com/file/d/11gU35QzXitGPqcjVjn9fqxWqJb7qwqmJ/view?usp=sharing',
-      'OLResume.pdf'
-    );
+    saveAs('/OLResume.pdf', 'OLResume.pdf');
   };
 
   return (

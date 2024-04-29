@@ -63,7 +63,7 @@ const Timeline = () => {
                   management, collaboration, and creativity. I contributed to
                   the Deloitte partnership by leveraging my coding knowledge to
                   create promotional materials, design webpages, and enhance
-                  digital assets. 
+                  digital assets.
                 </p>
               </motion.div>
             </div>
@@ -88,7 +88,7 @@ const Timeline = () => {
                 <p className="font-sans text-md">
                   Following my internship, I gained a {''}
                   <a
-                    href="https://www.linkedin.com/in/oscar-l-8371a512a/overlay/1635539465412/single-media-viewer/?profileId=ACoAAB-1PGsB2qxEtcOuY2wAuCKdZMvSUBCD9cM"
+                    href="https://drive.google.com/file/d/1ApHq3hPtedXQJRvMUBLMvpttiLvMBEai/view?usp=sharing"
                     target="_blank"
                     className="hover:text-green-500 underline"
                   >
