@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="www.linkedin.com/in/oscar-l-8371a512a">
+          <a href="https://www.linkedin.com/in/oscar-l-8371a512a/?profileId=ACoAAB-1PGsB2qxEtcOuY2wAuCKdZMvSUBCD9cM">
             <span className="icon-[uiw--linkedin] text-2xl  hover:text-green-500"></span>
           </a>
         </li>
