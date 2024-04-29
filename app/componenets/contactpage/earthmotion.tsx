@@ -9,7 +9,7 @@ export const EarthMotion = ({ children }: MotionProps) => {
   return (
     <motion.div
       initial={{ opacity: 1, x: 200 }}
-      whileInView={{ opacity: 1, x: 45 }}
+      whileInView={{ opacity: 1, x: 20 }}
       transition={{ duration: 2 }}
     >
       {children}

@@ -80,6 +80,7 @@ timeline {
   .contact-card {
     display: flex;
     width: 400px;
+    height: auto;
     margin-top: 0rem;
     justify-content: center;
   }
