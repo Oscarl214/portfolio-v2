@@ -11,10 +11,14 @@ const Footer = () => {
     <div>
       <ul className="flex flex-row justify-center text-center m-4 gap-4">
         <li>
-        <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
+          <a href="https://github.com/Oscarl214">
+            <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
+          </a>
         </li>
         <li>
-        <span className="icon-[uiw--linkedin] text-2xl  hover:text-green-500"></span>
+          <a href="www.linkedin.com/in/oscar-l-8371a512a">
+            <span className="icon-[uiw--linkedin] text-2xl  hover:text-green-500"></span>
+          </a>
         </li>
       </ul>
       <div className="flex flex-col text-center justify-center m-5  gap-4 items-center">
@@ -26,7 +30,9 @@ const Footer = () => {
           className="cursor-pointer flex text-center justify-center"
           priority
         />
-        <p className='text-xs text-gray-300 font-sans'>Developed with Next Js, Next UI, and Tailwind by Oscar Leal.</p>
+        <p className="text-xs text-gray-300 font-sans">
+          Developed with Next Js, Next UI, and Tailwind by Oscar Leal.
+        </p>
       </div>
     </div>
   );
