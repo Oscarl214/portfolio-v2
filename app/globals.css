@@ -74,8 +74,8 @@ timeline {
 @media (max-width: 767px) {
   main {
     padding-top: 7rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .contact-card {
     display: flex;
