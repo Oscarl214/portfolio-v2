@@ -15,49 +15,60 @@ import { Button } from '@nextui-org/react';
 const ProjectCard = () => {
   return (
     <div className="flex flex-wrap flex-row gap-4 justify-center">
-      {ProjectData.map((project) => (
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          key={project.id}
-        >
-          <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-[600px] lg:w-[800px] ">
-            <CardBody className="overflow-visible py-2">
-              <Image
-                alt="Card background"
-                className=" rounded-xl w-full"
-                src={project.image}
-                width={800}
-              />
-              <CardFooter className="justify-start  w-full gap-3  absolute   z-10">
-                <Tooltip content="Github-Repo">
-                  <a href={project.github} target="_blank">
-                  <span className="icon-[skill-icons--github-dark] text-2xl  hover:text-green-500"></span>
-                    {/* <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span> */}
-                  </a>
-                </Tooltip>
-                <Tooltip content="Live Site">
-                  <a href={project.link} target="_blank">
-                  <span className="icon-[noto--eye] hover:text-green-500 text-2xl"></span>
-                    {/* <span className="icon-[material-symbols--eye-tracking-outline-rounded]  hover:text-green-500 text-2xl"></span> */}
-                  </a>
-                </Tooltip>
-              </CardFooter>
-            </CardBody>
+      {ProjectData.map((project) => {
+        let liveBtn;
 
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start gap-5 dark:text-white text-white">
-              <h4 className="font-extrabold text-xl text-green-500">
-                {project.title}
-              </h4>
-              <p className="text-sm font-sans">{project.description}</p>
-              <small className="text-default-500 text-md flex-wrap leading-5">
-                {project.technologies}
-              </small>
-            </CardHeader>
-          </Card>
-        </motion.div>
-      ))}
+        if (project.link === '') {
+          liveBtn = (
+            <span className="icon-[tabler--error-404] text-2xl text-red-600"></span>
+          );
+        } else {
+          liveBtn = (
+            <a href={project.link} target="_blank">
+              <span className="icon-[noto--eye] hover:text-green-500 text-2xl"></span>
+            </a>
+          );
+        }
+
+        return (
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            key={project.id}
+          >
+            <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-[600px] lg:w-[800px] ">
+              <CardBody className="overflow-visible py-2">
+                <Image
+                  alt="Card background"
+                  className=" rounded-xl w-full"
+                  src={project.image}
+                  width={800}
+                />
+                <CardFooter className="justify-start  w-full gap-3  absolute   z-10">
+                  <Tooltip content="Github-Repo">
+                    <a href={project.github} target="_blank">
+                      <span className="icon-[skill-icons--github-dark] text-2xl  hover:text-green-500"></span>
+                      {/* <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span> */}
+                    </a>
+                  </Tooltip>
+                  <Tooltip content="Live Site">{liveBtn}</Tooltip>
+                </CardFooter>
+              </CardBody>
+
+              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start gap-5 dark:text-white text-white">
+                <h4 className="font-extrabold text-xl text-green-500">
+                  {project.title}
+                </h4>
+                <p className="text-sm font-sans">{project.description}</p>
+                <small className="text-default-500 text-md flex-wrap leading-5">
+                  {project.technologies}
+                </small>
+              </CardHeader>
+            </Card>
+          </motion.div>
+        );
+      })}
     </div>
   );
 };

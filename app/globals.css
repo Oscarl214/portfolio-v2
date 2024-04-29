@@ -51,6 +51,14 @@ main {
   margin: 3rem;
 }
 
+.contact-card {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+}
+
 timeline {
   font-size: 1.5rem;
 }
@@ -63,18 +71,16 @@ timeline {
   }
 }
 
-
-
 @media (max-width: 767px) {
   main {
     padding-top: 7rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }
-}
-
-.contact-card {
-  height: auto;
-  width: 400px;
-  margin:0;
+  .contact-card {
+    display: flex;
+    width: 400px;
+    margin-top: 0rem;
+    justify-content: center;
+  }
 }
