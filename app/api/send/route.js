@@ -13,9 +13,12 @@ export async function POST(request) {
     const data = await resend.emails.send({
       from: 'Oscar <oscarleal@osworld.dev>',
       to: email,
-      subject: { subject },
-      message: { message },
-      react: EmailTemplate({ firstName: name, subject: subject }),
+      subject: subject,
+      react: EmailTemplate({
+        firstName: name,
+        emailSubject: subject,
+        emailMessage: message,
+      }),
     });
 
     if (data.status === 'success') {
