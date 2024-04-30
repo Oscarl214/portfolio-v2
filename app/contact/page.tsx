@@ -6,7 +6,7 @@ import ContactForm from '../componenets/contactpage/contactform';
 const Contact = () => {
   return (
     <div className="flex justify-center items-center overflow-x-invisible lg:overflow-x-visible">
-      <div className="flex  flex-wrap-reverse  lg:flex-nowrap ">
+      <div className="flex  flex-wrap-reverse md:flex-wrap-reverse  lg:flex-nowrap ">
         <ContactMotion>
           <div>
             <ContactForm />
