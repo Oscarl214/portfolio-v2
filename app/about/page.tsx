@@ -8,6 +8,11 @@ import { MotionSkills } from '../componenets/aboutpage/motionskills';
 import Timeline from '../componenets/aboutpage/timeline';
 import { MotionTime } from '../componenets/aboutpage/timemotion';
 import RepoCard from '../componenets/aboutpage/repocard';
+import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
+
+
+
+
 const About = () => {
   return (
     <div>
@@ -26,6 +31,7 @@ const About = () => {
         <Timeline />
       </MotionTime>
       <RepoCard />
+      <PortfolioButton/>
     </div>
   );
 };
