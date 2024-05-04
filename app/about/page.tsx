@@ -7,9 +7,10 @@ import Skills from '../componenets/aboutpage/skills';
 import { MotionSkills } from '../componenets/aboutpage/motionskills';
 import Timeline from '../componenets/aboutpage/timeline';
 import { MotionTime } from '../componenets/aboutpage/timemotion';
+import RepoCard from '../componenets/aboutpage/repocard';
 const About = () => {
   return (
-    <div >
+    <div>
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         {' '}
         <Header />
@@ -24,6 +25,7 @@ const About = () => {
       <MotionTime>
         <Timeline />
       </MotionTime>
+      <RepoCard />
     </div>
   );
 };
