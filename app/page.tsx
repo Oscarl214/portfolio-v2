@@ -42,7 +42,7 @@ export default function Home() {
             className="flex flex-row justify-center items-center gap-5 hover:text-white"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 2 }}
           >
             <Link href={'/about'}>
               <Button

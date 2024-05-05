@@ -21,6 +21,7 @@ main {
 .navbar {
   position: absolute;
 }
+
 .video {
   position: absolute;
   /* top:0; */ /* will add once I add footer*/
