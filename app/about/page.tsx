@@ -10,10 +10,12 @@ import { MotionTime } from '../componenets/aboutpage/timemotion';
 import RepoCard from '../componenets/aboutpage/repocard';
 import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
 
+import getRepos from '../lib/getRepos';
 
+export default async function About() {
+  const username = 'oscarl214';
+  const repos = await getRepos(username);
 
-
-const About = () => {
   return (
     <div>
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
@@ -30,10 +32,8 @@ const About = () => {
       <MotionTime>
         <Timeline />
       </MotionTime>
-      <RepoCard />
-      <PortfolioButton/>
+      <RepoCard repos={repos} />
+      <PortfolioButton />
     </div>
   );
-};
-
-export default About;
+}
