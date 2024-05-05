@@ -28,7 +28,9 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <Providers>
-          <Navigation />
+          <div className="custom-navbar">
+            <Navigation />
+          </div>
           <main
             style={{
               paddingTop: '7rem',
