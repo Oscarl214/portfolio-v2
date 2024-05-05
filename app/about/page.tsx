@@ -9,7 +9,7 @@ import Timeline from '../componenets/aboutpage/timeline';
 import { MotionTime } from '../componenets/aboutpage/timemotion';
 import RepoCard from '../componenets/aboutpage/repocard';
 import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
-
+import { RepoMotion } from '../componenets/aboutpage/repomotion';
 import getRepos from '../lib/getRepos';
 
 export default async function About() {
@@ -32,7 +32,9 @@ export default async function About() {
       <MotionTime>
         <Timeline />
       </MotionTime>
-      <RepoCard repos={repos} />
+      <RepoMotion>
+        <RepoCard repos={repos} />
+      </RepoMotion>
       <PortfolioButton />
     </div>
   );
