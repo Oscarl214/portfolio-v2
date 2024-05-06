@@ -18,20 +18,22 @@ const Timeline = () => {
               <span className="icon-[whh--student] h-10 w-10"></span>
             </div>
 
-            <div className="lg:timeline-start timeline-end m-5 md:text-end mb-10 ">
+            <div className=" lg:timeline-start timeline-end m-5 md:text-end mb-10 ">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
               >
                 <time className="font-mono italic">2022</time>
-                <div className="text-lg font-bold text-orange-500">
+                <div className="text-lg font-bold text-orange-500 collapse-title">
                   Graduated from The University of Texas
                 </div>
-                <a className="font-sans text-md">
-                  Graduated from University with dual degrees in Corporate
-                  Communications and Arts & Entertainment Technologies, where I
-                  first got introduced to coding.
+                <a className="font-sans text-md ">
+                  <p>
+                    Graduated from University with dual degrees in Corporate
+                    Communications and Arts & Entertainment Technologies, where
+                    I first got introduced to coding.
+                  </p>
                 </a>
               </motion.div>
             </div>
@@ -44,7 +46,7 @@ const Timeline = () => {
             <div className="timeline-middle lg:m-5">
               <span className="icon-[logos--oracle] h-10 w-10 lg:h-10 lg:w-10"></span>
             </div>
-            <div className="timeline-end m-5 md:text-start mb-10">
+            <div className="timeline-end m-5 md:text-start mb-10 ">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -160,12 +162,41 @@ const Timeline = () => {
                 transition={{ duration: 1.5 }}
               >
                 <time className="font-mono italic">Present</time>
-                <div className="text-lg font-black">
-                  {' '}
-                  Free-Lance Developer:{' '}
-                  <a className="text-green-500">Os World</a>
+
+                <div
+                  tabIndex={0}
+                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                >
+                  <div className=" collapse-title text-lg font-black">
+                    {' '}
+                    Free-Lance Developer:{' '}
+                    <a className="text-green-500">Os World</a>
+                  </div>
+                  <div className="collapse-content">
+                    <p className="font-sans text-md ">
+                      In my spare time, I work as a part-time freelance
+                      developer, using Next.js to build user-friendly web
+                      applications. I have weekly appointments with clients,
+                      where I create websites to increase traffic and drive
+                      overall business growth. This experience not only enhances
+                      my understanding of marketing but also helps me refine my
+                      coding skills.
+                    </p>
+                  </div>
                 </div>
-                <p className="font-sans text-md ">
+              </motion.div>
+            </div>
+          </li>
+          <li>
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow border border-base-300 bg-base-200"
+            >
+              <div className="collapse-title text-xl font-medium">
+                Free-Lance Developer: <a className="text-green-500">Os World</a>
+              </div>
+              <div className="collapse-content">
+                <p>
                   In my spare time, I work as a part-time freelance developer,
                   using Next.js to build user-friendly web applications. I have
                   weekly appointments with clients, where I create websites to
@@ -173,12 +204,11 @@ const Timeline = () => {
                   experience not only enhances my understanding of marketing but
                   also helps me refine my coding skills.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </li>
         </ul>
       </div>
-
     </div>
   );
 };
