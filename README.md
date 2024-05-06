@@ -39,10 +39,6 @@ Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tai
 
 https://www.osworld.dev/
 
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
