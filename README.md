@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Party Knight Rental Services
 
-## Getting Started
+Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tailwind CSS. It showcases an About Me Page, displaying an overview about myself, a professional experience timeline, my skills, and my latest repos. I also have a dedicated page where I showcase all my projects to date. This portfolio is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for showcasing my abilities as a developer.
 
-First, run the development server:
+- **Home Page:** Introduces visitors to a image of myself with a moving video as the background, and links to my projects or about page, and an option to download my resume.
+- **About:** Provides insight into myself, my skills, my professional timeline, and my latest repos.
+- **Projects:** Details the various projects I have created either by myself or with groups. Giving the user the option to view the project live or the repo.
+- **Blog:** Details & Provides blogs written by me over all topics.
+- **Contact:** Offers visitors a convenient way to reach out for inquiries or work opportunities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dynamic Routing:** Leveraging Next.js for server-side rendering and routing, ensuring fast and efficient page loading.
+- **Responsive Design:** Tailwind CSS is utilized to ensure a visually appealing and responsive layout across devices.
+- **Ease of Maintenance:** The modular structure of React components and the utility-first approach of Tailwind CSS make the codebase easy to maintain and extend.
+- **Ease of Contact:** Utilized third party packages such as ReSend, to provide a easy and effective way to create communication with visitors who visit the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **NextUI:** https://nextui.org/
+- **Vercel:** https://vercel.com/home
+- **DaisyUI:** https://daisyui.com/
+- **TypedJs:** https://www.npmjs.com/package/typed-js
+- **ReSend:** https://resend.com/home
+- **Framer-Motion:** https://www.framer.com/motion/
+- **React-Hot-Toast:** https://www.npmjs.com/package/react-hot-toast
+- **Yes-Icons:** https://yesicon.app/
+- **ThreeJs:** https://threejs.org/
 
-## Learn More
+## Desktop View
 
-To learn more about Next.js, take a look at the following resources:
+![](https://github.com/Oscarl214/Birthday_Services_/blob/main/public/DesktopView.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Mobile View
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![](https://github.com/Oscarl214/Birthday_Services_/blob/main/public/MobileView.png)
 
-## Deploy on Vercel
+## Live
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://www.osworld.dev/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
