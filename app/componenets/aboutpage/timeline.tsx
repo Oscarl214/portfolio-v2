@@ -27,7 +27,7 @@ const Timeline = () => {
                 <time className="font-mono italic">2022</time>
                 <div
                   tabIndex={0}
-                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                  className="collapse collapse-arrow border border-green-300 bg-transparent mt-4"
                 >
                   <div className="text-lg font-bold text-orange-500 collapse-title">
                     Graduated from The University of Texas
@@ -62,7 +62,7 @@ const Timeline = () => {
                 <time className="font-mono italic">2022</time>
                 <div
                   tabIndex={0}
-                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                  className="collapse collapse-arrow border border-green-300 bg-transparent mt-4"
                 >
                   <div className="collapse-title text-lg  font-black">
                     Digital Marketing Specialist at{' '}
@@ -99,7 +99,7 @@ const Timeline = () => {
                 <time className="font-mono italic md:text-end">2022</time>
                 <div
                   tabIndex={0}
-                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                  className="collapse collapse-arrow border border-green-300 bg-transparent mt-4"
                 >
                   <div className="collapse-title text-lg font-bold text-blue-500">
                     Full Stack Coding Bootcamp
@@ -148,7 +148,7 @@ const Timeline = () => {
                 <time className="font-mono italic">2023-Present</time>
                 <div
                   tabIndex={0}
-                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                  className="collapse collapse-arrow border border-green-300 bg-transparent mt-4"
                 >
                   <div className="collapse-title text-lg font-black">
                     Assistant Email Developer at{' '}
@@ -194,7 +194,7 @@ const Timeline = () => {
 
                 <div
                   tabIndex={0}
-                  className="collapse collapse-arrow border border-green-300 bg-transparent"
+                  className="collapse collapse-arrow border border-green-300 bg-transparent mt-4"
                 >
                   <div className=" collapse-title text-lg font-black">
                     {' '}
