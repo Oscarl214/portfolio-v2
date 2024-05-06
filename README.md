@@ -1,4 +1,4 @@
-# Party Knight Rental Services
+# Os World | Portfolio
 
 Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tailwind CSS. It showcases an About Me Page, displaying an overview about myself, a professional experience timeline, my skills, and my latest repos. I also have a dedicated page where I showcase all my projects to date. This portfolio is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for showcasing my abilities as a developer.
 
@@ -29,11 +29,11 @@ Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tai
 
 ## Desktop View
 
-![](https://github.com/Oscarl214/Birthday_Services_/blob/main/public/DesktopView.png)
+![](https://github.com/Oscarl214/portfolio-v2/blob/main/public/DesktopView.png)
 
 # Mobile View
 
-![](https://github.com/Oscarl214/Birthday_Services_/blob/main/public/MobileView.png)
+![](https://github.com/Oscarl214/portfolio-v2/blob/main/public/PhoneView.png)
 
 ## Live
 
