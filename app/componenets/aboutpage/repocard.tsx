@@ -27,7 +27,7 @@ interface RepoCardProps {
 
 const RepoCard: React.FC<RepoCardProps> = ({ repos }) => {
   return (
-    <div>
+    <div className="overflow-auto">
       <h2 className=" lg:text-center lg:text-3xl text-center text-green-500 text-2xl font-extrabold mt-5 ">
         Latest Repos
       </h2>

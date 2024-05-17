@@ -32,9 +32,11 @@ export default async function About() {
       <MotionTime>
         <Timeline />
       </MotionTime>
-      <RepoMotion>
-        <RepoCard repos={repos} />
-      </RepoMotion>
+      <div className="overflow-x-hidden">
+        <RepoMotion>
+          <RepoCard repos={repos} />
+        </RepoMotion>
+      </div>
       <PortfolioButton />
     </div>
   );
