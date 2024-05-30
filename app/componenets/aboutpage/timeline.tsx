@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Timeline = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 overflow-auto">
       <div>
         <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold ml-3 ">
           My Experience

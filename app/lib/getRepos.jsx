@@ -5,6 +5,7 @@ export default async function getRepos(username) {
       cache: 'no-cache',
     }
   );
+
   if (!response.ok) {
     throw new Error('Failed to fetch repositories');
   }
@@ -13,5 +14,7 @@ export default async function getRepos(username) {
   repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
   // Get the latest two repositories
   const latestRepos = repos.slice(0, 2);
+
+  console.log(latestRepos);
   return latestRepos;
 }
