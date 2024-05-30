@@ -1,12 +1,12 @@
 [
   {
-    "id": 1,
-    "title": "Yard Service Site",
-    "description": "This project is a modern web application built using React, TypeScript and Next.js, & Tailwind CSS. The site is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for a lawn care service, featuring a range of static pages.",
-    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/Screenshot+2024-02-08+155400.png",
-    "link": "https://yard-service-site.vercel.app/",
-    "github": "https://github.com/Oscarl214/Yard-Service-Site",
-    "technologies": "React, TypeScript, JavaScript, CSS, Tailwind, NodeMailer "
+    "id": 12,
+    "title": "VidaBevidasProject",
+    "description": "VidaBebidas Project is a comprehensive, full-stack website designed to serve as a booking platform for a mobile bartender.",
+    "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
+    "link": "https://vida-bebidas-project.vercel.app/",
+    "github": "https://github.com/Oscarl214/VidaBebidasProject-",
+    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind"
   },
   {
     "id": 2,
@@ -15,6 +15,15 @@
     "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/BirthdayServiespage.png",
     "link": "https://www.partyknightrentals.com/",
     "github": "https://github.com/Oscarl214/Birthday_Services_/tree/main",
+    "technologies": "React, TypeScript, JavaScript, CSS, Tailwind, NodeMailer "
+  },
+  {
+    "id": 1,
+    "title": "Yard Service Site",
+    "description": "This project is a modern web application built using React, TypeScript and Next.js, & Tailwind CSS. The site is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for a lawn care service, featuring a range of static pages.",
+    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/Screenshot+2024-02-08+155400.png",
+    "link": "https://yard-service-site.vercel.app/",
+    "github": "https://github.com/Oscarl214/Yard-Service-Site",
     "technologies": "React, TypeScript, JavaScript, CSS, Tailwind, NodeMailer "
   },
   {
