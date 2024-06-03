@@ -4,7 +4,7 @@
     "title": "VidaBevidasProject",
     "description": "VidaBebidas Project is a comprehensive, full-stack website designed to serve as a booking platform for a mobile bartender.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
-    "link": "https://vida-bebidas-project.vercel.app/",
+    "link": "https://www.vidabevidasproject.me/",
     "github": "https://github.com/Oscarl214/VidaBebidasProject-",
     "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind"
   },
