@@ -6,7 +6,7 @@
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
     "link": "https://www.vidabevidasproject.me/",
     "github": "https://github.com/Oscarl214/VidaBebidasProject-",
-    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind"
+    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NodeMailer"
   },
   {
     "id": 2,
