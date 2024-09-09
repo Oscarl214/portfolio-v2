@@ -7,7 +7,7 @@ const BlogHeader = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['COMING SOON...'],
+      strings: [' MY BLOG...'],
       typeSpeed: 80,
       backSpeed: 80,
     };

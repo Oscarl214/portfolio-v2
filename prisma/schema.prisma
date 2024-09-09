@@ -12,3 +12,14 @@ datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
+
+model BlogPost {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  content     String
+  author      String
+  tags        String[] @default([])  // Array of tags for the post
+  status      String   @default("draft") // Could be "draft", "published", etc.
+  createdAt   DateTime @default(now())    // Auto-set on creation
+  updatedAt   DateTime @updatedAt         // Auto-update on save
+}
