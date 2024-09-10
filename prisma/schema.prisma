@@ -20,6 +20,7 @@ model BlogPost {
   author      String
   tags        String[] @default([])  // Array of tags for the post
   status      String   @default("draft") // Could be "draft", "published", etc.
-  createdAt   DateTime @default(now())    // Auto-set on creation
-  updatedAt   DateTime @updatedAt         // Auto-update on save
+  images      String[] @default([])
+  createdAt   DateTime @default(now())    
+  updatedAt   DateTime @updatedAt         
 }
