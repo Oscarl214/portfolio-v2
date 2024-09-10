@@ -9,7 +9,7 @@ import dayjs from 'dayjs';
 interface Blog {
   id: string;
   title: string;
-  content: string;
+  content: string[];
   tags: string[];
   status: string;
   images: string[];
@@ -75,11 +75,13 @@ const Blog = () => {
         </section>
 
         <article className="prose lg:prose-lg mx-auto mb-12">
-          <div
-            dangerouslySetInnerHTML={{ __html: blog.content }}
-            className="text-lg leading-relaxed text-gray-700"
-          />
-        </article>
+  {blog.content.map((paragraph, index) => (
+    <p key={index} className="text-lg leading-relaxed p-2 font-sans">
+      {paragraph}
+    </p>
+  ))}
+</article>
+
 
         <section className="mt-8">
           <h3 className="text-xl font-semibold mb-3">Tags</h3>

@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Image } from '@nextui-org/react';
-import dayjs from 'dayjs';
+import dayjs from 'dayjs'
 import Loading from './loading';
 import { useRouter } from 'next/navigation';
 interface Blog {
   id: string;
   title: string;
-  content: string;
+  content: string[];
   tags: string[];
   status: string;
   images: string[];
@@ -61,10 +61,10 @@ const BlogCard = () => {
             interests.
           </p>
           <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
-            {/* Blog Post 1 */}
+        
             {blogs.map((blog) => (
               <div
-                className="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
+                className="group cursor-pointer w-full max-lg:max-w-xl  md:w-1/2 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
                 key={blog.id}
                 onClick={() => handleBlogClick(blog.id)}
               >

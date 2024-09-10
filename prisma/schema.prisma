@@ -16,7 +16,7 @@ datasource db {
 model BlogPost {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
   title       String
-  content     String
+  content     String[] @default([])
   author      String
   tags        String[] @default([])  // Array of tags for the post
   status      String   @default("draft") // Could be "draft", "published", etc.
