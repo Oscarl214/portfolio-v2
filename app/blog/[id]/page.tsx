@@ -34,6 +34,7 @@ const Blog = () => {
       const data: Blog = await response.json();
       setBlog(data);
     };
+    //test
 
     if (id) {
       fetchBlog();
@@ -75,13 +76,12 @@ const Blog = () => {
         </section>
 
         <article className="prose lg:prose-lg mx-auto mb-12">
-  {blog.content.map((paragraph, index) => (
-    <p key={index} className="text-lg leading-relaxed p-2 font-sans">
-      {paragraph}
-    </p>
-  ))}
-</article>
-
+          {blog.content.map((paragraph, index) => (
+            <p key={index} className="text-lg leading-relaxed p-2 font-sans">
+              {paragraph}
+            </p>
+          ))}
+        </article>
 
         <section className="mt-8">
           <h3 className="text-xl font-semibold mb-3">Tags</h3>
