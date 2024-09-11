@@ -1,11 +1,18 @@
 import { prisma } from '@/lib/prisma';
 import { NextResponse } from 'next/server';
-
+import { ObjectId } from 'mongodb';
 export async function GET(
   request: Request,
   { params }: { params: { id: string } }
 ) {
   const { id } = params;
+
+  if (!ObjectId.isValid(id)) {
+    return NextResponse.json(
+      { error: 'Invalid blog ID format' },
+      { status: 400 }
+    );
+  }
 
   try {
     const blog = await prisma.blogPost.findUnique({
