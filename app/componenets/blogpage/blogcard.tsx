@@ -84,7 +84,7 @@ const BlogCard = () => {
                   </h4> */}
                   <div className="flex items-center justify-between font-medium mt-4">
                     <h6 className="text-sm">{blog.author}</h6>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-4">
                       <span className="text-sm text-green-500 text-end">
                         {dayjs(blog.createdAt).format('MM/DD/YYYY')}
                       </span>
@@ -98,6 +98,16 @@ const BlogCard = () => {
                           </span>
                         ))}
                       </div>
+
+                      <span
+                        className={
+                          blog.status === 'published'
+                            ? 'text-sm text-green-500 text-end'
+                            : 'text-sm text-orange-500 text-end'
+                        }
+                      >
+                        {blog.status}
+                      </span>
                     </div>
                   </div>
                 </div>
