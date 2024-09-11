@@ -2,7 +2,7 @@ import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 import React from 'react';
 
-const PortfolioButton = () => {
+const BlogButton = () => {
   return (
     <div>
       {' '}
@@ -12,11 +12,11 @@ const PortfolioButton = () => {
           variant="bordered"
           className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
         >
-          <Link href={'/portfolio'}>Portfolio</Link>
+          <Link href={'/blogs'}>Check Out my Blogs</Link>
         </Button>
       </div>
     </div>
   );
 };
 
-export default PortfolioButton;
+export default BlogButton;

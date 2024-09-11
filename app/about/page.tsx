@@ -11,13 +11,14 @@ import RepoCard from '../componenets/aboutpage/repocard';
 import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
 import { RepoMotion } from '../componenets/aboutpage/repomotion';
 import getRepos from '../lib/getRepos';
+import BlogButton from '../componenets/aboutpage/blogbutton';
 
 export default async function About() {
   const username = 'oscarl214';
   const repos = await getRepos(username);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         {' '}
         <Header />
@@ -37,7 +38,10 @@ export default async function About() {
           <RepoCard repos={repos} />
         </RepoMotion>
       </div>
-      <PortfolioButton />
+      <div className="gap-1 mt-5">
+        <PortfolioButton />
+        <BlogButton />
+      </div>
     </div>
   );
 }
