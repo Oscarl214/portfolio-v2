@@ -30,7 +30,7 @@ const Navigation = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'About', 'Portfolio', 'Blog', 'Contact'];
+  const menuItems = ['Home', 'About', 'Portfolio', 'Blogs', 'Contact'];
 
   return (
     <Navbar
@@ -73,7 +73,7 @@ const Navigation = () => {
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="/blog">
+          <Link color="foreground" href="/blogs">
             Blog
           </Link>
         </NavbarItem>
