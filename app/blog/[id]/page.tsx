@@ -107,20 +107,24 @@ const Blog = () => {
       <div>
         {' '}
         <div className="flex flex-col gap-2 justify-center m-5 mt-10">
+        <Link href={'/blogs'}>
           <Button
             color="success"
             variant="bordered"
             className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
           >
-            <Link href={'/blogs'}>Back to Blogs</Link>
+            Back to Blogs
           </Button>
+          </Link>
+          <Link href={'/portfolio'}>
           <Button
             color="success"
             variant="bordered"
             className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
           >
-            <Link href={'/portfolio'}>Portfolio</Link>
+           Portfolio
           </Button>
+          </Link>
         </div>
       </div>
     </div>

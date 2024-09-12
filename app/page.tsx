@@ -55,13 +55,15 @@ export default function Home() {
                 About
               </Button>
             </Link>
+            <Link href={'/portfolio'}>
             <Button
               // color="success"
               variant="bordered"
               className="hover:text-green-500 border-green-500 text-white"
             >
-              <Link href={'/portfolio'}>Portfolio</Link>
+              Portfolio
             </Button>
+            </Link>
           </motion.div>
           <motion.div
             className="flex flex-col"
