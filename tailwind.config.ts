@@ -21,7 +21,7 @@ const config: Config = {
         light: {
           layout: {
             foreground: '#000000',
-          }, // light theme layout tokens
+          },
         },
         dark: {
           layout: {}, // dark theme layout tokens

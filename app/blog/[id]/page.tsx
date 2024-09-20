@@ -62,7 +62,7 @@ const Blog = () => {
             Last updated on {dayjs(blog.updatedAt).format('MMMM D, YYYY')}
           </p>
 
-          {blog.images.length > 0 && (
+          {/* {blog.images.length > 0 && (
             <div className="mt-6">
               <Image
                 src={blog.images[0]}
@@ -72,14 +72,25 @@ const Blog = () => {
                 className="mx-auto rounded-lg shadow-lg"
               />
             </div>
-          )}
+          )} */}
         </section>
 
         <article className="prose lg:prose-lg mx-auto mb-12">
           {blog.content.map((paragraph, index) => (
-            <p key={index} className="text-lg leading-relaxed p-2 font-sans">
-              {paragraph}
-            </p>
+            <div key={index} className="mb-6">
+              {blog.images[index] && (
+                <Image
+                  src={blog.images[index]}
+                  alt={`Image for paragraph ${index}`}
+                  width={500}
+                  height={250}
+                  className="mx-auto rounded-lg shadow-lg mt-4"
+                />
+              )}
+              <p className="text-lg leading-relaxed p-2 font-sans">
+                {paragraph}
+              </p>
+            </div>
           ))}
         </article>
 
