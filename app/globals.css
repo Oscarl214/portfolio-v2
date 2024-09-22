@@ -60,11 +60,12 @@ main {
   margin-top: 12rem;
 }
 
+.navbar {
+  min-height: 1rem;
+}
+
 timeline {
   font-size: 1.5rem;
-}
-.custom-navbar {
-  height: -50px; /* Adjust the height as needed */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

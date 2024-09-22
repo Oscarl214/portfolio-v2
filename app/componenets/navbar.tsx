@@ -93,7 +93,7 @@ const Navigation = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="flex items-center justify-center">
+      <NavbarMenu className="flex items-center justify-center ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem
             key={`${item}-${index}`}

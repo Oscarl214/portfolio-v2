@@ -40,6 +40,21 @@ export default function Home() {
             <Image isZoomed width={300} alt="Me" src="/Me.JPG" />
           </motion.div>
           <motion.div
+            className="flex flex-col"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 3 }}
+          >
+            <Button
+              color="success"
+              variant="bordered"
+              className="hover:text-black text-green-500 bg-white"
+              onClick={saveFile}
+            >
+              Resume
+            </Button>
+          </motion.div>
+          <motion.div
             className="flex flex-row justify-center items-center gap-5 hover:text-white"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,29 +71,30 @@ export default function Home() {
               </Button>
             </Link>
             <Link href={'/portfolio'}>
-            <Button
-              // color="success"
-              variant="bordered"
-              className="hover:text-green-500 border-green-500 text-white"
-            >
-              Portfolio
-            </Button>
+              <Button
+                // color="success"
+                variant="bordered"
+                className="hover:text-green-500 border-green-500 text-white"
+              >
+                Portfolio
+              </Button>
             </Link>
           </motion.div>
           <motion.div
-            className="flex flex-col"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 3 }}
+            className="flex flex-row justify-center items-center gap-5 hover:text-white"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
           >
-            <Button
-              color="success"
-              variant="bordered"
-              className="hover:text-black text-green-500 bg-white"
-              onClick={saveFile}
-            >
-              Resume
-            </Button>
+            <Link href={'/blogs'}>
+              <Button
+                color="success"
+                variant="bordered"
+                className="hover:text-green-500 border-green-500 text-white"
+              >
+                Blogs
+              </Button>
+            </Link>
           </motion.div>
           <video
             src={require('../public/BG.mp4')}

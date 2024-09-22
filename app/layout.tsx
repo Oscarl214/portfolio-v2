@@ -29,7 +29,7 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <Providers>
-          <div className="custom-navbar">
+          <div className="">
             <Navigation />
           </div>
           <main
