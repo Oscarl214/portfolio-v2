@@ -1,5 +1,14 @@
 [
   {
+    "id": 14,
+    "title": "Chrsitmas List V2",
+    "description": "Leal's Christmas Wishes is a private, full-stack application built exclusively for my family to help organize and share our Christmas lists for the upcoming year. This version is a major upgrade from the original, where I previously used GraphQL. Now, I've leveraged the power of Next.js, Prisma, and NextAuth to create a more versatile and user-friendly experience for my family.",
+    "image": "https://christmaslist21.s3.us-east-2.amazonaws.com/WishChrist.gif",
+    "link": "https://christmaslist-v2.vercel.app",
+    "github": "https://github.com/Oscarl214/christmaslist-v2",
+    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NextAuth"
+  },
+  {
     "id": 13,
     "title": "Leal Directory",
     "description": "The Vehicle Maintenance Tracker is a private, full-stack application exclusively designed for my family to track the maintenance history of our vehicles. It provides a convenient maintenance guide to help users identify tasks and allows them to log the type of maintenance along with the date it was completed. Built with Next.js and secured with NextAuth for authentication, this application offers a secure and user-friendly experience. By keeping the site exclusive, it ensures that our family can easily update and monitor vehicle maintenance, solving the issue of forgetting service dates and keeping our cars in top shape.",
