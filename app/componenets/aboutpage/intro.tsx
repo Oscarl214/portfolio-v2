@@ -7,8 +7,8 @@ const Intro = () => {
       <h1 className="lg:text-center text-5xl font-extrabold ">
         HI, IM <span className="text-green-500 ">OSCAR LEAL</span>
       </h1>
-      <p className="lg:text-center lg:text-3xl text-2xl font-extrabold ">
-        A full-stack developer with 2+ years of experience. I enjoy building
+      <p className="lg:text-center lg:text-3xl text-xl font-extrabold ">
+        A full-stack developer with 3+ years of experience. I enjoy building
         sites and apps. My focus is React (Next.js).
       </p>
       <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold mt-5 ">
