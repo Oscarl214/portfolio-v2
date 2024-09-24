@@ -70,6 +70,11 @@ const Skills = () => {
               <span className="icon-[skill-icons--aws-dark]"></span>
             </Tooltip>
           </li>
+          <li>
+            <Tooltip content="Prisma">
+              <span className="icon-[skill-icons--prisma]"></span>
+            </Tooltip>
+          </li>
         </ul>
       </motion.div>
     </div>
