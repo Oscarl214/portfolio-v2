@@ -27,7 +27,7 @@ const Navigation = () => {
   const saveFile = () => {
     saveAs('/OLResume.pdf', 'OLResume.pdf');
   };
-
+  //
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ['Home', 'About', 'Portfolio', 'Blogs', 'Contact'];
