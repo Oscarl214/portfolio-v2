@@ -12,7 +12,7 @@
     "id": 13,
     "title": "Leal Directory",
     "description": "The Vehicle Maintenance Tracker is a private, full-stack application exclusively designed for my family to track the maintenance history of our vehicles. It provides a convenient maintenance guide to help users identify tasks and allows them to log the type of maintenance along with the date it was completed. Built with Next.js and secured with NextAuth for authentication, this application offers a secure and user-friendly experience. By keeping the site exclusive, it ensures that our family can easily update and monitor vehicle maintenance, solving the issue of forgetting service dates and keeping our cars in top shape.",
-    "image": "https://newportv2.s3.us-east-2.amazonaws.com/Screenshot+2024-09-08+195354.png",
+    "image": "https://newportv2.s3.us-east-2.amazonaws.com/CaRdIRECT.gif",
     "link": "",
     "github": "https://github.com/Oscarl214/Lealvechiledirectory",
     "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NextAuth"
