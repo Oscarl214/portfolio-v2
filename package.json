@@ -24,6 +24,7 @@
     "next-themes": "^0.3.0",
     "next-video": "^0.17.2",
     "next-videos": "^1.4.1",
+    "openai": "^4.65.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
