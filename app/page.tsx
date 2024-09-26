@@ -7,6 +7,8 @@ import { Button } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 import { saveAs } from 'file-saver';
 import Cube from './componenets/cube';
+import ChatBot from './componenets/chatbot/chatbot';
+import { Chat } from 'openai/resources';
 export default function Home() {
   const [welcome, setWelcome] = useState('Welcome');
   const saveFile = () => {
@@ -37,7 +39,13 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
           >
-            <Image isZoomed width={300} alt="Me" src="/Me.JPG" />
+            <Image
+              isZoomed
+              width={300}
+              alt="Me"
+              src="/Me.JPG"
+              className="z--5"
+            />
           </motion.div>
           <motion.div
             className="flex flex-col"
@@ -96,6 +104,7 @@ export default function Home() {
               </Button>
             </Link>
           </motion.div>
+          <ChatBot />
           <video
             src={require('../public/BG.mp4')}
             autoPlay
