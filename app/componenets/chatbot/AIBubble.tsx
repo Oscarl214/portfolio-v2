@@ -1,8 +1,47 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Image } from '@nextui-org/react';
+import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 
 const AIBubble = () => {
+  const [response, setResponse] = useState<string>(
+    'Hi there! How can I assist you?'
+  );
+  const [question, setQuestion] = useState<string>('');
+
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuestion(e.target.value || '');
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('/api/chatAI', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          question,
+        }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log('question asked successfully', result);
+
+        const chatresponse = result.choices[0].message.content;
+        setQuestion('');
+        setResponse(chatresponse);
+      } else {
+        console.error('Failed to ask question');
+      }
+    } catch (error) {
+      console.error('Error submitting Item:', error);
+    } finally {
+      //   setLoading(false);
+    }
+  };
+
   return (
     <div>
       <div>
@@ -40,16 +79,24 @@ const AIBubble = () => {
               Anakin
               <time className="text-xs opacity-50">12:46</time>
             </div>
-            <div className="chat-bubble">December 7th!</div>
+            <div className="chat-bubble">{response}</div>
             <div className="chat-footer opacity-50">Seen at 12:46</div>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-2">
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered input-accent w-full max-w-xs"
-          />
+          <div className="flex flex-row gap-2 items-center">
+            <input
+              type="text"
+              placeholder="How old is Oscar?"
+              value={question}
+              onChange={onChange}
+              className="input input-bordered input-accent w-[300px] max-w-xs"
+            />
+            <FaRegArrowAltCircleUp
+              className="text-3xl text-green-500 cursor-pointer"
+              onClick={handleSubmit}
+            />
+          </div>
         </div>
       </div>
     </div>
