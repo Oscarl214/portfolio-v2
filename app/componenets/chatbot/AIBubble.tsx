@@ -47,7 +47,7 @@ const AIBubble = () => {
       <div>
         <div className="artboard phone-2 dark:bg-white bg-black   z-auto rounded-md ">
           <div className="chat chat-start p-2 m-2">
-            <div className="chat-image avatar">
+            {/* <div className="chat-image avatar">
               <div className="w-10 rounded-full">
                 <Image
                   alt="Tailwind CSS chat bubble component"
@@ -56,13 +56,13 @@ const AIBubble = () => {
                   width={50}
                 />
               </div>
-            </div>
+            </div> */}
             <div className="chat-header">
               Obi-Wan Kenobi
               <time className="text-xs opacity-50">12:45</time>
             </div>
-            <div className="chat-bubble bg-green-300">When is Oscars B Day</div>
-            <div className="chat-footer opacity-50">Delivered</div>
+            {/* <div className="chat-bubble bg-green-300">When is Oscars B Day</div>
+            <div className="chat-footer opacity-50">Delivered</div> */}
           </div>
           <div className="chat chat-end p-2 m-2">
             <div className="chat-image avatar">
