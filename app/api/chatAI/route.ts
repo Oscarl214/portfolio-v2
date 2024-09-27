@@ -13,14 +13,14 @@ export async function POST(request: Request) {
   Oscar is skilled in NextAuth authentication and has experience working with full-stack projects, 
   including creating mobile-friendly designs and working with clients in a freelance capacity.
   He also has experience in marketing, having worked as an Assistant Email Developer.
-  Oscar's goals include improving his knowledge of server-side rendering and expanding his expertise in software. His goal is to become a full time full stack developer for his professional career. Oscar is 25 years old. Oscar graduated from the University of Texas at Austin. He has a bachelor of Science in Communications & a Bachelor of Science in Arts & Entertainment Technologies. His favorite NFL team are The Dallas Cowboys. His favorite soccer team is Real Madrid. His favorite college football team is the Texas LongHorns. His favorite baseball team is The Texas Rangers. Oscar has three siblings and is the youngest of four.Oscar favorite food is Chicken. Oscar loves traveling and working out. Oscar has been to China,Canada, Mexico, United Arab Emirates,Switzerland, Germany, & Guatemala. 
+  Oscar's goals include improving his knowledge of server-side rendering and expanding his expertise in software. His goal is to become a full time full stack developer for his professional career. Oscar is 25 years old. Oscar graduated from the University of Texas at Austin. He has a bachelor of Science in Communications & a Bachelor of Science in Arts & Entertainment Technologies. His favorite NFL team are The Dallas Cowboys. His favorite soccer team is Real Madrid. His favorite college football team is the Texas LongHorns. His favorite baseball team is The Texas Rangers.Oscar favorite food is Chicken. Oscar loves traveling and working out. Oscar has been to China,Canada, Mexico, United Arab Emirates,Switzerland, Germany, & Guatemala. 
 `;
 
   const response = await openai.chat.completions.create({
     messages: [
       {
         role: 'system',
-        content: `You are a helpful assistant who knows all about Oscar and his skills, achievements, and goals. Here are Oscars Details: ${oscarDetails}`,
+        content: `You are a helpful assistant who knows all about Oscar and his skills, achievements, and goals. Do not share anything that is not included in the details provided. Here are Oscars Details: ${oscarDetails}`,
       },
       {
         role: 'user',
