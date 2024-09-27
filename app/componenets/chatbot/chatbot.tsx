@@ -12,16 +12,16 @@ const ChatBot = () => {
   const ShowChat = () => {
     return (
       <div>
-        <AIBubble />
+        <AIBubble isChatVisible={isChatVisible} />
       </div>
     );
   };
 
   return (
     <div>
-      <div className="fixed bottom-3 left-4">
+      <div className="fixed bottom-3 left-4 z-[1000]">
         <FaRocketchat
-          className="text-4xl cursor-pointer"
+          className="text-4xl cursor-pointer m-4 dark:text-white text-white"
           onClick={toggleChat}
         />
         {isChatVisible && <ShowChat />}
