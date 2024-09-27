@@ -78,10 +78,10 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   if (!isChatVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 md:bottom-0 md:left-[300px]  p-4">
-      <div className="artboard phone-2  bg-black rounded-md w-full max-w-md h-full max-h-[800px] flex flex-col ">
+    <div className="fixed inset-0 flex items-center justify-center p-4">
+      <div className="artboard phone-2 bg-black rounded-md w-full max-w-md h-[400px] max-h-[800px] flex flex-col">
         <FaRegCircleXmark
-          className="text-2xl cursor-pointer m-2 text-white hover:text-green-500 "
+          className="text-2xl cursor-pointer m-2 text-white hover:text-green-500"
           onClick={toggleChat}
         />
         <div className="flex justify-center items-center p-5">
@@ -91,7 +91,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
               src="https://newportv2.s3.us-east-2.amazonaws.com/Me-Thinking.png"
               height={250}
               width={250}
-              className="rounded-full  animate-pulse"
+              className="rounded-full animate-pulse"
             />
           ) : (
             <Image
@@ -99,12 +99,12 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
               src="https://newportv2.s3.us-east-2.amazonaws.com/ChatAvat.png"
               height={250}
               width={250}
-              className="rounded-full  animate-pulse"
+              className="rounded-full animate-pulse"
             />
           )}
         </div>
-        <Divider className="bg-green-500  text-center" />
-        <div className="flex-1 overflow-y-auto px-4 ">
+        <Divider className="bg-green-500 text-center" />
+        <div className="flex-1 overflow-y-auto px-4">
           <div className="flex flex-col chat chat-start">
             {loading ? (
               <Spinner color="success" className="ml-4" />
