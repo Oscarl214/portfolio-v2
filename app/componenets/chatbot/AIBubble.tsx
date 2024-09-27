@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import { Image } from '@nextui-org/react';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { Spinner } from '@nextui-org/react';
-import { FaRocketchat } from 'react-icons/fa';
 
+import { FaRegCircleXmark } from 'react-icons/fa6';
 interface AIBubbleProps {
   isChatVisible: boolean;
+  toggleChat: () => void;
 }
 
-const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible }) => {
+const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   const [response, setResponse] = useState<string>(
     'Hi there! How can I assist you?'
   );
@@ -54,6 +55,10 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible }) => {
   return (
     <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 md:bottom-0 md:left-[300px]  p-4">
       <div className="artboard phone-2  bg-black rounded-md w-full max-w-md h-full max-h-[800px] flex flex-col ">
+        <FaRegCircleXmark
+          className="text-2xl cursor-pointer m-2 text-white hover:text-green-500 "
+          onClick={toggleChat}
+        />
         <div className="flex justify-center items-center p-5">
           <Image
             alt="Chat Avatar"

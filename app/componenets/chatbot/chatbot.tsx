@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaRocketchat } from 'react-icons/fa';
 import AIBubble from './AIBubble';
+import { toggle } from '@nextui-org/react';
 const ChatBot = () => {
   const [isChatVisible, setChatVisible] = useState(false);
 
@@ -12,7 +13,7 @@ const ChatBot = () => {
   const ShowChat = () => {
     return (
       <div>
-        <AIBubble isChatVisible={isChatVisible} />
+        <AIBubble isChatVisible={isChatVisible} toggleChat={toggleChat} />
       </div>
     );
   };
