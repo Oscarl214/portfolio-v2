@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <div className="">
-      <ul className="flex flex-row justify-center text-center mt-10 gap-4">
+      <ul className="flex flex-row justify-center text-center mt-10 gap-4 z--5">
         <li>
           <a href="https://github.com/Oscarl214" target="_blank">
             <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span>
