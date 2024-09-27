@@ -17,6 +17,10 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   const [loading, setLoading] = useState(false);
   const [question, setQuestion] = useState<string>('');
 
+  const [chatHistory, setChatHistory] = useState<
+    Array<{ question: string; response: string }>
+  >([]);
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuestion(e.target.value || '');
   };
@@ -39,7 +43,13 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
         const result = await response.json();
         const chatresponse = result.choices[0].message.content;
         setQuestion(question);
+
+        setChatHistory((prev) => [
+          ...prev,
+          { question: question, response: chatresponse },
+        ]);
         setResponse(chatresponse);
+        setQuestion('');
       } else {
         console.error('Failed to ask question');
       }
@@ -70,18 +80,24 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
         </div>
 
         <div className="flex-1 overflow-y-auto px-4">
-          <div className="chat chat-start">
+          <div className="flex flex-col chat chat-start">
             {loading ? (
               <Spinner color="success" className="ml-4" />
             ) : (
-              <div className="chat-bubble chat-bubble-success m-4">
-                {response}
-              </div>
+              chatHistory.map((chat, index) => (
+                <div key={index} className="flex flex-col space-y-4">
+                  <div className="flex flex-col items-start chat-bubble chat-bubble-success m-4">
+                    {chat.question}
+                  </div>
+                </div>
+              ))
             )}
           </div>
 
           <div className="chat chat-end">
-            <div className="chat-bubble bg-white m-4">{question}</div>
+            <div className="chat-bubble bg-white m-4 text-black">
+              {response}
+            </div>
           </div>
         </div>
 
