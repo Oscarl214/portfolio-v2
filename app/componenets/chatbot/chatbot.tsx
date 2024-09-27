@@ -26,7 +26,9 @@ const ChatBot = () => {
           height={70}
           width={70}
           alt="Oscar-Avatar-Laptop"
-          className="cursor-pointer  animate-bounce"
+          className={
+            isChatVisible ? 'hidden' : 'visible cursor-pointer animate-bounce'
+          }
           src={'https://newportv2.s3.us-east-2.amazonaws.com/MeLaptop.png'}
           onClick={toggleChat}
         />

@@ -78,7 +78,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   if (!isChatVisible) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center p-4">
+    <div className="fixed inset-0 md:bottom-0 md:left-0 md:inset-auto flex items-center justify-center p-4 ">
       <div className="artboard phone-2 bg-black rounded-md w-full max-w-md h-[400px] max-h-[800px] flex flex-col">
         <FaRegCircleXmark
           className="text-2xl cursor-pointer m-2 text-white hover:text-green-500"
