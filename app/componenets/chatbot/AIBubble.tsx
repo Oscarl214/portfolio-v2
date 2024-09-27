@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Divider, Image } from '@nextui-org/react';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { Spinner } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import { FaRegCircleXmark } from 'react-icons/fa6';
 interface AIBubbleProps {
@@ -12,7 +13,7 @@ interface AIBubbleProps {
 
 const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   const [response, setResponse] = useState<string>(
-    'Hi there! I am Oscars personal AI bot. Feel free to ask anything relating to Oscars achievements, skills, interests, or career goals.'
+    'Hi there! I am Oscars personal AI bot. Feel free to ask anything about Oscar.'
   );
   const [loading, setLoading] = useState(false);
   const [question, setQuestion] = useState<string>('');
@@ -26,8 +27,8 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   useEffect(() => {
     const options = {
       strings: [`${response}`],
-      typeSpeed: 90,
-      backSpeed: 90,
+      typeSpeed: 100,
+      backSpeed: 100,
     };
     const typed = new Typed(typingRef.current, options);
 
@@ -84,23 +85,35 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
           className="text-2xl cursor-pointer m-2 text-white hover:text-green-500"
           onClick={toggleChat}
         />
-        <div className="flex justify-center items-center p-5">
+        <div className="flex justify-center items-start ">
           {loading ? (
-            <Image
-              alt="Chat Avatar Thinking"
-              src="https://newportv2.s3.us-east-2.amazonaws.com/Me-Thinking.png"
-              height={250}
-              width={250}
-              className="rounded-full animate-pulse"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1.1 }}
+              transition={{ duration: 1.5 }}
+            >
+              <Image
+                alt="Chat Avatar Thinking"
+                src="https://newportv2.s3.us-east-2.amazonaws.com/Me-Thinking.png"
+                height={200}
+                width={200}
+                className="rounded-full "
+              />
+            </motion.div>
           ) : (
-            <Image
-              alt="Chat Avatar Idea"
-              src="https://newportv2.s3.us-east-2.amazonaws.com/ChatAvat.png"
-              height={250}
-              width={250}
-              className="rounded-full animate-pulse"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1.1 }}
+              transition={{ duration: 1.5 }}
+            >
+              <Image
+                alt="Chat Avatar Idea"
+                src="https://newportv2.s3.us-east-2.amazonaws.com/ChatAvat.png"
+                height={200}
+                width={200}
+                className="rounded-full"
+              />
+            </motion.div>
           )}
         </div>
         <Divider className="bg-green-500 text-center" />
@@ -111,9 +124,14 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
             ) : (
               chatHistory.map((chat, index) => (
                 <div key={index} className="flex flex-col space-y-4">
-                  <div className="flex flex-col items-start chat-bubble chat-bubble-success m-4">
+                  <motion.div
+                    className="flex flex-col items-start chat-bubble chat-bubble-success m-4"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                  >
                     {chat.question}
-                  </div>
+                  </motion.div>
                 </div>
               ))
             )}
