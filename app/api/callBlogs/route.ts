@@ -15,6 +15,9 @@ export async function GET(request: Request) {
         createdAt: true,
         updatedAt: true,
       },
+      orderBy: {
+        createdAt: 'desc',
+      },
     });
     return NextResponse.json({
       message: 'Blogs Data fetched',

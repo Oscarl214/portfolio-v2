@@ -87,7 +87,7 @@ const Blog = () => {
                   className="mx-auto rounded-lg shadow-lg mt-4"
                 />
               )}
-              <p className="text-lg leading-relaxed p-2 font-sans">
+              <p className="text-lg leading-relaxed p-2 font-sans mt-2">
                 {paragraph}
               </p>
             </div>
@@ -118,23 +118,23 @@ const Blog = () => {
       <div>
         {' '}
         <div className="flex flex-col gap-2 justify-center m-5 mt-10">
-        <Link href={'/blogs'}>
-          <Button
-            color="success"
-            variant="bordered"
-            className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
-          >
-            Back to Blogs
-          </Button>
+          <Link href={'/blogs'}>
+            <Button
+              color="success"
+              variant="bordered"
+              className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
+            >
+              Back to Blogs
+            </Button>
           </Link>
           <Link href={'/portfolio'}>
-          <Button
-            color="success"
-            variant="bordered"
-            className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
-          >
-           Portfolio
-          </Button>
+            <Button
+              color="success"
+              variant="bordered"
+              className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
+            >
+              Portfolio
+            </Button>
           </Link>
         </div>
       </div>
