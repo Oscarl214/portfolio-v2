@@ -1,8 +1,8 @@
 # Os World | Portfolio
 
-Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tailwind CSS. It showcases an About Me Page, displaying an overview about myself, a professional experience timeline, my skills, and my latest repos. I also have a dedicated page where I showcase all my projects to date. This portfolio is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for showcasing my abilities as a developer.
+Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tailwind CSS. It showcases an About Me Page, displaying an overview about myself, a professional experience timeline, my skills, and my latest repos. I also have a dedicated page where I showcase all my projects to date. This portfolio is fully responsive and can adapt to both desktop and mobile. It serves as a comprehensive online platform for showcasing my abilities as a developer. This portfolio also contains a self made bot that utilizes chatgpts API, users can ask it anything relating to me.
 
-- **Home Page:** Introduces visitors to a image of myself with a moving video as the background, and links to my projects or about page, and an option to download my resume.
+- **Home Page:** Introduces visitors to a image of myself with a moving video as the background, and links to my projects or about page, and an option to download my resume. The HomePage also contains my AI bot that users can click on.
 - **About:** Provides insight into myself, my skills, my professional timeline, and my latest repos.
 - **Projects:** Details the various projects I have created either by myself or with groups. Giving the user the option to view the project live or the repo.
 - **Blog:** Details & Provides blogs written by me over all topics.
