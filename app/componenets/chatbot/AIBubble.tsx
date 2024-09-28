@@ -116,7 +116,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
             </motion.div>
           )}
         </div>
-        <Divider className="bg-green-500 text-center" />
+        {/* <Divider className="bg-green-500 text-center" /> */}
         <div className="flex-1 overflow-y-auto px-4">
           <div className="flex flex-col chat chat-start">
             {loading ? (
@@ -151,7 +151,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
             placeholder="Ask me a question..."
             value={question}
             onChange={onChange}
-            className="input input-bordered input-accent w-full"
+            className="input input-bordered input-accent w-full border-green-500"
           />
           <FaRegArrowAltCircleUp
             className="text-3xl text-white ml-2 cursor-pointer hover:text-green-500"
