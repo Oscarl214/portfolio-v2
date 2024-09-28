@@ -13,7 +13,7 @@ interface AIBubbleProps {
 
 const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   const [response, setResponse] = useState<string>(
-    'Hi there! I am Oscars personal AI bot. Feel free to ask anything about Oscar.'
+    'Hi, welcome to my Portfolio. Ask me anything you would like to know about me!'
   );
   const [loading, setLoading] = useState(false);
   const [question, setQuestion] = useState<string>('');
@@ -80,7 +80,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
 
   return (
     <div className="fixed inset-0 md:bottom-0 md:left-0 md:inset-auto flex items-center justify-center p-4 ">
-      <div className="artboard phone-2 bg-black rounded-md w-full max-w-md h-[400px] max-h-[800px] flex flex-col">
+      <div className="artboard phone-2 bg-gray-500 rounded-md w-full max-w-md h-[400px] max-h-[800px] flex flex-col">
         <FaRegCircleXmark
           className="text-2xl cursor-pointer m-2 text-white hover:text-green-500"
           onClick={toggleChat}
