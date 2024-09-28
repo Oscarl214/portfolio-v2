@@ -13,7 +13,7 @@ interface AIBubbleProps {
 
 const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
   const [response, setResponse] = useState<string>(
-    'Hi, welcome to my Portfolio. Ask me anything you would like to know about me!'
+    'Hi, welcome to my Portfolio. Ask anything you would like to know about me!'
   );
   const [loading, setLoading] = useState(false);
   const [question, setQuestion] = useState<string>('');
