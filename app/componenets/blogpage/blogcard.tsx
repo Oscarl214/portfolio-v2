@@ -34,7 +34,6 @@ const BlogCard = () => {
         }
 
         const data = await response.json();
-        console.log('All Blog Data', data);
         setBlogs(data.BlogData);
       } catch (error) {
         console.error('Error fetching blog data', error);
