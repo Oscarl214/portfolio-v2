@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "title": "GetFit",
+    "description": "A collaborative project where we build a simple workout application that targeted beginners in the gym. We utilized the MVC paradigm framework to organize and modularize the codebase, while utilizing the handlebars.js library to create reusable templates for our pages.",
+    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/GetFit.png",
+    "link": "",
+    "github": "https://github.com/Sunny9810/Workout-App",
+    "technologies": "HTML, Bulma, Handlebars, MySQL, Bycript"
+  },
+  {
+    "id": 4,
+    "title": "Cohort-Retort",
+    "description": "A collobarative project in which we created a social network application that was dedicated for our bootcamp cohort to use post bootcamp. This project challenged me to understand the MERN framework while also pushing myself to understand REACT and its state capabilities. I also learned how to implement my first SWS cloud service.",
+    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/Cohort-retort.png",
+    "link": "https://cohort-retort-v1-3ead1d24c761.herokuapp.com/login",
+    "github": "https://github.com/Oscarl214/Cohort-Retort",
+    "technologies": "MongoDB, Express.js, React, Node.js,SWS S3 Service,GraphQL,Apollo Server Express,Bycript,Mongoose,TailwindCSS"
+  }
+]
