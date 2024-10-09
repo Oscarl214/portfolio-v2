@@ -55,12 +55,12 @@ const BlogCard = () => {
   return (
     <div>
       <section className="py-3 ">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto lg:max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-center mb-10 font-sans">
             Blogs written by me with topics ranging from: tech, life, &
             interests.
           </p>
-          <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+          <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-center lg:gap-x-8">
             {blogs.map((blog) => (
               <div
                 className="group cursor-pointer w-full max-lg:max-w-xl  md:w-1/2 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
