@@ -7,7 +7,7 @@ const Intro = () => {
       <h1 className="lg:text-center text-5xl font-extrabold ">
         HI, IM <span className="text-green-500 ">OSCAR LEAL</span>
       </h1>
-      <p className="lg:text-center lg:text-3xl text-xl font-extrabold ">
+      <p className="lg:text-center lg:text-3xl text-xl font-extrabold lg:m-2">
         A full-stack developer with 3+ years of experience. I enjoy building
         sites and apps. My focus is React (Next.js).
       </p>
