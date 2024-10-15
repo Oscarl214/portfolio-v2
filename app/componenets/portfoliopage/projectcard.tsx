@@ -25,19 +25,17 @@ const ProjectCard = () => {
         } else {
           liveBtn = (
             <a href={project.link} target="_blank">
-              <span className="icon-[noto--eye] hover:text-green-500 text-2xl animate-pulse"></span>
+              <span className="icon-[ph--globe]  hover:text-green-500 text-2xl "></span>
             </a>
           );
         }
 
         return (
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+          <div
             key={project.id}
+            className="flex justify-center mb-4 gap-y-4 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-center lg:gap-x-4"
           >
-            <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-[600px] lg:w-[800px] ">
+            <Card className="p-5 rounded-2xl sm:w-[350px] w-full bg-gray-800  lg:overflow-auto lg:h-auto lg:w-[500px] ">
               <CardBody className="overflow-visible py-2">
                 <Image
                   alt="Card background"
@@ -45,28 +43,28 @@ const ProjectCard = () => {
                   src={project.image}
                   width={800}
                 />
-                <CardFooter className="justify-start  w-full gap-3  absolute   z-10">
+                <CardFooter className="flex flex-row gap-2">
                   <Tooltip content="Github-Repo">
                     <a href={project.github} target="_blank">
-                      <span className="icon-[skill-icons--github-dark] text-2xl  hover:text-green-500 animate-pulse"></span>
+                      <span className="icon-[skill-icons--github-dark] text-2xl  hover:text-green-500 "></span>
                       {/* <span className="icon-[whh--github] text-2xl  hover:text-green-500"></span> */}
                     </a>
                   </Tooltip>
                   <Tooltip content="Live Site">{liveBtn}</Tooltip>
                 </CardFooter>
-              </CardBody>
 
-              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start gap-5 dark:text-white text-white">
-                <h4 className="font-extrabold text-xl text-green-500">
-                  {project.title}
-                </h4>
-                <p className="text-sm font-sans">{project.description}</p>
-                <small className="text-default-500 text-md flex-wrap leading-5">
-                  {project.technologies}
-                </small>
-              </CardHeader>
+                <CardHeader className="pb-0 pt-2 px-2 flex-col items-start gap-1 dark:text-white text-white">
+                  <h4 className="font-extrabold text-xl text-green-500">
+                    {project.title}
+                  </h4>
+                  <p className="text-sm font-sans">{project.description}</p>
+                  <small className="text-default-500 text-md flex-wrap leading-5">
+                    {project.technologies}
+                  </small>
+                </CardHeader>
+              </CardBody>
             </Card>
-          </motion.div>
+          </div>
         );
       })}
     </div>
