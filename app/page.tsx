@@ -12,7 +12,7 @@ import { Chat } from 'openai/resources';
 export default function Home() {
   const [welcome, setWelcome] = useState('Welcome');
   const saveFile = () => {
-    saveAs('/OLResume.pdf', 'OLResume.pdf');
+    saveAs('/OLResume.pdf', 'OscarResume2024.pdf');
   };
   //
 
