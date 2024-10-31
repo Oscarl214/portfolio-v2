@@ -2,7 +2,7 @@
   {
     "id": 13,
     "title": "Job Hunt AI.",
-    "description": "Job Hunt AI is a full-stack application designed to streamline job application management, helping users track, update, and organize their job applications across various industries. This application leverages AI for tailored job recommendations and integrates cloud storage for easy file uploads, all within a secure, user-friendly environment.",
+    "description": "Job Hunt AI is a full-stack application designed to streamline job application management, helping users track, update, and organize their job applications across the software development & public health fields. This application leverages AI for tailored job recommendations and integrates cloud storage for easy file uploads, all within a secure, user-friendly environment.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/DesktopViewJobHunt.gif",
     "link": "https://jobhunt-helper.vercel.app",
     "github": "https://github.com/Oscarl214/jobhunt-helper",
