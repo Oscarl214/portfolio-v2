@@ -5,7 +5,7 @@ import { CardMotion } from '../componenets/portfoliopage/cardmotion';
 import ContactButton from '../componenets/portfoliopage/button';
 const Portfolio = () => {
   return (
-    <div>
+    <div className=' '>
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         <Header />
       </div>

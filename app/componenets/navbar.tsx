@@ -82,7 +82,7 @@ const Navigation = () => {
             Contact
           </Link>
         </NavbarItem>
-        <NavbarItem onClick={saveFile} className="hover:text-green-500">
+        <NavbarItem onClick={saveFile} className="hover:text-green-500 cursor-pointer">
           Resume
         </NavbarItem>
       </NavbarContent>
