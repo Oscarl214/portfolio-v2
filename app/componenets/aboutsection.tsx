@@ -1,49 +1,34 @@
 import React from 'react';
-import Cube from '../componenets/cube';
-import Intro from '../componenets/aboutpage/intro';
-import Header from '../componenets/aboutpage/header';
-import { Motion } from '../componenets/aboutpage/motion';
 import Skills from '../componenets/aboutpage/skills';
 import { MotionSkills } from '../componenets/aboutpage/motionskills';
 import Timeline from '../componenets/aboutpage/timeline';
 import { MotionTime } from '../componenets/aboutpage/timemotion';
 import RepoCard from '../componenets/aboutpage/repocard';
-import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
+
 import { RepoMotion } from '../componenets/aboutpage/repomotion';
 import getRepos from '../lib/getRepos';
-import BlogButton from '../componenets/aboutpage/blogbutton';
-
+import { Motion } from './aboutpage/motion';
+import Intro from './aboutpage/intro';
 const AboutSection = async () => {
-    const username = 'oscarl214';
-    const repos = await getRepos(username);
+  // const username = 'oscarl214';
+  // const repos = await getRepos(username);
 
+  // console.log(repos);
   return (
     <div>
-    <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
-      {' '}
-      <Header />
+      <MotionSkills>
+        <Skills />
+      </MotionSkills>
+      <MotionTime>
+        <Timeline />
+      </MotionTime>
+      {/* <div className="overflow-x-hidden">
+        <RepoMotion>
+          <RepoCard repos={repos} />
+        </RepoMotion>
+      </div> */}
     </div>
+  );
+};
 
-    <Motion>
-      <Intro />
-    </Motion>
-    <MotionSkills>
-      <Skills />
-    </MotionSkills>
-    <MotionTime>
-      <Timeline />
-    </MotionTime>
-    <div className="overflow-x-hidden">
-      <RepoMotion>
-        <RepoCard repos={repos} />
-      </RepoMotion>
-    </div>
-    <div className="gap-1 mt-5">
-      <PortfolioButton />
-      <BlogButton />
-    </div>
-  </div>
-  )
-}
-
-export default AboutSection
+export default AboutSection;

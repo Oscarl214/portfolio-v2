@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      />
 
       <body className={Orbi.className}>
         <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
@@ -32,16 +35,13 @@ export default function RootLayout({
           <div className="fixed z-[1000] top-0 w-full">
             <Navigation />
           </div>
-          <main
-            style={{
-              paddingTop: '3rem',
-            }}
-          >
+          <main style={{ paddingTop: '5rem' }}>
             {children}
             <ScrollButton />
           </main>
-
-          {/* <Footer /> */}
+          <div>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

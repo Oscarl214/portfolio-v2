@@ -58,17 +58,17 @@ const Navigation = () => {
 
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="#intro">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
-          <Link href="/about" aria-current="page">
+          <Link href="#about" aria-current="page">
             About
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="/portfolio">
+          <Link color="foreground" href="#projects">
             Portfolio
           </Link>
         </NavbarItem>
@@ -78,11 +78,14 @@ const Navigation = () => {
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="/contact">
+          <Link color="foreground" href="#contact">
             Contact
           </Link>
         </NavbarItem>
-        <NavbarItem onClick={saveFile} className="hover:text-green-500 cursor-pointer">
+        <NavbarItem
+          onClick={saveFile}
+          className="hover:text-green-500 cursor-pointer"
+        >
           Resume
         </NavbarItem>
       </NavbarContent>
