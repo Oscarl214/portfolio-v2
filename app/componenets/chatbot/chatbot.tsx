@@ -5,7 +5,7 @@ import AIBubble from './AIBubble';
 import { toggle } from '@nextui-org/react';
 import Image from 'next/image';
 const ChatBot = () => {
-  const [isChatVisible, setChatVisible] = useState(true);
+  const [isChatVisible, setChatVisible] = useState(false);
 
   const toggleChat = () => {
     setChatVisible((prevState) => !prevState);

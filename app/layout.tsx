@@ -29,19 +29,19 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <Providers>
-          <div className="">
+          <div className="fixed z-[1000] top-0 w-full">
             <Navigation />
           </div>
           <main
             style={{
-              paddingTop: '7rem',
+              paddingTop: '3rem',
             }}
           >
             {children}
             <ScrollButton />
           </main>
 
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>

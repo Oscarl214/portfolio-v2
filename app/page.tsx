@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { saveAs } from 'file-saver';
 import Cube from './componenets/cube';
 import ChatBot from './componenets/chatbot/chatbot';
-import { Chat } from 'openai/resources';
+import AboutSection from './componenets/aboutsection';
 export default function Home() {
   const [welcome, setWelcome] = useState('Welcome');
   const saveFile = () => {
@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex flex-col h-screen">
         <div className="flex flex-col justify-around items-center flex-wrap lg:m-5 lg:p-5 gap-5">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
@@ -47,63 +47,7 @@ export default function Home() {
               className="z--5"
             />
           </motion.div>
-          <motion.div
-            className="flex flex-col"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 3 }}
-          >
-            <Button
-              color="success"
-              variant="bordered"
-              className="hover:text-black text-green-500 bg-white"
-              onClick={saveFile}
-            >
-              Resume
-            </Button>
-          </motion.div>
-          <motion.div
-            className="flex flex-row justify-center items-center gap-5 hover:text-white"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-          >
-            <Link href={'/about'}>
-              <Button
-                color="success"
-                variant="bordered"
-                className="hover:text-green-500 border-green-500 text-white"
-                href={'/about'}
-              >
-                About
-              </Button>
-            </Link>
-            <Link href={'/portfolio'}>
-              <Button
-                // color="success"
-                variant="bordered"
-                className="hover:text-green-500 border-green-500 text-white"
-              >
-                Portfolio
-              </Button>
-            </Link>
-          </motion.div>
-          <motion.div
-            className="flex flex-row justify-center items-center gap-5 hover:text-white"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-          >
-            <Link href={'/blogs'}>
-              <Button
-                color="success"
-                variant="bordered"
-                className="hover:text-green-500 border-green-500 text-white"
-              >
-                Blogs
-              </Button>
-            </Link>
-          </motion.div>
+    
           <ChatBot />
           <video
             src={require('../public/BG.mp4')}
@@ -114,6 +58,7 @@ export default function Home() {
             className="video"
           />
         </div>
+        <AboutSection />
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const Navigation = () => {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="navbar font-open "
+      className="navbar font-open"
     >
       <NavbarContent className="sm:hidden" justify="center">
         <NavbarMenuToggle
