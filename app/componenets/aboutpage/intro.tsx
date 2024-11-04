@@ -1,7 +1,14 @@
 import React from 'react';
 import { Card, CardBody } from '@nextui-org/react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Button } from '@nextui-org/react';
+import { saveAs } from 'file-saver';
 const Intro = () => {
+  const saveFile = () => {
+    saveAs('/OscarResume2024.pdf', 'OscarResume2024.pdf');
+  };
+
   return (
     <div className="flex flex-col justify-center gap-1 lg:intro">
       <h1 className="lg:text-center text-5xl font-extrabold ">

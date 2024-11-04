@@ -41,8 +41,8 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="contact-card flex ">
-      <section className=" bg-gray-800 dark:bg-gray-800 rounded lg:w-[800px] w-[900px]">
+    <div className=" flex justify-center ">
+      <section className=" bg-gray-800 dark:bg-gray-800 rounded lg:w-[400px] w-[400px] ">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-green-500 dark:text-white">
             Contact.

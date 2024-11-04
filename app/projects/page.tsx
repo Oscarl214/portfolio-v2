@@ -1,18 +1,19 @@
 import React from 'react';
-import BlogHeader from '../componenets/blogpage/typing';
-import BlogCard from '../componenets/blogpage/blogcard';
+import Header from '../componenets/portfoliopage/header';
+import ProjectCard from '../componenets/portfoliopage/projectcard';
+import { CardMotion } from '../componenets/portfoliopage/cardmotion';
+import ContactButton from '../componenets/portfoliopage/button';
 import Link from 'next/link';
 import { Button } from '@nextui-org/react';
-const Blogs = () => {
+const Projects = () => {
   return (
-    <div>
+    <div className=" ">
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
-        <BlogHeader />
+        <Header />
       </div>
-      <div>
-        <BlogCard />
-      </div>
-      <div className="ml-4">
+
+      <ProjectCard />
+      <div className="m-4">
         <Link href={'/'}>
           <Button
             color="success"
@@ -27,4 +28,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Projects;

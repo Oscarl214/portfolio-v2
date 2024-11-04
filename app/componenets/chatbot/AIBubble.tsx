@@ -80,7 +80,7 @@ const AIBubble: React.FC<AIBubbleProps> = ({ isChatVisible, toggleChat }) => {
 
   return (
     <div className="fixed inset-0 md:bottom-0 md:left-0 md:inset-auto flex items-center justify-center p-4 ">
-      <div className="artboard phone-2 bg-gray-500 rounded-md w-full max-w-md h-[400px] max-h-[800px] flex flex-col">
+      <div className="artboard phone-2 bg-gray-500 rounded-md w-full max-w-md md:h-[600px] h-[400px] md:w-[400px] flex flex-col">
         <FaRegCircleXmark
           className="text-2xl cursor-pointer m-2 text-white hover:text-green-500"
           onClick={toggleChat}
