@@ -5,9 +5,9 @@ import ContactTyping from './contactpage/ContactTyping';
 const ContactSection = () => {
   return (
     <div>
-      <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
+      {/* <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         <ContactTyping />
-      </div>
+      </div> */}
       <ContactMotion>
         <ContactForm />
       </ContactMotion>
