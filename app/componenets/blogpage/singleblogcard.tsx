@@ -3,8 +3,9 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
 import dayjs from 'dayjs';
-
+import { useRouter } from 'next/navigation';
 const SingleBlogCard = () => {
+  const router = useRouter();
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ['lastBlog'],
     queryFn: async () => {
@@ -22,27 +23,35 @@ const SingleBlogCard = () => {
   if (!data) return <div>No blog found</div>;
 
   console.log('Blog Data:', data);
+
+  const handleBlogClick = (id: string) => {
+    router.push(`/blog/${id}`);
+  };
+
   return (
     <div>
       <section className="py-3">
         <div className="mx-auto px-4">
-          <p className="text-center mb-10">My Latest Blog Post</p>
-          <div className="flex justify-center mb-14">
+          <h2 className="mb-2 lg:text-start lg:text-3xl  text-xl font-bold">
+            Latest Blog
+          </h2>
+          <div className="flex justify-start">
             <div
-              className="group cursor-pointer w-full max-lg:max-w-xl md:w-1/2 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
+              className="group cursor-pointer max-w-[800px] border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
               key={data.id}
+              onClick={() => handleBlogClick(data.id)}
             >
-              {/* <div className="flex items-center mb-6">
+              <div className="flex items-center mb-6">
                 {data.images && data.images.length > 0 && (
                   <Image
                     src={data.images[0]}
                     alt={`${data.title} image`}
                     className="rounded-lg w-full object-cover"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                   />
                 )}
-              </div> */}
+              </div>
               <div className="block">
                 <h3 className="font-medium leading-8 mb-9">{data.title}</h3>
                 <div className="flex items-center justify-between font-medium mt-4">
@@ -50,7 +59,7 @@ const SingleBlogCard = () => {
                     <span className="text-sm text-green-500 text-end">
                       {dayjs(data.createdAt).format('MM/DD/YYYY')}
                     </span>
-                    <div className="flex gap-1 flex-wrap">
+                    {/* <div className="flex gap-1 flex-wrap">
                       {data.tags?.map((tag: string, index: number) => (
                         <span
                           key={index}
@@ -59,8 +68,8 @@ const SingleBlogCard = () => {
                           {tag}
                         </span>
                       ))}
-                    </div>
-                    <span
+                    </div> */}
+                    {/* <span
                       className={
                         data.status === 'published'
                           ? 'text-sm text-green-500 text-end'
@@ -68,7 +77,7 @@ const SingleBlogCard = () => {
                       }
                     >
                       {data.status}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </div>
