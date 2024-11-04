@@ -7,6 +7,8 @@ import Navigation from './componenets/navbar';
 import Footer from './componenets/footer';
 import { Toaster } from 'react-hot-toast';
 import ScrollButton from './componenets/ScrollButton';
+
+import QueryProvider from './queryprovider';
 const Orbi = Orbitron({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -31,18 +33,20 @@ export default function RootLayout({
         <Head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
-        <Providers>
-          <div className="fixed z-[1000] top-0 w-full">
-            <Navigation />
-          </div>
-          <main style={{ paddingTop: '5rem' }}>
-            {children}
-            <ScrollButton />
-          </main>
-          <div>
-            <Footer />
-          </div>
-        </Providers>
+        <QueryProvider>
+          <Providers>
+            <div className="fixed z-[1000] top-0 w-full">
+              <Navigation />
+            </div>
+            <main style={{ paddingTop: '5rem' }}>
+              {children}
+              <ScrollButton />
+            </main>
+            <div>
+              <Footer />
+            </div>
+          </Providers>
+        </QueryProvider>
       </body>
     </html>
   );

@@ -9,6 +9,7 @@ import ChatBot from './componenets/chatbot/chatbot';
 import AboutSection from './componenets/aboutsection';
 import ProjectSection from './componenets/projectssection';
 import ContactSection from './componenets/contactsection';
+import SingleBlogCard from './componenets/blogpage/singleblogcard';
 export default function Home() {
   return (
     <main className="min-h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
@@ -35,6 +36,7 @@ export default function Home() {
           <Motion>
             <Intro />
           </Motion>
+          <SingleBlogCard />
         </div>
       </section>
 
