@@ -4,7 +4,7 @@ import { Tooltip } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 const Skills = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-10">
       <h2 className=" lg:text-start lg:text-3xl text-green-500 text-2xl font-extrabold">
         My Skills
       </h2>

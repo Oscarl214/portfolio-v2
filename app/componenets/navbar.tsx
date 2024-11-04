@@ -25,12 +25,12 @@ const Navigation = () => {
   };
 
   const saveFile = () => {
-    saveAs('/OLResume.pdf', 'OLResume.pdf');
+    saveAs('/OscarResume2024.pdf', 'OscarResume2024.pdf');
   };
-  //
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'About', 'Portfolio', 'Blogs', 'Contact'];
+  const menuItems = ['Home', 'Projects', 'Blogs'];
 
   return (
     <Navbar
@@ -62,14 +62,14 @@ const Navigation = () => {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem className="hover:text-green-500">
+        {/* <NavbarItem className="hover:text-green-500">
           <Link href="#about" aria-current="page">
             About
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="#projects">
-            Portfolio
+            Projects
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
@@ -77,22 +77,28 @@ const Navigation = () => {
             Blog
           </Link>
         </NavbarItem>
-        <NavbarItem className="hover:text-green-500">
+        {/* <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="#contact">
             Contact
           </Link>
+        </NavbarItem> */}
+        {/* <NavbarItem
+          onClick={saveFile}
+          className="hover:text-green-500 cursor-pointer"
+        >
+          Resume
+        </NavbarItem> */}
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <NavbarItem className=" lg:flex sm:flex gap-4">
+          <Switcher />
         </NavbarItem>
         <NavbarItem
           onClick={saveFile}
           className="hover:text-green-500 cursor-pointer"
         >
           Resume
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent justify="end">
-        <NavbarItem className=" lg:flex sm:flex gap-4">
-          <Switcher />
         </NavbarItem>
       </NavbarContent>
 

@@ -10,6 +10,8 @@ import AboutSection from './componenets/aboutsection';
 import ProjectSection from './componenets/projectssection';
 import ContactSection from './componenets/contactsection';
 import SingleBlogCard from './componenets/blogpage/singleblogcard';
+import RepoSection from './componenets/reposection';
+import { RepoMotion } from './componenets/aboutpage/repomotion';
 export default function Home() {
   return (
     <main className="min-h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
@@ -26,11 +28,10 @@ export default function Home() {
             transition={{ duration: 2 }}
           >
             <Image
-              isZoomed
               width={300}
               alt="Me"
               src="/Me.JPG"
-              className="w-[200px] md:w-[300px] h-auto object-cover mb-10"
+              className="w-[200px] md:w-[300px] h-auto object-cover"
             />
           </motion.div>
           <Motion>
@@ -69,6 +70,17 @@ export default function Home() {
           <ContactSection />
         </div>
       </section>
+      {/* Repo Section
+      <section
+        id="repos"
+        className="min-h-screen w-full snap-start flex items-center justify-center px-4"
+      >
+        <div className="w-full max-w-4xl mx-auto">
+          <RepoMotion>
+            <RepoSection />
+          </RepoMotion>
+        </div>
+      </section> */}
     </main>
   );
 }

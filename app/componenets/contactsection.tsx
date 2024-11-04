@@ -9,9 +9,7 @@ const ContactSection = () => {
         <ContactTyping />
       </div>
       <ContactMotion>
-        <div>
-          <ContactForm />
-        </div>
+        <ContactForm />
       </ContactMotion>
     </div>
   );
