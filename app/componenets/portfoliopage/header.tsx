@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['Projects...'],
+      strings: ['My Projects...'],
       typeSpeed: 80,
       backSpeed: 80,
     };

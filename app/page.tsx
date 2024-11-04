@@ -64,7 +64,7 @@ export default function Home() {
       {/*Contact Section */}
       <section
         id="contact"
-        className="h-[80vh] w-full snap-start flex items-center justify-center px-4"
+        className="h-[100vh] w-full snap-start flex items-center justify-center px-4"
       >
         <div className="w-full max-w-4xl mx-auto">
           <ContactSection />
