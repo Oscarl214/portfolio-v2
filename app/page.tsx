@@ -1,6 +1,6 @@
 'use client';
 import { Image } from '@nextui-org/react';
-
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Motion } from './componenets/aboutpage/motion';
 import Intro from './componenets/aboutpage/intro';
@@ -21,19 +21,21 @@ export default function Home() {
         id="intro"
       >
         <div className="flex flex-col justify-around items-center w-full max-w-4xl mx-auto gap-5">
-          <motion.div
-            className="rounded-full "
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2 }}
-          >
-            <Image
-              width={300}
-              alt="Me"
-              src="/Me.JPG"
-              className="w-[200px] md:w-[300px] h-auto object-cover"
-            />
-          </motion.div>
+          <Link href="/gallery">
+            <motion.div
+              className="rounded-full "
+              initial={{ opacity: 0, scale: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2 }}
+            >
+              <Image
+                width={300}
+                alt="Me"
+                src="/Me.JPG"
+                className="w-[200px] md:w-[300px] h-auto object-cover"
+              />
+            </motion.div>
+          </Link>
           <Motion>
             <Intro />
           </Motion>

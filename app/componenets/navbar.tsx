@@ -30,7 +30,7 @@ const Navigation = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'Projects', 'Blogs'];
+  const menuItems = ['Home', 'Projects', 'Blogs', 'Gallery'];
 
   return (
     <Navbar
@@ -77,11 +77,11 @@ const Navigation = () => {
             Blog
           </Link>
         </NavbarItem>
-        {/* <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="#contact">
-            Contact
+        <NavbarItem className="hover:text-green-500">
+          <Link color="foreground" href="/gallery">
+            Gallery
           </Link>
-        </NavbarItem> */}
+        </NavbarItem>
         {/* <NavbarItem
           onClick={saveFile}
           className="hover:text-green-500 cursor-pointer"
