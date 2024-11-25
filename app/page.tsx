@@ -13,6 +13,31 @@ import SingleBlogCard from './componenets/blogpage/singleblogcard';
 import RepoSection from './componenets/reposection';
 import { RepoMotion } from './componenets/aboutpage/repomotion';
 export default function Home() {
+  let arr = [1, 2, 3, 4, -5, 6, -7, 8, 0, 100];
+
+  const PlusMinus = async (arr: number[]) => {
+    let positive = 0;
+    let negative = 0;
+    let zero = 0;
+
+    arr.forEach((item) => {
+      if (item < 0) {
+        negative++;
+      } else if (item > 0) {
+        positive++;
+      } else {
+        zero++;
+      }
+    });
+
+    const arrLength = arr.length;
+    console.log((positive / arrLength).toFixed(6));
+    console.log((negative / arrLength).toFixed(6));
+    console.log((zero / arrLength).toFixed(6));
+  };
+
+  PlusMinus(arr);
+
   return (
     <main className="min-h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
       {/* Hero Section */}
