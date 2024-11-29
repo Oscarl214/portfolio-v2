@@ -4,7 +4,7 @@
     "title": "Runners Unidos",
     "description": "Runners Unidos is a full-stack web application I built to serve as an information hub for a local running club in Dallas, Texas. The site helps keep our running community connected by providing easy access to schedules, events, and more.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/runners.jpg",
-    "link": "runnersunidos.vercel.app",
+    "link": "https://runnersunidos.vercel.app",
     "github": "https://github.com/Oscarl214/runnersunidos",
     "technologies": "NextUI, Vercel, FramerMotion, AWS: RDS & S3, TypeScript, TailWind"
   },
