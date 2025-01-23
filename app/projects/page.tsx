@@ -13,7 +13,7 @@ const Projects = () => {
       </div>
 
       <ProjectCard />
-      <div className="m-4">
+      {/* <div className="m-4">
         <Link href={'/'}>
           <Button
             color="success"
@@ -23,7 +23,7 @@ const Projects = () => {
             Back to Home
           </Button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
