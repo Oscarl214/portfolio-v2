@@ -36,7 +36,8 @@
     "sass": "^1.75.0",
     "three": "^0.163.0",
     "typed-js": "^0.2.3",
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "unframer": "^2.26.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.202",

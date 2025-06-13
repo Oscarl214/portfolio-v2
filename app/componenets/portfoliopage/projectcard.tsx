@@ -33,7 +33,7 @@ const ProjectCard = () => {
             key={project.id}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex justify-center mb-4"
           >
-            <Card className="p-5 rounded-2xl bg-gray-800 w-full">
+            <Card className="p-5 rounded-2xl bg-transparent w-full">
               <CardBody className="overflow-visible py-2">
                 <Image
                   alt="Card background"

@@ -16,9 +16,9 @@ const AboutSection = async () => {
   // console.log(repos);
   return (
     <div>
-      <MotionSkills>
+   
         <Skills />
-      </MotionSkills>
+     
       <MotionTime>
         <Timeline />
       </MotionTime>
