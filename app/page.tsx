@@ -21,7 +21,7 @@ import HomePageContent from './componenets/homepage/homepageContent';
 interface Image {
   src: string
 }
-
+//ccomments
 export default function Home() {
   let arr = [1, 2, 3, 4, -5, 6, -7, 8, 0, 100];
 
