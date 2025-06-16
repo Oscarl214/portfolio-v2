@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Logo from '../../public/ol-logo.png';
-import Switcher from './switcher';
+import Switcher from '../motionanimations/switcher';
 import {
   Navbar,
   NavbarBrand,
@@ -25,12 +25,12 @@ const Navigation = () => {
   };
 
   const saveFile = () => {
-    saveAs('/OscarResume2024.pdf', 'OscarResume2024.pdf');
+    saveAs('/OscarResume2025.pdf', 'OscarResume2025.pdf');
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'Projects', 'Blogs', 'Gallery'];
+  const menuItems = ['Home', 'Projects', 'Blogs', 'Gallery','Contact'];
 
   return (
     <Navbar
@@ -44,31 +44,29 @@ const Navigation = () => {
         />
       </NavbarContent>
 
+<Link href={'/'}>
+
       <NavbarContent className="sm:hidden " justify="center">
         <NavbarBrand>
           <Image src={Logo} alt="Logo" width="45" height="55" priority />
         </NavbarBrand>
       </NavbarContent>
-
+</Link>
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="hidden lg:flex">
+<Link href={'/'}>
           <Image src={Logo} alt="Logo" width="45" height="55" priority />
+      </Link>
         </NavbarBrand>
       </NavbarContent>
-
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="#intro">
+          <Link color="foreground" href="/">
             Home
           </Link>
         </NavbarItem>
-        {/* <NavbarItem className="hover:text-green-500">
-          <Link href="#about" aria-current="page">
-            About
-          </Link>
-        </NavbarItem> */}
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="#projects">
+          <Link color="foreground" href="/projects">
             Projects
           </Link>
         </NavbarItem>
@@ -80,6 +78,11 @@ const Navigation = () => {
         <NavbarItem className="hover:text-green-500">
           <Link color="foreground" href="/gallery">
             Gallery
+          </Link>
+        </NavbarItem>
+        <NavbarItem className="hover:text-green-500">
+          <Link color="foreground" href="/contact">
+            Contact
           </Link>
         </NavbarItem>
         {/* <NavbarItem

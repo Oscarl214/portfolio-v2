@@ -12,7 +12,7 @@ import ProjectData from '../../projectdata.json';
 
 const ProjectCard = () => {
   return (
-    <div className="flex flex-wrap gap-4 justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto">
       {ProjectData.map((project) => {
         let liveBtn;
 
@@ -31,8 +31,9 @@ const ProjectCard = () => {
         return (
           <div
             key={project.id}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex justify-center mb-4"
+            className="w-full"
           >
+            
             <Card className="p-5 rounded-2xl bg-transparent w-full">
               <CardBody className="overflow-visible py-2">
                 <Image
@@ -54,7 +55,7 @@ const ProjectCard = () => {
                   <h4 className="font-extrabold text-xl text-green-500">
                     {project.title}
                   </h4>
-                  <p className="text-sm font-sans">{project.description}</p>
+                  {/* <p className="text-sm font-sans">{project.description}</p> */}
                   <small className="text-default-500 text-md flex-wrap leading-5">
                     {project.technologies}
                   </small>

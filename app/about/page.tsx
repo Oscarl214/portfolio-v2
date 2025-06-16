@@ -1,17 +1,17 @@
 import React from 'react';
-import Cube from '../componenets/cube';
-import Intro from '../componenets/aboutpage/intro';
-import Header from '../componenets/aboutpage/header';
-import { Motion } from '../componenets/aboutpage/motion';
-import Skills from '../componenets/aboutpage/skills';
-import { MotionSkills } from '../componenets/aboutpage/motionskills';
-import Timeline from '../componenets/aboutpage/timeline';
-import { MotionTime } from '../componenets/aboutpage/timemotion';
-import RepoCard from '../componenets/aboutpage/repocard';
-import PortfolioButton from '../componenets/aboutpage/portfoliobutton';
-import { RepoMotion } from '../componenets/aboutpage/repomotion';
+import Cube from '../componenets/2024archive/cube';
+import Intro from '../componenets/2024archive/aboutpage/intro';
+import Header from '../componenets/2024archive/aboutpage/header';
+import { Motion } from '../componenets/2024archive/aboutpage/motion';
+import Skills from '../componenets/2024archive/aboutpage/skills';
+import { MotionSkills } from '../componenets/2024archive/aboutpage/motionskills';
+import Timeline from '../componenets/2024archive/aboutpage/timeline';
+import { MotionTime } from '../componenets/2024archive/aboutpage/timemotion';
+import RepoCard from '../componenets/2024archive/aboutpage/repocard';
+import PortfolioButton from '../componenets/2024archive/aboutpage/portfoliobutton';
+import { RepoMotion } from '../componenets/2024archive/aboutpage/repomotion';
 import getRepos from '../lib/getRepos';
-import BlogButton from '../componenets/aboutpage/blogbutton';
+import BlogButton from '../componenets/2024archive/aboutpage/blogbutton';
 
 export default async function About() {
   const username = 'oscarl214';

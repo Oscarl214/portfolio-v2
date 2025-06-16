@@ -1,10 +1,10 @@
 [
   {
     "id": 8,
-    "title": "Pintech | In Process..",
+    "title": "Pintech Collective",
     "description": "Static site for a robotic automation company. Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/Cover-11.jpg",
-    "link": "https://pintechproject-theta.vercel.app/",
+    "link": "https://www.pintechcollective.com/",
     "github": "https://github.com/Oscarl214/pintechproject",
     "technologies": "NextUI, Vercel, FramerMotion, S3, TypeScript, TailWind"
   },
@@ -13,7 +13,7 @@
     "title": "Runners Unidos",
     "description": "Runners Unidos is a full-stack web application I built to serve as an information hub for a local running club in Dallas, Texas. The site helps keep our running community connected by providing easy access to schedules, events, and more.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/runners.jpg",
-    "link": "https://runnersunidos.vercel.app",
+    "link": "https://www.runnersunidos.com/",
     "github": "https://github.com/Oscarl214/runnersunidos",
     "technologies": "NextUI, Vercel, FramerMotion, AWS: RDS & S3, TypeScript, TailWind"
   },
@@ -34,41 +34,5 @@
     "link": "https://lealvechiledirectory.vercel.app/",
     "github": "https://github.com/Oscarl214/Lealvechiledirectory",
     "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NextAuth"
-  },
-  {
-    "id": 4,
-    "title": "AR WEBPAGE",
-    "description": "Designed a mock e-commerce web page utilizing the power of augmented reality (AR) to showcase three 3D modals of different products for a B2C Company of choice.",
-    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/WebARProejct.png",
-    "link": "https://yywb1u.csb.app/",
-    "github": "https://github.com/Oscarl214/WebAR-Project",
-    "technologies": "HTML, CSS, JavaScript, SandBox, Modal Viwer Component npm package"
-  },
-  {
-    "id": 3,
-    "title": "Chrsitmas List V2",
-    "description": "Leal's Christmas Wishes is a private, full-stack application built exclusively for my family to help organize and share our Christmas lists for the upcoming year. This version is a major upgrade from the original, where I previously used GraphQL. Now, I've leveraged the power of Next.js, Prisma, and NextAuth to create a more versatile and user-friendly experience for my family.",
-    "image": "https://christmaslist21.s3.us-east-2.amazonaws.com/WishChrist.gif",
-    "link": "https://christmaslist-v2.vercel.app",
-    "github": "https://github.com/Oscarl214/christmaslist-v2",
-    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NextAuth"
-  },
-  {
-    "id": 2,
-    "title": "Social Network API",
-    "description": "A restful API for a social network application where users can share thoughts,react to friends thoughts, and create a friends list. This challenged me to grasp a nonSQL workflow when working on the backend.Utilized Insomia for testing all routes.",
-    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/SocialMediaAPI.png",
-    "link": "",
-    "github": "https://github.com/Oscarl214/Social-Media-API",
-    "technologies": "NodeJs, MongoDb, Mongoose, Insomia"
-  },
-  {
-    "id": 1,
-    "title": "Ecommerce Store",
-    "description": "Created a back end for a e-commerce store. This project challenged me to grasp a MySQL workflow. Utilized postman to test al routes.",
-    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/EcommerceBackend.png",
-    "link": "",
-    "github": "https://github.com/Oscarl214/Ecommerce_BackEnd",
-    "technologies": "Nodejs, Express, MySql, Sequelize"
   }
 ]
