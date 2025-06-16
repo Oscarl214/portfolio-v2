@@ -5,17 +5,18 @@ import AbercrombieLogo from '@/public/AF.png'
 import Image from 'next/image';
 import { IoArrowForward } from 'react-icons/io5';
 import Link from 'next/link';
+import LogoCarousel from './LogoCarousel';
 const HomePageContent = () => {
   return (
     <section
-    className="flex flex-col items-center justify-center w-full max-w-[656px] gap-[60px] min-h-[580px] p-4"
+    className="flex flex-col items-center justify-center w-full max-w-[656px] gap-[60px] min-h-[580px] p-4 overflow-x-hidden"
   >
    <div className="flex flex-col items-start justify-center gap-8 w-full">
       <div className="flex flex-col gap-2.5 w-full">
-        <h1 className="font-outfit font-semibold text-[68px] leading-[74.8px] tracking-tighter">
+        <h1 className="font-outfit font-semibold text-4xl md:text-[68px] leading-tight md:leading-[74.8px] tracking-tighter">
           Helping Bridge <span className='text-primary'>Solutions</span>
         </h1>
-        <p className="dark:text-gray-300 text-lg">A full-stack developer with 3+ years of experience in both software and marketing. I enjoy building sites and apps. My focus is React (Next.js).</p>
+        <p className="dark:text-gray-300 text-base md:text-lg">A full-stack developer with 3+ years of experience in both software and marketing. I enjoy building sites and apps. My focus is React (Next.js).</p>
       </div>
       <div className="flex flex-wrap gap-[60px]">
  <Stats/>
@@ -36,7 +37,14 @@ const HomePageContent = () => {
       </Button>
       </Link>
       </div>
+      <div className="w-full">
+        <p className="text-gray-300 text-lg mb-8">
+         My Skills:
+        </p>
+        <LogoCarousel  />
+      </div>
     </div>
+    
     <div className="w-full">
       <p className="dark:text-gray-300 text-lg mb-2.5">
         Current Employer
