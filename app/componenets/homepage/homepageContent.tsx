@@ -38,7 +38,7 @@ const HomePageContent = () => {
       </Link>
       </div>
       <div className="w-full">
-        <p className="text-gray-300 text-lg mb-8">
+        <p className="dark:text-gray-300 text-lg mb-8">
          My Skills:
         </p>
         <LogoCarousel  />
