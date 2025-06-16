@@ -5,26 +5,18 @@ import { CardMotion } from '../componenets/portfoliopage/cardmotion';
 import ContactButton from '../componenets/portfoliopage/button';
 import Link from 'next/link';
 import { Button } from '@nextui-org/react';
+import ProjectSection from '../componenets/portfoliopage/projectsection';
+import BussinessCard from '../componenets/homepage/businesscard';
+import { PageTransition } from '../motionanimations/pagetransition';
+
 const Projects = () => {
   return (
-    <div className=" ">
-      <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
-        <Header />
-      </div>
-
-      <ProjectCard />
-      {/* <div className="m-4">
-        <Link href={'/'}>
-          <Button
-            color="success"
-            variant="bordered"
-            className="hover:dark:text-green-500 hover:text-green-500 border-green-500 dark:text-white text-black"
-          >
-            Back to Home
-          </Button>
-        </Link>
-      </div> */}
-    </div>
+    <PageTransition>
+      <main className="flex flex-row justify-center lg:items-center min-h-screen w-full gap-8 lg:px-4 flex-wrap-reverse">
+        <BussinessCard/>
+        <ProjectSection/>
+      </main>
+    </PageTransition>
   );
 };
 

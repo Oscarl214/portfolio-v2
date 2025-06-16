@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Navigation from './componenets/navbar';
 import Footer from './componenets/footer';
 import { Toaster } from 'react-hot-toast';
-import ScrollButton from './componenets/ScrollButton';
+import ScrollButton from './motionanimations/ScrollButton';
 
 import QueryProvider from './queryprovider';
 const Orbi = Orbitron({ subsets: ['latin'] });

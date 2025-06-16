@@ -1,4 +1,4 @@
-import { EmailTemplate } from '../../componenets/email-template';
+import { EmailTemplate } from '../../componenets/2024archive/email-template';
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
