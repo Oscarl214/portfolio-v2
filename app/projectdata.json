@@ -5,7 +5,7 @@
     "description": "Static site for a robotic automation company. Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/Cover-11.jpg",
     "link": "https://www.pintechcollective.com/",
-    "github": "https://github.com/Oscarl214/pintechproject",
+    "github": "",
     "technologies": "NextUI, Vercel, FramerMotion, S3, TypeScript, TailWind"
   },
   {
@@ -22,7 +22,7 @@
     "title": "VidaBevidasProject",
     "description": "VidaBebidas Project is a comprehensive, full-stack website designed to serve as a booking platform for a mobile bartender. The site features a professional video showcasing the client's expertise, along with written reviews from previous clients. Users can explore a detailed packages page to learn about the services offered and access a booking page to submit a booking form. The site is paired with Prisma + MongoDB + NodeMailer to offer a fluid method of creating users and bookings, while also providing a email template that is delivered to customers upon booking.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
-    "link": "https://www.vidabevidasproject.me/",
+    "link": "https://vida-bebidas-project.vercel.app/",
     "github": "https://github.com/Oscarl214/VidaBebidasProject-",
     "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NodeMailer"
   },
