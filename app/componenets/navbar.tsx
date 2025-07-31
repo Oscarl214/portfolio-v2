@@ -25,7 +25,7 @@ const Navigation = () => {
   };
 
   const saveFile = () => {
-    saveAs('/OscarResume2025.pdf', 'OscarResume2025.pdf');
+    saveAs('/OscarLealResume2025.pdf', 'OscarLealResume2025.pdf');
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
