@@ -1,7 +1,11 @@
 import React from 'react'
 
-const LogoCarousel = () => {
-    const techLogos = [
+interface LogoCarouselProps {
+  mode: 'dev' | 'martech';
+}
+
+const LogoCarousel = ({ mode }: LogoCarouselProps) => {
+    const devLogos = [
         {
             src: '/tech/react.svg',
             alt: 'React logo',
@@ -32,9 +36,38 @@ const LogoCarousel = () => {
         },
         {
           src: '/tech/reactnative.svg',
-          alt: 'Git logo',
+          alt: 'React Native logo',
       }
     ];
+
+    const martechLogos = [
+        {
+            src: '/tech/ai.svg',
+            alt: 'AI logo',
+        },
+        {
+            src: '/tech/react.svg',
+            alt: 'React logo',
+        },
+        {
+            src: '/tech/nextjs.svg',
+            alt: 'Next.js logo',
+        },
+        {
+            src: '/tech/typescript.svg',
+            alt: 'TypeScript logo',
+        },
+        {
+            src: '/tech/nodejs.svg',
+            alt: 'Node.js logo',
+        },
+        {
+            src: '/tech/git.svg',
+            alt: 'Git logo',
+        }
+    ];
+
+    const techLogos = mode === 'dev' ? devLogos : martechLogos;
 
     
     const duplicatedLogos = [...techLogos, ...techLogos];
