@@ -41,7 +41,7 @@ const BussinessCard=()=>{
             <Link href={'/contact'}>
             
             
-      <Button className='bg-primary text-black animate-pulse'>Lets Yap</Button>
+      <Button className='bg-primary text-black animate-pulse'>Lets Chat</Button>
             </Link>
             <Link href={'/blog/66df958a15ebda87035dc3ad'}>
             
