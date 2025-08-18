@@ -66,7 +66,7 @@ const Navigation = () => {
           </Link>
         </NavbarItem>
         <NavbarItem className="hover:text-green-500">
-          <Link color="foreground" href="/projects">
+          <Link color="foreground" href="/projects" prefetch={true}>
             Projects
           </Link>
         </NavbarItem>

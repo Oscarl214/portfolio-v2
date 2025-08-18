@@ -6,29 +6,33 @@ import { Switch } from '@nextui-org/react';
 import { FaSun, FaMoon } from 'react-icons/fa6';
 import { FaCode, FaChartLine } from 'react-icons/fa';
 import { useMode } from '../providers';
+import Image from 'next/image';
 
 const Switcher = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const { mode, toggleMode } = useMode();
+  const { mode, toggleMode, isLoaded } = useMode();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
-
-  function handleTheme() {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
+  // Synchronize theme with mode when component mounts or mode changes
+  useEffect(() => {
+    if (mounted && isLoaded) {
+      const expectedTheme = mode === 'dev' ? 'dark' : 'light';
+      if (theme !== expectedTheme) {
+        setTheme(expectedTheme);
+      }
     }
-  }
+  }, [mode, theme, setTheme, mounted, isLoaded]);
+
+  if (!mounted || !isLoaded) return null;
 
   function handleModeToggle() {
     const newMode = mode === 'dev' ? 'martech' : 'dev';
-    setTheme(newMode === 'dev' ? 'dark' : 'light');
+    const newTheme = newMode === 'dev' ? 'dark' : 'light';
+    setTheme(newTheme);
     toggleMode();
   }
 
@@ -36,24 +40,37 @@ const Switcher = () => {
     <div className="flex flex-col gap-2">
       {/* Mode Toggle - Dev vs Martech */}
       <div className="flex items-center gap-2">
-        <span className="text-xs text-gray-500">Mode:</span>
+      <span className="text-xs font-bold text-red-500">{mode === 'dev' ? 'DEV' : 'MARTTECH'}</span>
         <Switch
           size="sm"
           isSelected={mode === 'martech'}
           color="success"
           onClick={handleModeToggle}
           thumbIcon={({ isSelected, className }) =>
-            isSelected ? <FaChartLine className="text-white" /> : <FaCode className="text-white" />
+            isSelected ? (
+              <Image 
+                src="/martech/martech.svg" 
+                alt="Martech" 
+                width={24} 
+                height={24} 
+                className="text-white"
+              />
+            ) : (
+              <Image 
+                src="/tech/dev.svg" 
+                alt="Dev" 
+                width={24} 
+                height={24} 
+                className="text-white"
+              />
+            )
           }
         />
-        <span className="text-xs text-gray-500">{mode === 'dev' ? 'Dev' : 'Martech'}</span>
+        
       </div>
       
-      {/* Theme Display */}
-      {/* <div className="flex items-center gap-2">
-        <span className="text-xs text-gray-500">Theme:</span>
-        <span className="text-xs text-gray-500">{mode === 'dev' ? 'Dark' : 'Light'}</span>
-      </div> */}
+  
+
     </div>
   );
 };

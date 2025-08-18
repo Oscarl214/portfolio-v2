@@ -7,24 +7,40 @@ import { IoArrowForward } from 'react-icons/io5';
 import Link from 'next/link';
 import LogoCarousel from './LogoCarousel';
 import { useMode } from '../../providers';
+import Logo from '@/public/ol-logo.png';
 
 const HomePageContent = () => {
-  const { mode } = useMode();
+  const { mode, isLoaded } = useMode();
+  
+  // Don't render content until mode is loaded to prevent flash of incorrect content
+  if (!isLoaded) {
+    return (
+      <section className="flex flex-col items-center justify-center w-full max-w-[656px] gap-[60px] min-h-[580px] p-4 overflow-x-hidden">
+        <div className="animate-pulse">
+          <div className="h-16 bg-gray-200 dark:bg-gray-700 rounded mb-4"></div>
+          <div className="h-32 bg-gray-200 dark:bg-gray-700 rounded"></div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section
-    className="flex flex-col items-center justify-center w-full max-w-[656px] gap-[60px] min-h-[580px] p-4 overflow-x-hidden"
+    className="flex flex-col items-center justify-center w-full max-w-[656px] gap-[60px] min-h-[580px] p-4 overflow-x-hidden "
   >
-   <div className="flex flex-col items-start justify-center gap-8 w-full">
+   <div className="flex flex-col items-start gap-6 w-full">
       <div className="flex flex-col gap-2.5 w-full">
-        <h1 className="font-outfit font-semibold text-4xl md:text-[68px] leading-tight md:leading-[74.8px] tracking-tighter">
+        <h1 className="font-outfit font-semibold text-4xl md:text-[68px] leading-tight md:leading-[74.8px] tracking-tighter ">
           { mode ==='dev'? "O's World" : "Bridging Solutions one Campaign at a Time"} 
         </h1>
-        <p className="dark:text-gray-300 text-base md:text-lg">
-          {mode === 'dev' 
-            ? "A full-stack developer with 3+ years of experience building modern web applications. I specialize in React, Next.js, and full-stack development. I enjoy creating scalable, user-friendly applications that solve real-world problems."
-            : "With hands-on experience in marketing operations across global brands and freelance projects, I specialize in executing and optimizing digital campaigns that drive measurable impact. From coding responsive HTML emails to managing end-to-end campaign workflows in platforms like Salesforce Marketing Cloud and Oracle Responsys, I bridge technical expertise with marketing strategy. I’ve supported cross-brand initiatives, improved campaign efficiency through automation, and leveraged analytics to boost engagement and ROI—helping teams deliver campaigns at scale with precision and creativity."
-          }
-        </p>
+        <div className={`w-full p-6 rounded-xl border-l-4 ${mode === 'dev' ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-500' : 'bg-white/80 dark:bg-green-950/20 border-[#98B5BF]'} backdrop-blur-sm`}>
+          <p className={`${mode === 'dev' ? 'dark:text-blue-100 text-blue-900' : 'dark:text-green-100 text-gray-800'} md:text-lg leading-relaxed font-medium`}>
+            {mode === 'dev' 
+              ? "A full-stack free lance developer with 3+ years of experience building modern web applications. I specialize in React, Next.js, and full-stack development. I enjoy creating scalable, user-friendly applications that solve real-world problems."
+              : "A jack of all trades in marketing operations, I bring hands-on experience across global brands and freelance projects. I specialize in executing and optimizing digital campaigns—coding responsive HTML emails, managing workflows in Salesforce Marketing Cloud, Cordial, and Oracle Responsys, and driving measurable results through automation and analytics. Adaptable and quick to learn new CMS platforms and technologies, I bridge technical expertise with marketing strategy to help teams deliver campaigns at scale with precision and creativity."
+            }
+          </p>
+        </div>
       </div>
       <div className="flex flex-wrap gap-[60px]">
  <Stats mode={mode}/>
@@ -32,13 +48,13 @@ const HomePageContent = () => {
       <div className="flex items-center gap-4">
         <Link href='/contact'>
         
-     <Button     className="inline-flex items-center justify-center h-11 px-6 bg-primary rounded-lg font-medium dark:text-white hover:bg-primary-600 transition-colors overflow-hidden group"
+     <Button     className="inline-flex items-center font-semibold justify-center h-11 px-6 bg-primary rounded-lg  dark:text-white hover:bg-primary-600 transition-colors overflow-hidden group"
         >
-      Lets Yap
+      Lets Chat
       </Button>
             </Link>
             <Link href='/projects'>
-      <Button    className="inline-flex items-center gap-1.5 bg-transparent dark:text-white hover:text-black hover:bg-primary transition-colors"
+      <Button    className="inline-flex items-center gap-1.5 bg-transparent border-3 font-semibold dark:text-white hover:text-black hover:bg-primary transition-colors"
         >
           My Work
           <IoArrowForward className="text-green-500" />
@@ -46,18 +62,18 @@ const HomePageContent = () => {
       </Link>
       </div>
       <div className="w-full">
-        {/* <p className="dark:text-gray-300 text-lg mb-8">
+        <p className="dark:text-gray-300 text-lg font-semibold mb-8">
          {mode === 'dev' ? 'My Development Skills:' : 'My Marketing Technology Skills:'}
         </p>
-        <LogoCarousel mode={mode} /> */}
+        <LogoCarousel mode={mode} />
       </div>
     </div>
     
     <div className="w-full">
-      <p className="dark:text-gray-300 text-lg mb-2.5">
-        {/* {mode === 'dev' ? 'Current Employer' : 'Current Role'} */}
+      <p className="dark:text-gray-300 text-lg mb-2.5 font-semibold">
+        {mode === 'dev' ? 'Self-Employed: Os World' : 'Current Employed at A&F as a Marketing Email Developer'}
       </p>
-      <Image src={AbercrombieLogo.src} className='h-auto w-auto' alt="Thumbs Up Gif" height={75} width={75}/>
+      <Image src={mode==='dev' ? Logo : AbercrombieLogo.src} className='h-auto w-auto' alt="Thumbs Up Gif" height={75} width={75}/>
       <p className="dark:text-gray-300 text-sm mt-2">
         {/* {mode === 'dev' 
           ? 'Full-Stack Developer at Abercrombie & Fitch'

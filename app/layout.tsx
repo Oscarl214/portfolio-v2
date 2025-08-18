@@ -28,7 +28,7 @@ export default function RootLayout({
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       />
 
-      <body className={Orbi.className}>
+      <body className={`${Orbi.className} bg-background text-foreground`}>
         <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
         <Head>
           <link rel="icon" href="/favicon.ico" sizes="any" />

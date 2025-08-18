@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Header from '../componenets/portfoliopage/header';
 import ProjectCard from '../componenets/portfoliopage/projectcard';

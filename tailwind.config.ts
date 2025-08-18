@@ -45,18 +45,26 @@ const config: Config = {
     nextui({
       themes: {
         light: {
-          layout: {
-            foreground: '#000000',
+          colors: {
+            background: '#FDFBD4',
+            foreground: '#0f172a',
+            // color: '#3A3A3A',
+            primary: {
+              DEFAULT: '#0ea5e9',
+              500: '#0ea5e9',
+            },
           },
         },
         dark: {
-          layout: {}, // dark theme layout tokens
           colors: {
-            foreground: '#ffffff',
-          }, // dark theme colors
+            primary: {
+              DEFAULT: '#16a34a',
+              500: '#16a34a',
+            },
+          },
         },
       },
-    }),
+    })
   ],
 };
 export default config;
