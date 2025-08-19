@@ -37,7 +37,7 @@ const AbercrombiePage = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Developed and QA'd responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
+                Developed and QAd responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
                 ensuring cross-platform compatibility across 1M+ subscribers. This project involved 
                 creating sophisticated email campaigns that maintained brand consistency while 
                 delivering exceptional user experience across all email clients.

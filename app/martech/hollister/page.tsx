@@ -39,10 +39,10 @@ const HollisterPage = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Developed and QA'd responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
+                Developed and QAd responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
                 ensuring cross-platform compatibility across 1M+ subscribers. This project 
                 focused on creating engaging email campaigns that resonated with the 
-                brand's youthful demographic while maintaining technical excellence.
+                brands youthful demographic while maintaining technical excellence.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 The work encompassed template development, responsive design implementation, 
@@ -76,7 +76,7 @@ const HollisterPage = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Tailored content for Hollister's specific demographic and brand voice
+                  Tailored content for Hollisters specific demographic and brand voice
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
@@ -132,20 +132,20 @@ const HollisterPage = () => {
               <p className="text-gray-600 leading-relaxed mb-4">
                 Working with Hollister required a deep understanding of their brand identity 
                 and target demographic. The email templates were designed to reflect the 
-                brand's casual, beach-inspired aesthetic while maintaining technical excellence.
+              brands casual, beach-inspired aesthetic while maintaining technical excellence.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Visual Design</h3>
                   <p className="text-gray-600 text-sm">
-                    Implemented Hollister's signature visual style with beach-inspired 
+                    Implemented Hollisters signature visual style with beach-inspired 
                     imagery and casual, laid-back design elements.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Content Strategy</h3>
                   <p className="text-gray-600 text-sm">
-                    Tailored messaging to resonate with Hollister's youthful, 
+                    Tailored messaging to resonate with Hollisters youthful, 
                     fashion-forward audience while maintaining brand voice consistency.
                   </p>
                 </div>
@@ -242,7 +242,7 @@ const HollisterPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Email Examples</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Here are some examples of the email campaigns I developed for Hollister. 
-            Each template was designed to capture the brand's youthful, beach-inspired 
+            Each template was designed to capture the brands youthful, beach-inspired 
             aesthetic while ensuring optimal performance across all email clients and regional markets.
           </p>
           
