@@ -23,7 +23,7 @@ export const useMode = () => {
 };
 
 export const ModeProvider = ({ children }: { children: ReactNode }) => {
-  const [mode, setMode] = useState<'dev' | 'martech'>('dev');
+  const [mode, setMode] = useState<'dev' | 'martech'>('martech');
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Load mode from localStorage on mount
