@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import martechData from '@/app/martechdata.json'
-
+import Image from 'next/image'
 const MarTechCard: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
@@ -16,7 +16,7 @@ const MarTechCard: React.FC = () => {
           >
             {/* Background Image */}
             <div className="h-48 overflow-hidden">
-              <img 
+              <Image
                 src={project.image} 
                 alt={project.title}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

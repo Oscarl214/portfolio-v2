@@ -23,7 +23,7 @@ const AbercrombiePage = () => {
 
         {/* Hero Section */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-          <img 
+          <Image
             src="/martech/A&F.jpg" 
             alt="Abercrombie & Fitch" 
             className="w-full  object-cover"

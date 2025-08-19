@@ -25,7 +25,7 @@ const HollisterPage = () => {
 
         {/* Hero Section */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-          <img 
+          <Image
             src="/martech/hollister.jpg" 
             alt="Hollister" 
             className="w-full  object-cover"

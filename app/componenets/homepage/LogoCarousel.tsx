@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 interface LogoCarouselProps {
   mode: 'dev' | 'martech';
 }
@@ -101,7 +101,7 @@ const LogoCarousel = ({ mode }: LogoCarouselProps) => {
                             key={index}
                             className="group relative inline-flex items-center justify-center h-10 w-[60px] md:w-[100px] shrink-0 hover:scale-110 transition-transform duration-300"
                         >
-                            <img
+                            <Image
                                 src={logo.src}
                                 alt={logo.alt}
                                 className="max-w-full max-h-full object-contain filter hover:grayscale-0 transition-all duration-300"
