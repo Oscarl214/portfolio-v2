@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Providers from './providers';
-import { Open_Sans, Orbitron } from 'next/font/google';
+import { Open_Sans, Orbitron, Roboto } from 'next/font/google';
 import Head from 'next/head';
 import Navigation from './componenets/navbar';
 import Footer from './componenets/footer';
 import { Toaster } from 'react-hot-toast';
 import ScrollButton from './motionanimations/ScrollButton';
-
 import QueryProvider from './queryprovider';
+import FontWrapper from './componenets/FontWrapper';
 const Orbi = Orbitron({ subsets: ['latin'] });
-
+const Robo = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 export const metadata: Metadata = {
   title: 'Os Portfolio',
   description: 'Newest personal portfolio',
@@ -28,23 +28,25 @@ export default function RootLayout({
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       />
 
-      <body className={Orbi.className}>
+      <body className={`${Orbi.className} bg-background text-foreground`}>
         <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
         <Head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <QueryProvider>
           <Providers>
-            <div className="fixed z-[1000] top-0 w-full">
-              <Navigation />
-            </div>
-            <main style={{ paddingTop: '5rem' }}>
-              {children}
-              <ScrollButton />
-            </main>
-            <div>
-              <Footer />
-            </div>
+            <FontWrapper>
+              <div className="fixed z-[1000] top-0 w-full">
+                <Navigation />
+              </div>
+              <main style={{ paddingTop: '5rem' }}>
+                {children}
+                <ScrollButton />
+              </main>
+              <div>
+                <Footer />
+              </div>
+            </FontWrapper>
           </Providers>
         </QueryProvider>
       </body>

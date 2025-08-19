@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Email Campaign Execution",
+    "description": "Developed and QA'd responsive HTML email templates for Abercrombie Adults brand, ensuring cross-platform compatibility across 1M+ subscribers.",
+    "image": "/martech/A&F.jpg",
+    "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
+    "link": "/martech/abercrombie"
+  },
+  {
+    "id": 2,
+    "title": "Email Campaign Execution",
+    "description": "Developed and QA'd responsive HTML email templates for Hollister Brand, ensuring cross-platform compatibility across 1M+ subscribers.",
+    "image": "/martech/hollister.jpg",
+    "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
+    "link": "/martech/hollister"
+  },
+  {
+    "id": 3,
+    "title": "Promotional Push Content Optimization",
+    "description": "Alongside, Email I also build dynamic push notifications for both Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers & cordinate timing across email + app push to deliver a unified brand experience.",
+    "image": "/martech/Joint_Logos.jpg",
+    "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
+    "link": ""
+  }
+]
+

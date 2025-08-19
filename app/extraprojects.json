@@ -1,0 +1,21 @@
+//   {
+//     "id": 2,
+//     "title": "Marketing Automation",
+//     "description": "Implemented automated email workflows and customer journey mapping using advanced marketing technology platforms.",
+//     "image": "/martech/martech.svg",
+//     "technologies": "Marketing Automation, Customer Journey Mapping, Email Workflows"
+//   },
+//   {
+//     "id": 3,
+//     "title": "CRM Integration",
+//     "description": "Designed and executed CRM integration strategies to streamline customer data management and improve marketing efficiency.",
+//     "image": "/martech/salesforce.svg",
+//     "technologies": "CRM, Data Integration, Customer Data Management"
+//   },
+//   {
+//     "id": 4,
+//     "title": "Analytics & Reporting",
+//     "description": "Built comprehensive analytics dashboards and reporting systems to track marketing performance and ROI.",
+//     "image": "/martech/oracle.svg",
+//     "technologies": "Analytics, Data Visualization, Performance Tracking, ROI Measurement"
+//   }
