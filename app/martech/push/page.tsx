@@ -369,7 +369,7 @@ const PushPage = () => {
         >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Push Notifications & In App messages Examples</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Some examples of diffrent push notifications I developed for all three brands. 
+            Some examples of different push notifications I developed for all three brands. 
             Each template was deisgned with re-usabilty across all brands while ensuring optimal performance across both IOS and Android and regional markets.
           </p>
           
