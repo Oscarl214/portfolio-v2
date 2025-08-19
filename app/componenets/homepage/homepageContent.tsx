@@ -72,7 +72,7 @@ const HomePageContent = () => {
     
     <div className="w-full">
       <p className="dark:text-gray-300 text-lg mb-2.5 font-semibold">
-        {mode === 'dev' ? 'Self-Employed: Os World' : 'Current Employed at A&F as a Marketing Email Developer'}
+        {mode === 'dev' ? 'Self-Employed: Os World' : 'Currently Employed at A&F as a Marketing Email Developer'}
       </p>
       <Image src={mode==='dev' ? Logo : AbercrombieLogo.src} className='h-auto w-auto' alt="Thumbs Up Gif" height={75} width={75}/>
       <p className="dark:text-gray-300 text-sm mt-2">
