@@ -20,7 +20,7 @@ const Switcher = () => {
   // Synchronize theme with mode when component mounts or mode changes
   useEffect(() => {
     if (mounted && isLoaded) {
-      const expectedTheme = mode === 'dev' ? 'dark' : 'light';
+      const expectedTheme = mode === 'dev' ? 'dark' : 'martech';
       if (theme !== expectedTheme) {
         setTheme(expectedTheme);
       }
@@ -31,7 +31,7 @@ const Switcher = () => {
 
   function handleModeToggle() {
     const newMode = mode === 'dev' ? 'martech' : 'dev';
-    const newTheme = newMode === 'dev' ? 'dark' : 'light';
+    const newTheme = newMode === 'dev' ? 'dark' : 'martech';
     setTheme(newTheme);
     toggleMode();
   }
@@ -40,11 +40,11 @@ const Switcher = () => {
     <div className="flex flex-col gap-2">
       {/* Mode Toggle - Dev vs Martech */}
       <div className="flex items-center gap-2">
-      <span className="text-xs font-bold text-red-500">{mode === 'dev' ? 'DEV' : 'MARTTECH'}</span>
+      <span className={`text-xs font-bold ${mode === 'dev' ? 'text-red-500' : 'text-martech-600'}`}>{mode === 'dev' ? 'DEV' : 'MARTTECH'}</span>
         <Switch
           size="sm"
           isSelected={mode === 'martech'}
-          color="success"
+          color="primary"
           onClick={handleModeToggle}
           thumbIcon={({ isSelected, className }) =>
             isSelected ? (

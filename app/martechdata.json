@@ -18,10 +18,10 @@
   {
     "id": 3,
     "title": "Promotional Push Content Optimization",
-    "description": "Alongside, Email I also build dynamic push notifications for both Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers & cordinate timing across email + app push to deliver a unified brand experience.",
-    "image": "/martech/Joint_Logos.jpg",
+    "description": "Alongside email development, I also build dynamic push notifications for both Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers & cordinate timing across email + app push to deliver a unified brand experience.",
+    "image": "/martech/Brands.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
-    "link": ""
+    "link": "/martech/push"
   }
 ]
 

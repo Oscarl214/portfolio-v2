@@ -42,6 +42,12 @@ const GalleryData = [
     title: 'In the Mountains',
   },
   {
+    id: 10,
+    src: '/Brazil.jpg',
+    alt: 'Brazil',
+    title: 'Christ in Rio De Janeiro Brazil',
+  },
+  {
     id: 8,
     src: '/KanyeBear.jpg',
     alt: 'Takashi Art',

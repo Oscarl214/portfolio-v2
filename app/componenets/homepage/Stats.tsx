@@ -44,7 +44,7 @@ const Stats = ({ mode }: StatsProps) => {
       <div className="flex flex-row lg:gap-10 flex-wrap gap-4">
         {Stats.map((stat, index) => (
           <div key={index}>
-            <p className="font-outfit font-semibold text-[70px] leading-[84px] tracking-[-0.7px] dark:text-white text-[#FF746C]">
+            <p className={`font-outfit font-semibold text-[70px] leading-[84px] tracking-[-0.7px] dark:text-white ${mode === 'dev' ? 'text-[#FF746C]' : 'text-martech-600'}`}>
               {stat.value}
             </p>
             {stat.label.map((text, i) => (

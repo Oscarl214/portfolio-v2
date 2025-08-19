@@ -33,13 +33,14 @@ const HomePageContent = () => {
         <h1 className="font-outfit font-semibold text-4xl md:text-[68px] leading-tight md:leading-[74.8px] tracking-tighter ">
           { mode ==='dev'? "O's World" : "Bridging Solutions one Campaign at a Time"} 
         </h1>
-        <div className={`w-full p-6 rounded-xl border-l-4 ${mode === 'dev' ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-500' : 'bg-white/80 dark:bg-green-950/20 border-[#98B5BF]'} backdrop-blur-sm`}>
-          <p className={`${mode === 'dev' ? 'dark:text-blue-100 text-blue-900' : 'dark:text-green-100 text-gray-800'} md:text-lg leading-relaxed font-medium`}>
+        <div className={`w-full p-6 rounded-xl border-l-4 ${mode === 'dev' ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-500' : 'bg-martech-50/80 dark:bg-martech-950/20 border-martech-600'} backdrop-blur-sm`}>
+          <p className={`${mode === 'dev' ? 'dark:text-blue-100 text-blue-900' : 'dark:text-martech-100 text-martech-900'} md:text-lg leading-relaxed font-medium`}>
             {mode === 'dev' 
               ? "A full-stack free lance developer with 3+ years of experience building modern web applications. I specialize in React, Next.js, and full-stack development. I enjoy creating scalable, user-friendly applications that solve real-world problems."
-              : "A jack of all trades in marketing operations, I bring hands-on experience across global brands and freelance projects. I specialize in executing and optimizing digital campaigns—coding responsive HTML emails, managing workflows in Salesforce Marketing Cloud, Cordial, and Oracle Responsys, and driving measurable results through automation and analytics. Adaptable and quick to learn new CMS platforms and technologies, I bridge technical expertise with marketing strategy to help teams deliver campaigns at scale with precision and creativity."
+              : "A professional in marketing operations, I bring hands-on experience across global brands and freelance projects. I specialize in executing and optimizing digital campaigns—coding responsive HTML emails, managing workflows in various diffrent CMS softwares, most recently via Cordial, and Oracle Responsys, and driving measurable results through automation and analytics. Adaptable and quick to learn new CMS platforms and technologies, I bridge technical expertise with marketing strategy to help teams deliver campaigns at scale with precision and creativity."
             }
           </p>
+          <p className='mt-8 italic'>Outside of my professional venture, I enjoy being active, traveling, and challenging myself to be better than I was the day before.</p>
         </div>
       </div>
       <div className="flex flex-wrap gap-[60px]">

@@ -104,9 +104,11 @@ const LogoCarousel = ({ mode }: LogoCarouselProps) => {
                             <Image
                                 src={logo.src}
                                 alt={logo.alt}
+                                width={80}
+                                height={80}
                                 className="max-w-full max-h-full object-contain filter hover:grayscale-0 transition-all duration-300"
                             />
-                            <p className={`pointer-events-none absolute inset-0 flex items-center justify-center text-lg text-black ${mode==='dev' ? 'bg-black text-white': ' bg-[#f5984b] '} rounded opacity-0 transition-opacity duration-200 group-hover:opacity-100`}>{logo.alt}</p>
+                            <p className={`pointer-events-none absolute inset-0 flex items-center justify-center text-lg text-black ${mode==='dev' ? 'bg-black text-white': ' bg-[#FDFBD4] '} rounded opacity-0 transition-opacity duration-200 group-hover:opacity-100`}>{logo.alt}</p>
                         </div>
                     ))}
                 </div>

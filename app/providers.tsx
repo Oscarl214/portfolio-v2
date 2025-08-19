@@ -58,8 +58,8 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     <NextUIProvider>
       <NextThemesProvider
         attribute="class"
-        defaultTheme="light"
-        themes={['light', 'dark', 'mytheme']}
+        defaultTheme="martech"
+        themes={['light', 'dark', 'martech']}
         enableSystem={false}
         disableTransitionOnChange
         storageKey="portfolio-theme"
