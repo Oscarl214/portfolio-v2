@@ -416,7 +416,7 @@ const Orchestration = () => {
                   </div>
                   <div>
                     <span className="text-sm font-medium text-gray-500">Teams Involved</span>
-                    <p className="text-gray-900">Martech, Engineering, Cordial</p>
+                    <p className="text-gray-900">Martech, Engineering, Cordial, Strategy, Design</p>
                   </div>
                 </div>
               </motion.div>
