@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "title": "First Time Buyer Orchestration",
+    "description": "Kickstarted a orchestration project that spaned across mutiple teams within martech and engineer department that focused in on the first time buyer journey, for both Abercrombie & Hollister Brand.",
+    "image": "/martech/orchestration.png",
+    "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
+    "link": "/martech/orchestration"
+  },
+  {
+    "id": 2,
     "title": "Email Campaign Execution",
     "description": "Developed and QA'd responsive HTML email templates for Abercrombie Adults brand, ensuring cross-platform compatibility across 1M+ subscribers.",
     "image": "/martech/A&F.jpg",
@@ -8,7 +16,7 @@
     "link": "/martech/abercrombie"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Email Campaign Execution",
     "description": "Developed and QA'd responsive HTML email templates for Hollister Brand, ensuring cross-platform compatibility across 1M+ subscribers.",
     "image": "/martech/hollister.jpg",
@@ -16,7 +24,7 @@
     "link": "/martech/hollister"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Promotional Push Content Optimization",
     "description": "Alongside email development, I also build dynamic push notifications for both Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers & cordinate timing across email + app push to deliver a unified brand experience.",
     "image": "/martech/Brands.jpg",

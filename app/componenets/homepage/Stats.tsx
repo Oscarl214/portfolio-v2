@@ -40,7 +40,7 @@ const useCounter = (end: number, start = 0, duration = 2000) => {
         } else {
           setCount(end);
           setIsAnimating(false);
-          setHasAnimated(true); // Mark as completed so it won't animate again
+          setHasAnimated(true); 
         }
       };
 

@@ -79,7 +79,7 @@ const config: Config = {
         // Martech theme
         martech: {
           colors: {
-            background: '#f8fafc',
+            background: '#DA9C14,',
             foreground: '#1e293b',
             primary: {
               DEFAULT: '#2563eb',
