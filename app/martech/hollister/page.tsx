@@ -58,8 +58,8 @@ const HollisterPage = () => {
   const examplesInView = useInView(examplesRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-4">
+    <div className="min-h-screen bg-gray-50 py-12 project-container">
+      <div className="max-w-4xl mx-auto px-4 w-full">
         {/* Header */}
         <motion.div 
           ref={headerRef}

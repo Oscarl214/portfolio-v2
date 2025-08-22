@@ -13,7 +13,7 @@ import { PageTransition } from '../motionanimations/pagetransition';
 const Projects = () => {
   return (
     <PageTransition>
-      <main className="flex flex-row justify-center lg:items-center min-h-screen w-full gap-8 lg:px-4 flex-wrap-reverse">
+      <main className="flex flex-row justify-center lg:items-center min-h-screen w-full gap-8 lg:px-4 flex-wrap-reverse project-container">
         <BussinessCard/>
         <ProjectSection/>
       </main>

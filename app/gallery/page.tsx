@@ -5,8 +5,8 @@ import Link from 'next/link';
 const Gallery = () => {
   const galleryImages = GalleryData;
   return (
-    <div className="min-h-screen bg-neutral-light/5 py-16">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-neutral-light/5 py-16 project-container">
+      <div className="container mx-auto px-4 w-full">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-green-500 mb-4">Me</h1>
         </div>

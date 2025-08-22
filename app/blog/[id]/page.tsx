@@ -49,9 +49,8 @@ const Blog = () => {
     );
 
   return (
-    <div>
-      {' '}
-      <div className="container mx-auto py-10 px-4 lg:px-8">
+    <div className="project-container">
+      <div className="container mx-auto py-10 px-4 lg:px-8 w-full">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
           <p className="text-sm text-gray-600">

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 const Blogs = () => {
   return (
-    <div>
+    <div className="project-container">
       <div className=" header flex justify-center font-bold lg:text-6xl text-4xl text-green-500">
         <BlogHeader />
       </div>

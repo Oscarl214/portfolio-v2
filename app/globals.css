@@ -2,13 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'MyFont';
-}
 html {
   font-family: OpenSans, sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+body {
+  font-family: 'MyFont';
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Prevent horizontal scrolling on mobile */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure images and other content don't overflow */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll on project pages */
+.project-container {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Additional mobile-specific rules */
+@media (max-width: 768px) {
+  .project-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .project-container > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure text doesn't overflow */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Prevent table overflow */
+  table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+}
+
 /* html,
 body {
   overscroll-behavior-y: none;
