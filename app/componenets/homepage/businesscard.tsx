@@ -91,7 +91,7 @@ const BussinessCard = () => {
       }}
     >
       <motion.div
-        className={`relative w-[344px] h-[560px]`}
+        className={`relative w-[344px] h-[580px]`}
         variants={cardVariants}
         animate={mode === 'dev' ? 'reset' : 'flip'}
         initial="initial"
@@ -144,6 +144,13 @@ const BussinessCard = () => {
                       <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border border-white/20 shadow-lg hover:shadow-xl">
                         My Story
                         <IoArrowForward className="text-green-500" />
+                      </Button>
+                    </Link>
+                  </div>
+                  <div>
+                  <Link href={'/projects'}>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                        My Work
                       </Button>
                     </Link>
                   </div>
@@ -203,6 +210,13 @@ const BussinessCard = () => {
                       <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border-3 font-semibold dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border border-white/20 shadow-lg hover:shadow-xl">
                         My Story
                         <IoArrowForward className="text-green-500" />
+                      </Button>
+                    </Link>
+                  </div>
+                  <div>
+                  <Link href={'/projects'}>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                        My Work
                       </Button>
                     </Link>
                   </div>
