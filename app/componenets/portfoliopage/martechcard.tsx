@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import martechData from '@/app/martechdata.json'
 import Image from 'next/image'
+
 const MarTechCard: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
@@ -9,10 +10,14 @@ const MarTechCard: React.FC = () => {
         <Link 
           key={project.id}
           href={project.link}
-          className="block"
+          className="block relative"
         >
           <div 
-            className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden cursor-pointer border border-martech-100 hover:border-martech-300"
+            className={`${
+              project.id === 1 
+                ? "bg-white blur-sm opacity-50" 
+                : "bg-white"
+            } rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden cursor-pointer border border-martech-100 hover:border-martech-300`}
           >
             {/* Background Image */}
             <div className="h-48 overflow-hidden">
@@ -44,6 +49,20 @@ const MarTechCard: React.FC = () => {
               )}
             </div>
           </div>
+
+          {/* "In The Works" Overlay - Only for project with ID 1 */}
+          {project.id === 1 && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg z-10">
+              <div className="bg-white/90 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg border border-martech-200">
+                <h2 className="text-2xl font-bold text-martech-900 text-center">
+                  In The Works
+                </h2>
+                <p className="text-sm text-martech-700 text-center mt-1">
+                  Coming Soon..
+                </p>
+              </div>
+            </div>
+          )}
         </Link>
       ))}
     </div>
