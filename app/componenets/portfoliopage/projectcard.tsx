@@ -23,7 +23,7 @@ const ProjectCard = () => {
         } else {
           liveBtn = (
             <a href={project.link} target="_blank">
-              <span className="icon-[ph--globe] hover:text-green-500 text-2xl"></span>
+              <span className="icon-[ph--globe] md:hover:text-green-500 text-2xl"></span>
             </a>
           );
         }
@@ -45,7 +45,7 @@ const ProjectCard = () => {
                 <CardFooter className="flex flex-row gap-2">
                   <Tooltip content="Github-Repo">
                     <a href={project.github} target="_blank">
-                      <span className="icon-[skill-icons--github-dark] text-2xl hover:text-green-500"></span>
+                      <span className="icon-[skill-icons--github-dark] text-2xl md:hover:text-green-500"></span>
                     </a>
                   </Tooltip>
                   <Tooltip content="Live Site">{liveBtn}</Tooltip>

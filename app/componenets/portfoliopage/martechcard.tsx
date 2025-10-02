@@ -17,7 +17,7 @@ const MarTechCard: React.FC = () => {
               project.id === 1 
                 ? "bg-white blur-sm opacity-50" 
                 : "bg-white"
-            } rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden cursor-pointer border border-martech-100 hover:border-martech-300`}
+            } rounded-lg shadow-lg md:hover:shadow-xl transition-all duration-300 md:hover:scale-[1.02] overflow-hidden cursor-pointer border border-martech-100 md:hover:border-martech-300`}
           >
             {/* Background Image */}
             <div className="h-48 overflow-hidden">
@@ -26,7 +26,7 @@ const MarTechCard: React.FC = () => {
                 height={500}
                 width={500}
                 alt={project.title}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover md:hover:scale-105 transition-transform duration-300"
               />
             </div>
             

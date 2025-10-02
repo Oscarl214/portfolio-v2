@@ -162,7 +162,7 @@ const BussinessCard = () => {
 
         {/* Back side (Martech mode) */}
         <motion.div
-          className={`absolute inset-0 flex flex-col items-center gap-6 bg-martech-600/80 backdrop-blur-md rounded-2xl p-[30px_20px] text-white border border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-300`}
+          className={`absolute inset-0 flex flex-col items-center gap-6 bg-martech-600/80 backdrop-blur-md rounded-2xl p-[30px_20px] text-white border border-white/10 shadow-2xl md:hover:shadow-3xl transition-all duration-300`}
           style={{ 
             backfaceVisibility: 'hidden',
             transform: 'rotateY(180deg)'
