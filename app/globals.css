@@ -21,9 +21,30 @@ body {
 }
 
 /* Ensure images and other content don't overflow */
-img, video, iframe {
+img, video {
   max-width: 100%;
   height: auto;
+}
+
+/* Generic iframes - but not Calendly */
+iframe:not([src*="calendly"]) {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Calendly widget specific styles */
+.calendly-inline-widget,
+.calendly-inline-widget iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 1000px !important;
+}
+
+@media (max-width: 640px) {
+  .calendly-inline-widget,
+  .calendly-inline-widget iframe {
+    min-height: 900px !important;
+  }
 }
 
 /* Prevent horizontal scroll on project pages */

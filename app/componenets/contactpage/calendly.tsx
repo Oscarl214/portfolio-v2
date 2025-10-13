@@ -17,7 +17,7 @@ const CalendlyForm = () => {
   }, [])
 
   return (
-    <div className="w-full bg-white py-14">
+    <div className="w-full bg-white py-8 px-4 sm:px-6 lg:px-8 min-h-screen">
     <div className="flex items-start justify-center">
       <Image
         src={Ologo}
@@ -27,10 +27,13 @@ const CalendlyForm = () => {
         className="text-center mb-5 object-cover"
       />
     </div>
-      <div 
-        className="calendly-inline-widget w-full h-[700px] sm:h-[800px]"
-        data-url="https://calendly.com/oscarleal/one-on-one-w-oscar?hide_gdpr_banner=1"
-      />
+      <div className="w-full mx-auto" style={{ maxWidth: '1200px' }}>
+        <div 
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/oscarleal/one-on-one-w-oscar?hide_event_type_details=1&hide_gdpr_banner=1"
+          style={{ minWidth: '320px', height: '700px' }}
+        />
+      </div>
     </div>
   )
 }
