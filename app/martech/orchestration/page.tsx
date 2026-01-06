@@ -73,7 +73,7 @@ const Orchestration = () => {
               ← Back to Projects
             </Link>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">First-Time Buyer Orchestration</h1>
-            <p className="text-xl text-gray-600">Multi-Channel Customer Journey & Content Strategy</p>
+            <p className="text-xl text-gray-600">Growth Engineering: Multi-Channel Customer Journey & Automation</p>
           </motion.div>
 
           {/* Hero Section */}
@@ -83,7 +83,7 @@ const Orchestration = () => {
             animate={heroInView ? "animate" : "initial"}
             variants={fadeInUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="bg-white rounded-lg shadow-lg overflow-hidden mb-8"
+            className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
               src="/martech/AF_V2.webp" 
@@ -104,21 +104,21 @@ const Orchestration = () => {
                 animate={overviewInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
                                  <p className="text-gray-600 leading-relaxed mb-4">
-                   Led the development of a comprehensive first-time buyer orchestration journey designed to 
-                   encourage repeat purchases through strategic multi-channel communication. This project 
+                   As a growth engineer, I contributed to the technical development and strategic implementation of a comprehensive first-time buyer orchestration journey designed to 
+                   drive repeat purchases and maximize customer lifetime value through strategic multi-channel communication. This project 
                    spanned across multiple teams within the martech and engineering departments, creating 
-                   a sophisticated customer journey that combines promotional incentives with intelligent 
+                   a sophisticated growth system that combines technical infrastructure, promotional incentives, and intelligent 
                    automation for both Hollister and Abercrombie Adults brands.
                  </p>
                 <p className="text-gray-600 leading-relaxed">
                   The orchestration workflow begins with an immediate welcome email containing a promo code, 
                   followed by a series of strategically timed communications that include additional promotional 
                   offers to drive urgency and incentivize conversion. The system incorporates advanced testing 
-                  capabilities with control and variant paths (T1–T4) for performance optimization.
+                  capabilities with control and variant paths (T1–T4) for continuous performance optimization and data-driven growth.
                 </p>
               </motion.div>
 
@@ -128,7 +128,7 @@ const Orchestration = () => {
                 animate={workflowInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Orchestration Workflow</h2>
                 <motion.div 
@@ -185,9 +185,9 @@ const Orchestration = () => {
                 animate={contributionsInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">My Key Contributions</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">My Growth Engineering Contributions</h2>
                 <motion.div 
                   variants={staggerContainer}
                   initial="initial"
@@ -195,33 +195,35 @@ const Orchestration = () => {
                   className="grid grid-cols-1 md:grid-cols-2 gap-6"
                 >
                   <motion.div variants={fadeInUp}>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Content Development</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Content Development & Technical Implementation</h3>
                     <p className="text-gray-600 text-sm">
-                      Built out all email content and push notification copy, ensuring brand consistency 
-                      while optimizing for conversion and engagement across multiple touchpoints.
+                      Built out email content and push notification systems for both Hollister and 
+                      Abercrombie Adults brands, ensuring brand consistency while engineering for conversion 
+                      and engagement optimization across multiple touchpoints.
                     </p>
                   </motion.div>
                                      <motion.div variants={fadeInUp}>
-                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Multi-Brand Content Development</h3>
+                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Growth System Contribution</h3>
                      <p className="text-gray-600 text-sm">
-                       Built out all email content and push notification copy for both Hollister and 
-                       Abercrombie Adults brands, ensuring brand consistency while optimizing for conversion 
-                       and engagement across multiple touchpoints.
+                       Contributed to the technical framework for multi-brand orchestration workflows, timing rules, 
+                       and suppression mechanisms, bridging marketing strategy with technical implementation 
+                       to maximize growth outcomes.
                      </p>
                    </motion.div>
                                      <motion.div variants={fadeInUp}>
-                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Multi-Brand Sandbox Testing</h3>
+                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Cross-Functional Engineering</h3>
                      <p className="text-gray-600 text-sm">
-                       Collaborated with Cordial partners during sandbox testing phases for both Hollister 
-                       and Abercrombie Adults accounts, learning about orchestration workflows, timing rules, 
-                       and suppression mechanisms while providing content expertise and feedback.
+                       Collaborated with Cordial engineers and internal teams during sandbox testing phases, 
+                       translating marketing requirements into technical specifications and ensuring seamless integration 
+                       of promotional codes, API calls, and suppression logic.
                      </p>
                    </motion.div>
                                      <motion.div variants={fadeInUp}>
-                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Cross-Team Coordination</h3>
+                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Marketing-Technology Bridge</h3>
                      <p className="text-gray-600 text-sm">
-                       Worked closely with Cordial engineers and internal teams to ensure seamless integration 
-                       of promotional codes, API calls, and suppression logic within the orchestration framework.
+                       Served as the technical liaison between marketing teams and engineering departments, 
+                       ensuring orchestration framework aligned with business objectives while maintaining 
+                       technical excellence and scalability.
                      </p>
                    </motion.div>
                 </motion.div>
@@ -233,7 +235,7 @@ const Orchestration = () => {
                 animate={technicalInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Implementation</h2>
                 <motion.div 
@@ -286,12 +288,13 @@ const Orchestration = () => {
                 animate={collaborationInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Cross-Team Collaboration</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Growth Engineering: Cross-Team Collaboration</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   This project required extensive collaboration across multiple departments, with my role 
-                  serving as the bridge between content strategy and technical implementation.
+                  as a growth engineer serving as the bridge between marketing strategy and technical implementation, 
+                  translating business objectives into scalable growth systems.
                 </p>
                 <motion.div 
                   variants={staggerContainer}
@@ -338,7 +341,7 @@ const Orchestration = () => {
                 animate={implementationInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Implementation & Results</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -394,7 +397,7 @@ const Orchestration = () => {
             >
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Project Details</h3>
                 <div className="space-y-3">
@@ -404,7 +407,7 @@ const Orchestration = () => {
                   </div>
                   <div>
                                        <span className="text-sm font-medium text-gray-500">Role</span>
-                   <p className="text-gray-900">Content Developer & Strategy Specialist</p>
+                   <p className="text-gray-900">Growth Engineer</p>
                   </div>
                                      <div>
                      <span className="text-sm font-medium text-gray-500">Scope</span>
@@ -423,7 +426,7 @@ const Orchestration = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Technologies Used</h3>
                 <motion.div 
@@ -447,7 +450,7 @@ const Orchestration = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Key Outcomes</h3>
                 <motion.div 

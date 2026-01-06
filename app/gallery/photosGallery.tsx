@@ -27,7 +27,7 @@ const GalleryData = [
     id: 5,
     src: '/Data.webp',
     alt: 'Album',
-    title: 'Data by Tiny',
+    title: 'Data by Tainy',
   },
   {
     id: 6,

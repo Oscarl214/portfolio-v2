@@ -2,7 +2,7 @@
   {
     "id": 8,
     "title": "Pintech Collective",
-    "description": "Static site for a robotic automation company. Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.",
+    "description": "As a growth engineer, I developed a static site for a robotic automation company that showcases their cutting-edge technology. The site was engineered to drive lead generation and business growth through optimized user experience, performance, and conversion-focused design. Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/Cover-11.jpg",
     "link": "https://www.pintechcollective.com/",
     "github": "",
@@ -11,7 +11,7 @@
   {
     "id": 7,
     "title": "Runners Unidos",
-    "description": "Runners Unidos is a full-stack web application I built to serve as an information hub for a local running club in Dallas, Texas. The site helps keep our running community connected by providing easy access to schedules, events, and more.",
+    "description": "As a growth engineer, I built a full-stack web application to serve as an information hub for a local running club in Dallas, Texas. The site was engineered to grow community engagement by providing easy access to schedules, events, and member resources. By combining technical development with community growth objectives, the platform helps keep our running community connected and engaged.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/runners.jpg",
     "link": "https://www.runnersunidos.com/",
     "github": "https://github.com/Oscarl214/runnersunidos",
@@ -20,7 +20,7 @@
   {
     "id": 6,
     "title": "VidaBevidasProject",
-    "description": "VidaBebidas Project is a comprehensive, full-stack website designed to serve as a booking platform for a mobile bartender. The site features a professional video showcasing the client's expertise, along with written reviews from previous clients. Users can explore a detailed packages page to learn about the services offered and access a booking page to submit a booking form. The site is paired with Prisma + MongoDB + NodeMailer to offer a fluid method of creating users and bookings, while also providing a email template that is delivered to customers upon booking.",
+    "description": "As a growth engineer, I developed a comprehensive, full-stack booking platform for a mobile bartender service. The site was engineered to drive business growth through optimized conversion funnels, featuring a professional video showcasing the client's expertise and written reviews to build trust. The booking system integrates Prisma + MongoDB + NodeMailer to streamline customer acquisition and automate email communications, translating technical implementation into measurable business growth.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
     "link": "https://vida-bebidas-project.vercel.app/",
     "github": "https://github.com/Oscarl214/VidaBebidasProject-",
@@ -29,7 +29,7 @@
   {
     "id": 5,
     "title": "Leal Directory",
-    "description": "The Vehicle Maintenance Tracker is a private, full-stack application exclusively designed for my family to track the maintenance history of our vehicles. It provides a convenient maintenance guide to help users identify tasks and allows them to log the type of maintenance along with the date it was completed. Built with Next.js and secured with NextAuth for authentication, this application offers a secure and user-friendly experience. By keeping the site exclusive, it ensures that our family can easily update and monitor vehicle maintenance, solving the issue of forgetting service dates and keeping our cars in top shape.",
+    "description": "As a growth engineer, I built a private, full-stack vehicle maintenance tracking application for my family. While internal-facing, the application demonstrates growth engineering principles through optimized user experience, automated workflows, and data-driven insights. Built with Next.js and NextAuth, the app solves real business problems by preventing forgotten service dates and reducing vehicle maintenance costs through proactive tracking and reminders.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/CaRdIRECT.gif",
     "link": "https://lealvechiledirectory.vercel.app/",
     "github": "https://github.com/Oscarl214/Lealvechiledirectory",

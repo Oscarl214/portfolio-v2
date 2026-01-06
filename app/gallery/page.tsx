@@ -15,7 +15,7 @@ const Gallery = () => {
           {galleryImages.map((image) => (
             <div
               key={image.id}
-              className="group relative aspect-square overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]"
+              className="group relative aspect-square overflow-hidden rounded-md shadow-md transition-transform hover:scale-[1.02] border-2 border-gray-200 dark:border-gray-700"
             >
               <Image
                 src={image.src}
@@ -36,7 +36,7 @@ const Gallery = () => {
 
         <Link href="/">
           <div className="text-center mt-12">
-            <button className="bg-green-500 text-white px-8 py-3 rounded-lg transition-colors duration-200">
+            <button className="bg-green-500 text-white px-8 py-3 rounded-sm transition-colors duration-200 shadow-md hover:shadow-lg border-2 border-green-600">
               Back Home
             </button>
           </div>

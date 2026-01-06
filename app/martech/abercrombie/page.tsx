@@ -74,7 +74,7 @@ const AbercrombiePage = () => {
               ← Back to Projects
             </Link>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Abercrombie & Fitch</h1>
-            <p className="text-xl text-gray-600">Email Campaign Execution & Development</p>
+            <p className="text-xl text-gray-600">Growth Engineering: Email Campaign Development & Optimization</p>
           </motion.div>
 
           {/* Hero Section */}
@@ -84,7 +84,7 @@ const AbercrombiePage = () => {
             animate={heroInView ? "animate" : "initial"}
             variants={fadeInUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="bg-white rounded-lg shadow-lg overflow-hidden mb-8"
+            className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
               src="/martech/A&F.jpg" 
@@ -105,19 +105,19 @@ const AbercrombiePage = () => {
                 animate={overviewInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Developed and QAd responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
+                  As a growth engineer, I developed and QA'd responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
                   ensuring cross-platform compatibility across 1M+ subscribers. This project involved 
-                  creating sophisticated email campaigns that maintained brand consistency while 
-                  delivering exceptional user experience across all email clients.
+                  engineering sophisticated email campaigns that maintained brand consistency while 
+                  optimizing for maximum deliverability, engagement, and conversion across all email clients.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  The work included template development, responsive design implementation, 
-                  cross-platform testing, and performance optimization to ensure maximum 
-                  deliverability and engagement rates across multiple regional markets.
+                  The work included technical template development, responsive design implementation, 
+                  cross-platform testing, and performance optimization—all engineered with growth metrics in mind 
+                  to ensure maximum deliverability and engagement rates across multiple regional markets.
                 </p>
               </motion.div>
 
@@ -127,7 +127,7 @@ const AbercrombiePage = () => {
                 animate={responsibilitiesInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Responsibilities</h2>
                 <motion.ul 
@@ -177,7 +177,7 @@ const AbercrombiePage = () => {
                 animate={achievementsInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Achievements</h2>
                 <motion.div 
@@ -223,7 +223,7 @@ const AbercrombiePage = () => {
                 animate={dataManagementInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Management & Regional Deployment</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -279,7 +279,7 @@ const AbercrombiePage = () => {
             >
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Project Details</h3>
                 <div className="space-y-3">
@@ -308,7 +308,7 @@ const AbercrombiePage = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Technologies Used</h3>
                 <motion.div 

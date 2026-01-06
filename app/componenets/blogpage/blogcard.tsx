@@ -63,7 +63,7 @@ const BlogCard = () => {
           <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-center lg:gap-x-8">
             {blogs.map((blog) => (
               <div
-                className="group cursor-pointer w-full max-lg:max-w-xl  md:w-1/2 border border-gray-300 rounded-2xl p-5 transition-all duration-300 md:hover:border-green-500"
+                className="group cursor-pointer w-full max-lg:max-w-xl  md:w-1/2 border-2 border-gray-300 rounded-md p-5 transition-all duration-300 md:hover:border-green-500 shadow-md hover:shadow-lg"
                 key={blog.id}
                 onClick={() => handleBlogClick(blog.id)}
               >
@@ -72,7 +72,7 @@ const BlogCard = () => {
                     <Image
                       src={blog.images[0]}
                       alt={`${blog.title} image`}
-                      className="rounded-lg w-full object-cover"
+                      className="rounded-sm w-full object-cover"
                     />
                   )}
                 </div>
@@ -91,7 +91,7 @@ const BlogCard = () => {
                         {blog.tags.map((tag: any, index: any) => (
                           <span
                             key={index}
-                            className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-lg"
+                            className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-sm"
                           >
                             {tag}
                           </span>

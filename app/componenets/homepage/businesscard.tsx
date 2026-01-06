@@ -28,8 +28,8 @@ const BussinessCard = () => {
         }}
       >
         <div className="relative w-[344px] h-[560px]">
-          <div className="absolute inset-0 flex flex-col items-center gap-6 bg-gray-200/20 dark:bg-gray-700/20 backdrop-blur-sm rounded-2xl p-[30px_20px] animate-pulse border border-white/10 shadow-2xl">
-            <div className="w-60 h-70 rounded-2xl bg-gray-300/30 dark:bg-gray-600/30"></div>
+          <div className="absolute inset-0 flex flex-col items-center gap-6 bg-gray-200/20 dark:bg-gray-700/20 backdrop-blur-sm rounded-md p-[30px_20px] animate-pulse border-2 border-white/20 shadow-lg">
+            <div className="w-60 h-70 rounded-md bg-gray-300/30 dark:bg-gray-600/30"></div>
             <div className="flex flex-col items-center gap-4 w-full">
               <div className="h-8 bg-gray-300/30 dark:bg-gray-600/30 rounded w-3/4"></div>
               <div className="h-4 bg-gray-300/30 dark:bg-gray-600/30 rounded w-1/2"></div>
@@ -99,7 +99,7 @@ const BussinessCard = () => {
       >
         {/* Front side (Dev mode) */}
         <motion.div
-          className={`absolute inset-0 flex flex-col items-center gap-6 bg-[#272829]/80 backdrop-blur-md rounded-2xl p-[30px_20px] text-white border border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-300`}
+          className={`absolute inset-0 flex flex-col items-center gap-6 bg-[#272829]/80 backdrop-blur-md rounded-md p-[30px_20px] text-white border-2 border-white/20 shadow-lg hover:shadow-xl transition-all duration-300`}
           style={{ backfaceVisibility: 'hidden' }}
         >
           <AnimatePresence mode="wait">
@@ -112,7 +112,7 @@ const BussinessCard = () => {
                 exit="exit"
                 className="flex flex-col items-center gap-6 w-full h-full"
               >
-                <div className="relative w-60 h-70 rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
+                <div className="relative w-60 h-70 rounded-md overflow-hidden flex-shrink-0 shadow-md border-2 border-white/10">
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20 z-10"></div>
                   <Image src={profilePic} height={400} width={400} className='w-auto h-auto' alt='Profile'/>
                 </div>
@@ -136,12 +136,12 @@ const BussinessCard = () => {
                   </div>
                   <div className="w-full flex flex-row justify-around m-2">
                     <Link href={'/contact'}>
-                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-md hover:shadow-lg rounded-sm border-2 border-primary/50'>
                         Lets Chat
                       </Button>
                     </Link>
                     <Link href={'/blog/66df958a15ebda87035dc3ad'}>
-                      <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border border-white/20 shadow-lg hover:shadow-xl">
+                      <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border-2 border-white/30 shadow-md hover:shadow-lg rounded-sm">
                         My Story
                         <IoArrowForward className="text-green-500" />
                       </Button>
@@ -149,7 +149,7 @@ const BussinessCard = () => {
                   </div>
                   <div>
                   <Link href={'/projects'}>
-                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-md hover:shadow-lg rounded-sm border-2 border-primary/50'>
                         My Work
                       </Button>
                     </Link>
@@ -162,7 +162,7 @@ const BussinessCard = () => {
 
         {/* Back side (Martech mode) */}
         <motion.div
-          className={`absolute inset-0 flex flex-col items-center gap-6 bg-martech-600/80 backdrop-blur-md rounded-2xl p-[30px_20px] text-white border border-white/10 shadow-2xl md:hover:shadow-3xl transition-all duration-300`}
+          className={`absolute inset-0 flex flex-col items-center gap-6 bg-martech-600/80 backdrop-blur-md rounded-md p-[30px_20px] text-white border-2 border-white/20 shadow-lg md:hover:shadow-xl transition-all duration-300`}
           style={{ 
             backfaceVisibility: 'hidden',
             transform: 'rotateY(180deg)'
@@ -178,7 +178,7 @@ const BussinessCard = () => {
                 exit="exit"
                 className="flex flex-col items-center gap-6 w-full h-full"
               >
-                <div className="relative w-60 h-70 rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
+                <div className="relative w-60 h-70 rounded-md overflow-hidden flex-shrink-0 shadow-md border-2 border-white/10">
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20 z-10"></div>
                   <Image src={martechPic} height={400} width={400} className='w-auto h-auto' alt='Martech Profile'/>
                 </div>
@@ -202,12 +202,12 @@ const BussinessCard = () => {
                   </div>
                   <div className="w-full flex flex-row justify-around m-2">
                     <Link href={'/contact'}>
-                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse font-semibold hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse font-semibold hover:bg-primary/100 transition-all duration-300 shadow-md hover:shadow-lg rounded-sm border-2 border-primary/50'>
                         Lets Chat
                       </Button>
                     </Link>
                     <Link href={'/blog/66df958a15ebda87035dc3ad'}>
-                      <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border-3 font-semibold dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border border-white/20 shadow-lg hover:shadow-xl">
+                      <Button className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border-2 font-semibold dark:text-white hover:text-black hover:bg-primary/90 transition-all duration-300 border-white/30 shadow-md hover:shadow-lg rounded-sm">
                         My Story
                         <IoArrowForward className="text-green-500" />
                       </Button>
@@ -215,7 +215,7 @@ const BussinessCard = () => {
                   </div>
                   <div>
                   <Link href={'/projects'}>
-                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                      <Button className='bg-primary/90 backdrop-blur-sm dark:text-white text-white animate-pulse hover:bg-primary/100 transition-all duration-300 shadow-md hover:shadow-lg rounded-sm border-2 border-primary/50'>
                         My Work
                       </Button>
                     </Link>

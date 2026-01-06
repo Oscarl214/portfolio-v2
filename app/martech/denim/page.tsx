@@ -73,7 +73,7 @@ const DenimRetentionPage = () => {
               ← Back to Projects
             </Link>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Denim Retention Campaign</h1>
-            <p className="text-xl text-gray-600">Large-Scale Multi-Channel Re-Engagement Strategy</p>
+            <p className="text-xl text-gray-600">Growth Engineering: Large-Scale Multi-Channel Re-Engagement Strategy</p>
           </motion.div>
 
           {/* Hero Section */}
@@ -83,7 +83,7 @@ const DenimRetentionPage = () => {
             animate={heroInView ? "animate" : "initial"}
             variants={fadeInUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="bg-white rounded-lg shadow-lg overflow-hidden mb-8"
+            className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
               src="/martech/Denim.jpg" 
@@ -104,21 +104,21 @@ const DenimRetentionPage = () => {
                 animate={overviewInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Led content development for a comprehensive denim retention campaign designed to 
+                  As a growth engineer, I led the technical implementation and content development for a comprehensive denim retention campaign designed to 
                   re-engage customers who purchased denim products the previous year but had not returned. 
                   This large-scale ad hoc project spanned multiple departments including web development, 
                   email marketing, push notifications, and media content, requiring seamless coordination 
-                  across teams and platforms.
+                  across teams and platforms to maximize retention and revenue growth.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  The campaign involved sophisticated data management workflows, beginning with analytics 
+                  The campaign involved engineering sophisticated data management workflows, beginning with analytics 
                   team data uploads, CMS integration, advanced audience segmentation, and multi-channel 
-                  deployment strategies to deliver personalized re-engagement messaging across email, 
-                  push, and in-app channels.
+                  deployment strategies—all designed to deliver personalized re-engagement messaging across email, 
+                  push, and in-app channels with measurable growth outcomes.
                 </p>
               </motion.div>
 
@@ -128,7 +128,7 @@ const DenimRetentionPage = () => {
                 animate={dataManagementInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Management & Personalization Workflow</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -195,7 +195,7 @@ const DenimRetentionPage = () => {
                 animate={responsibilitiesInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Responsibilities</h2>
                 <motion.ul 
@@ -245,7 +245,7 @@ const DenimRetentionPage = () => {
                 animate={channelsInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Multi-Channel Implementation</h2>
                 <motion.div 
@@ -295,7 +295,7 @@ const DenimRetentionPage = () => {
                 animate={technicalInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Achievements</h2>
                 <motion.div 
@@ -355,7 +355,7 @@ const DenimRetentionPage = () => {
                 animate={collaborationInView ? "animate" : "initial"}
                 variants={fadeInLeft}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Cross-Team Collaboration</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -411,7 +411,7 @@ const DenimRetentionPage = () => {
             >
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Project Details</h3>
                 <div className="space-y-3">
@@ -440,7 +440,7 @@ const DenimRetentionPage = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Technologies Used</h3>
                 <motion.div 
@@ -467,7 +467,7 @@ const DenimRetentionPage = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Key Outcomes</h3>
                 <motion.div 

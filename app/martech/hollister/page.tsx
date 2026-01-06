@@ -76,7 +76,7 @@ const HollisterPage = () => {
             ← Back to Projects
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Hollister</h1>
-          <p className="text-xl text-gray-600">Email Campaign Execution & Development</p>
+          <p className="text-xl text-gray-600">Growth Engineering: Email Campaign Development & Optimization</p>
         </motion.div>
 
         {/* Hero Section */}
@@ -86,7 +86,7 @@ const HollisterPage = () => {
           animate={heroInView ? "animate" : "initial"}
           variants={fadeInUp}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="bg-white rounded-lg shadow-lg overflow-hidden mb-8"
+            className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
         >
           <Image
             src="/martech/hollister.jpg" 
@@ -107,19 +107,19 @@ const HollisterPage = () => {
               animate={overviewInView ? "animate" : "initial"}
               variants={fadeInLeft}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Developed and QAd responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
+                As a growth engineer, I developed and QA'd responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
                 ensuring cross-platform compatibility across 1M+ subscribers. This project 
-                focused on creating engaging email campaigns that resonated with the 
-                brands youthful demographic while maintaining technical excellence.
+                focused on engineering engaging email campaigns that resonated with the 
+                brands youthful demographic while optimizing for growth metrics and maintaining technical excellence.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                The work encompassed template development, responsive design implementation, 
-                cross-platform testing, and performance optimization to ensure maximum 
-                deliverability and engagement rates for the Hollister audience across multiple regional markets.
+                The work encompassed technical template development, responsive design implementation, 
+                cross-platform testing, and performance optimization—all engineered with growth objectives in mind 
+                to ensure maximum deliverability and engagement rates for the Hollister audience across multiple regional markets.
               </p>
             </motion.div>
 
@@ -129,7 +129,7 @@ const HollisterPage = () => {
               animate={responsibilitiesInView ? "animate" : "initial"}
               variants={fadeInLeft}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Responsibilities</h2>
               <motion.ul 
@@ -183,7 +183,7 @@ const HollisterPage = () => {
               animate={achievementsInView ? "animate" : "initial"}
               variants={fadeInLeft}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Achievements</h2>
               <motion.div 
@@ -229,7 +229,7 @@ const HollisterPage = () => {
               animate={brandSpecificInView ? "animate" : "initial"}
               variants={fadeInLeft}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Brand-Specific Approach</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -266,7 +266,7 @@ const HollisterPage = () => {
               animate={dataManagementInView ? "animate" : "initial"}
               variants={fadeInLeft}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-lg shadow-lg p-8"
+                className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Management & Regional Deployment</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -322,7 +322,7 @@ const HollisterPage = () => {
           >
             <motion.div 
               variants={fadeInUp}
-              className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
             >
               <h3 className="text-lg font-bold text-gray-900 mb-4">Project Details</h3>
               <div className="space-y-3">
@@ -351,7 +351,7 @@ const HollisterPage = () => {
 
             <motion.div 
               variants={fadeInUp}
-              className="bg-white rounded-lg shadow-lg p-6"
+                className="bg-white rounded-md shadow-md p-6 border-2 border-gray-100"
             >
               <h3 className="text-lg font-bold text-gray-900 mb-4">Technologies Used</h3>
               <motion.div 

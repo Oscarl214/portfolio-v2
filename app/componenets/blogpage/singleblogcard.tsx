@@ -37,7 +37,7 @@ const SingleBlogCard = () => {
           </h2>
           <div className="flex justify-start">
             <div
-              className="group cursor-pointer max-w-[800px] border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-green-500"
+              className="group cursor-pointer max-w-[800px] border-2 border-gray-300 rounded-md p-5 transition-all duration-300 hover:border-green-500 shadow-md hover:shadow-lg"
               key={data.id}
               onClick={() => handleBlogClick(data.id)}
             >
@@ -46,7 +46,7 @@ const SingleBlogCard = () => {
                   <Image
                     src={data.images[0]}
                     alt={`${data.title} image`}
-                    className="rounded-lg w-full object-cover"
+                    className="rounded-sm w-full object-cover"
                     width={200}
                     height={200}
                   />
@@ -63,7 +63,7 @@ const SingleBlogCard = () => {
                       {data.tags?.map((tag: string, index: number) => (
                         <span
                           key={index}
-                          className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-lg"
+                          className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-sm"
                         >
                           {tag}
                         </span>

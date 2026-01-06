@@ -31,13 +31,13 @@ const HomePageContent = () => {
    <div className="flex flex-col items-start gap-6 w-full">
       <div className="flex flex-col gap-2.5 w-full">
         <h1 className="font-outfit font-semibold text-4xl md:text-[68px] leading-tight md:leading-[74.8px] tracking-tighter ">
-          { mode ==='dev'? "O's World" : "Bridging Solutions one Campaign at a Time"} 
+          { mode ==='dev'? "Engineering Growth Through Technology" : "Bridging Marketing & Technology"} 
         </h1>
-        <div className={`w-full p-6 rounded-xl border-l-4 ${mode === 'dev' ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-500' : 'bg-martech-50/80 dark:bg-martech-950/20 border-martech-600'} backdrop-blur-sm`}>
+        <div className={`w-full p-6 rounded-md border-l-4 ${mode === 'dev' ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-500' : 'bg-martech-50/80 dark:bg-martech-950/20 border-martech-600'} backdrop-blur-sm`}>
           <p className={`${mode === 'dev' ? 'dark:text-blue-100 text-blue-900' : 'dark:text-martech-100 text-martech-900'} md:text-lg leading-relaxed font-medium`}>
             {mode === 'dev' 
-              ? "A full-stack free lance developer with 3+ years of experience building modern web applications. I specialize in React, Next.js, and full-stack development. I enjoy creating scalable, user-friendly applications that solve real-world problems."
-              : "A professional in marketing operations, I bring hands-on experience across global brands and freelance projects. I specialize in executing and optimizing digital campaigns—coding responsive HTML emails, managing workflows in various diffrent CMS softwares, most recently via Cordial, and Oracle Responsys, and driving measurable results through automation and analytics. Adaptable and quick to learn new CMS platforms and technologies, I bridge technical expertise with marketing strategy to help teams deliver campaigns at scale with precision and creativity."
+              ? "A growth engineer and full-stack developer with 3+ years of experience building modern web applications that drive business growth. I specialize in React, Next.js, and full-stack development, creating scalable, user-friendly applications that solve real-world problems while delivering measurable business impact. I bridge the gap between technical implementation and business objectives, ensuring every line of code contributes to growth."
+              : "A growth engineer who sits at the intersection of marketing and technology, I bring hands-on experience across global brands and freelance projects. I specialize in building and optimizing growth systems—from coding responsive HTML emails and managing complex workflows in CMS platforms like Cordial and Oracle Responsys, to developing full-stack applications that drive measurable business results. I bridge technical expertise with marketing strategy, translating business goals into scalable technical solutions that deliver precision, creativity, and measurable growth."
             }
           </p>
           <p className='mt-8 italic'>Outside of my professional venture, I enjoy being active, traveling, and challenging myself to be better than I was the day before.</p>
@@ -49,13 +49,13 @@ const HomePageContent = () => {
       <div className="flex items-center gap-4">
         <Link href='/contact'>
         
-     <Button     className="inline-flex items-center font-semibold justify-center h-11 px-6 bg-primary rounded-lg  dark:text-white hover:bg-primary-600 transition-colors overflow-hidden group"
+     <Button     className="inline-flex items-center font-semibold justify-center h-11 px-6 bg-primary rounded-sm  dark:text-white hover:bg-primary-600 transition-colors overflow-hidden group shadow-md hover:shadow-lg"
         >
       Lets Chat
       </Button>
             </Link>
             <Link href='/projects'>
-      <Button    className="inline-flex items-center gap-1.5 bg-transparent border-3 font-semibold dark:text-white hover:text-black hover:bg-primary transition-colors"
+      <Button    className="inline-flex items-center gap-1.5 bg-transparent border-2 font-semibold dark:text-white hover:text-black hover:bg-primary transition-colors rounded-sm"
         >
           My Work
           <IoArrowForward className="text-green-500" />
@@ -64,7 +64,7 @@ const HomePageContent = () => {
       </div>
       <div className="w-full">
         <p className="dark:text-gray-300 text-lg font-semibold mb-8">
-         {mode === 'dev' ? 'My Development Skills:' : 'My Marketing Technology Skills:'}
+         {mode === 'dev' ? 'My Growth Engineering Skills:' : 'My Growth Engineering Skills:'}
         </p>
         <LogoCarousel mode={mode} />
       </div>
@@ -72,7 +72,7 @@ const HomePageContent = () => {
     
     <div className="w-full">
       <p className="dark:text-gray-300 text-lg mb-2.5 font-semibold">
-        {mode === 'dev' ? 'Self-Employed: Os World' : 'Currently Employed at A&F as a Marketing Email Developer'}
+        {mode === 'dev' ? 'Self-Employed: Growth Engineer & Developer' : 'Currently Employed at A&F as a Growth Engineer'}
       </p>
       <Image src={mode==='dev' ? Logo : AbercrombieLogo.src} className='h-auto w-auto' alt="Thumbs Up Gif" height={75} width={75}/>
       <p className="dark:text-gray-300 text-sm mt-2">

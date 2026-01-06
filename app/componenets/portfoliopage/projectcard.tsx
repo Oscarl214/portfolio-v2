@@ -34,11 +34,11 @@ const ProjectCard = () => {
             className="w-full"
           >
             
-            <Card className="p-5 rounded-2xl bg-transparent w-full">
+            <Card className="p-5 rounded-md bg-transparent w-full border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-shadow">
               <CardBody className="overflow-visible py-2">
                 <Image
                   alt="Card background"
-                  className="rounded-xl w-full"
+                  className="rounded-sm w-full"
                   src={project.image}
                   width={800}
                 />
