@@ -109,7 +109,7 @@ const AbercrombiePage = () => {
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  As a growth engineer, I developed and QA'd responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
+                  As a growth engineer, I developed and QA&apos;d responsive HTML email templates for Abercrombie Adults brand within Content Management System, Cordial, 
                   ensuring cross-platform compatibility across 1M+ subscribers. This project involved 
                   engineering sophisticated email campaigns that maintained brand consistency while 
                   optimizing for maximum deliverability, engagement, and conversion across all email clients.

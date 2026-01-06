@@ -111,7 +111,7 @@ const HollisterPage = () => {
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Overview</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                As a growth engineer, I developed and QA'd responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
+                As a growth engineer, I developed and QA&apos;d responsive HTML email templates for Hollister brand within Content Management System, Cordial, 
                 ensuring cross-platform compatibility across 1M+ subscribers. This project 
                 focused on engineering engaging email campaigns that resonated with the 
                 brands youthful demographic while optimizing for growth metrics and maintaining technical excellence.
