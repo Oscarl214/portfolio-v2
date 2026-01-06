@@ -15,7 +15,7 @@ const GalleryData = [
     id: 3,
     src: '/MeAgain.jpg',
     alt: 'Oscar',
-    title: 'Hiking a Volcano',
+    title: 'Hiking a Volcano in Guatemala',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const GalleryData = [
     id: 7,
     src: '/Mount.jpg',
     alt: 'Hiking',
-    title: 'In the Mountains',
+    title: 'Mount Rainer National Park, Washington USA ',
   },
   {
     id: 10,
@@ -58,6 +58,12 @@ const GalleryData = [
     src: '/Travel.jpg',
     alt: 'Window Plane',
     title: 'Traveling',
+  },
+  {
+    id: 10,
+    src: '/ChichenItza.jpg',
+    alt: 'Monument',
+    title: 'Chichen Itza Mexico',
   },
 ];
 
