@@ -43,5 +43,14 @@
     "image": "/martech/Brands.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
     "link": "/martech/push"
+  },
+  {
+    "id": 6,
+    "title": "Internal Dev Team Tooling",
+    "description": "As a growth engineer, I identified a team-wide productivity bottleneck and built an internal Chrome extension with vanilla JavaScript to streamline our dev team's campaign workflow. The tool provides one-click access to team resources, pre-validated CMS scripting templates, brand-specific email headers, and localized translations — reducing errors and speeding up campaign development.",
+    "shortDescription": "Chrome extension I built to speed up the dev team's workflow with one-click CMS snippets and quick links.",
+    "image": "/martech/extensions-chrome.jpg",
+    "technologies": "JavaScript, HTML, CSS, Chrome Extension APIs, Manifest V3, Clipboard API, Vite",
+    "link": "/martech/extension"
   }
 ]
