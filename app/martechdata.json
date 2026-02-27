@@ -3,14 +3,16 @@
     "id": 1,
     "title": "Denim Retention Campaign",
     "description": "As a growth engineer, led technical implementation and content development for a large-scale denim retention campaign targeting previous-year buyers. Engineered data integration systems, built audience segmentation workflows across CMS platforms, and architected multi-channel deployment spanning email, push notifications, in-app messaging, and media content to maximize retention and revenue.",
+    "shortDescription": "Multi-channel retention campaign targeting previous-year denim buyers across email, push, in-app, and media.",
     "image": "/martech/Denim.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications, In-App Messaging, Data Management, Audience Segmentation, CMS Integration",
-    "link": "/coming-soon"
+    "link": "/martech/denim"
   },
   {
     "id": 2,
     "title": "First Time Buyer Orchestration",
     "description": "As a growth engineer bridging marketing and technology, contributed to an orchestration project spanning multiple teams within martech and engineering departments. Worked on the first-time buyer journey automation system for both Abercrombie & Hollister brands, combining technical infrastructure with marketing strategy to drive repeat purchase behavior.",
+    "shortDescription": "Cross-team orchestration automating the first-time buyer journey for Abercrombie & Hollister brands.",
     "image": "/martech/Orchestration.png",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
     "link": "/martech/orchestration"
@@ -19,6 +21,7 @@
     "id": 3,
     "title": "Email Campaign Execution",
     "description": "Engineered responsive HTML email templates and campaign workflows for Abercrombie Adults brand, ensuring cross-platform compatibility across 1M+ subscribers. Combined technical development with growth optimization strategies to maximize deliverability, engagement, and conversion rates.",
+    "shortDescription": "Responsive HTML email campaigns for Abercrombie Adults reaching 1M+ subscribers.",
     "image": "/martech/A&F.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
     "link": "/martech/abercrombie"
@@ -27,6 +30,7 @@
     "id": 4,
     "title": "Email Campaign Execution",
     "description": "Engineered responsive HTML email templates and campaign workflows for Hollister Brand, ensuring cross-platform compatibility across 1M+ subscribers. Applied growth engineering principles to optimize campaign performance, segment targeting, and deliverability for maximum business impact.",
+    "shortDescription": "Responsive HTML email campaigns for Hollister Brand reaching 1M+ subscribers.",
     "image": "/martech/hollister.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
     "link": "/martech/hollister"
@@ -35,6 +39,7 @@
     "id": 5,
     "title": "Promotional Push Content Optimization",
     "description": "As a growth engineer, built dynamic push notification systems for Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers. Engineered coordinated timing workflows across email + app push channels to deliver a unified brand experience that maximizes engagement and conversion.",
+    "shortDescription": "Dynamic push notification systems for A&F and HCO brands coordinated across email and app channels.",
     "image": "/martech/Brands.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
     "link": "/martech/push"

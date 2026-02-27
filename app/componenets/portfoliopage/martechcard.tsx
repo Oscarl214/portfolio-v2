@@ -15,7 +15,7 @@ const MarTechCard: React.FC = () => {
           <div 
             className={`${
               project.id === 1 
-                ? "bg-white blur-sm opacity-50" 
+                ? "bg-white" 
                 : "bg-white"
             } rounded-md shadow-md md:hover:shadow-lg transition-all duration-300 md:hover:scale-[1.02] overflow-hidden cursor-pointer border-2 border-martech-200 md:hover:border-martech-500`}
           >
@@ -51,7 +51,7 @@ const MarTechCard: React.FC = () => {
           </div>
 
           {/* "In The Works" Overlay - Only for project with ID 1 */}
-          {project.id === 1 && (
+          {/* {project.id === 1 && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg z-10">
               <div className="bg-white/90 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg border border-martech-200">
                 <h2 className="text-2xl font-bold text-martech-900 text-center">
@@ -62,7 +62,7 @@ const MarTechCard: React.FC = () => {
                 </p>
               </div>
             </div>
-          )}
+          )} */}
         </Link>
       ))}
     </div>

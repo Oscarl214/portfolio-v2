@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { IoArrowForward } from 'react-icons/io5';
 import Link from 'next/link';
 import LogoCarousel from './LogoCarousel';
+import FeaturedProject from './FeaturedProject';
 import { useMode } from '../../providers';
 import Logo from '@/public/ol-logo.png';
 
@@ -69,6 +70,8 @@ const HomePageContent = () => {
         <LogoCarousel mode={mode} />
       </div>
     </div>
+
+    <FeaturedProject mode={mode} />
     
     <div className="w-full">
       <p className="dark:text-gray-300 text-lg mb-2.5 font-semibold">

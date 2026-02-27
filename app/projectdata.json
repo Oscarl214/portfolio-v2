@@ -1,38 +1,52 @@
 [
   {
+    "id": 9,
+    "title": "Tifo Market",
+    "description": "As a growth engineer, I built an immersive full-stack e-commerce platform for the Dallas Tifo Market, a football memorabilia community in Dallas, Texas. The site features a cinematic scroll-driven landing page powered by GSAP ScrollTrigger with parallax effects, clip-path video reveals, and infinite marquee galleries. The integrated shop includes category-filtered product browsing, a persistent shopping cart, and Stripe-powered checkout. The platform drives community engagement by showcasing events, a social media feed, and tournament promotions — translating culture-driven storytelling into a conversion-optimized digital experience.",
+    "shortDescription": "Full-stack e-commerce platform for a Dallas football memorabilia community, featuring cinematic scroll animations, Stripe checkout, and a product catalog.",
+    "image": "https://portfolioprojectsol.s3.us-east-2.amazonaws.com/Hero.jpg",
+    "link": "https://www.dallastifomarket.com/",
+    "github": "https://github.com/TifoHub/tifo-market",
+    "technologies": ["Next.js", "React", "TypeScript", "TailwindCSS", "GSAP", "Stripe", "Framer Motion", "Three.js", "Radix UI", "Shadcn"]
+  },
+  {
     "id": 8,
     "title": "Pintech Collective",
     "description": "As a growth engineer, I developed a static site for a robotic automation company that showcases their cutting-edge technology. The site was engineered to drive lead generation and business growth through optimized user experience, performance, and conversion-focused design. Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.",
+    "shortDescription": "Lead generation site for a robotic automation company, built for performance and conversion-focused design.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/Cover-11.jpg",
     "link": "https://www.pintechcollective.com/",
     "github": "",
-    "technologies": "NextUI, Vercel, FramerMotion, S3, TypeScript, TailWind"
+    "technologies": ["NextUI", "Vercel", "Framer Motion", "S3", "TypeScript", "TailwindCSS"]
   },
   {
     "id": 7,
     "title": "Runners Unidos",
     "description": "As a growth engineer, I built a full-stack web application to serve as an information hub for a local running club in Dallas, Texas. The site was engineered to grow community engagement by providing easy access to schedules, events, and member resources. By combining technical development with community growth objectives, the platform helps keep our running community connected and engaged.",
+    "shortDescription": "Full-stack community hub for a Dallas running club, providing schedules, events, and member resources.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/runners.jpg",
     "link": "https://www.runnersunidos.com/",
     "github": "https://github.com/Oscarl214/runnersunidos",
-    "technologies": "NextUI, Vercel, FramerMotion, AWS: RDS & S3, TypeScript, TailWind"
+    "technologies": ["NextUI", "Vercel", "Framer Motion", "AWS", "TypeScript", "TailwindCSS"]
   },
   {
     "id": 6,
     "title": "VidaBevidasProject",
     "description": "As a growth engineer, I developed a comprehensive, full-stack booking platform for a mobile bartender service. The site was engineered to drive business growth through optimized conversion funnels, featuring a professional video showcasing the client's expertise and written reviews to build trust. The booking system integrates Prisma + MongoDB + NodeMailer to streamline customer acquisition and automate email communications, translating technical implementation into measurable business growth.",
+    "shortDescription": "Full-stack booking platform for a mobile bartender service with automated emails and conversion-optimized design.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/desktopvida.png",
     "link": "https://vida-bebidas-project.vercel.app/",
     "github": "https://github.com/Oscarl214/VidaBebidasProject-",
-    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NodeMailer"
+    "technologies": ["NextUI", "Vercel", "DaisyUI", "Framer Motion", "AWS", "TypeScript", "TailwindCSS", "Prisma", "MongoDB", "NodeMailer"]
   },
   {
     "id": 5,
     "title": "Leal Directory",
     "description": "As a growth engineer, I built a private, full-stack vehicle maintenance tracking application for my family. While internal-facing, the application demonstrates growth engineering principles through optimized user experience, automated workflows, and data-driven insights. Built with Next.js and NextAuth, the app solves real business problems by preventing forgotten service dates and reducing vehicle maintenance costs through proactive tracking and reminders.",
+    "shortDescription": "Private vehicle maintenance tracker with automated reminders, proactive service date tracking, and data-driven insights.",
     "image": "https://newportv2.s3.us-east-2.amazonaws.com/CaRdIRECT.gif",
     "link": "https://lealvechiledirectory.vercel.app/",
     "github": "https://github.com/Oscarl214/Lealvechiledirectory",
-    "technologies": "NextUI, Vercel, DaisyUI, FramerMotion, AWS, TypeScript, TailWind, Prisma, MongoDB, NextAuth"
+    "technologies": ["NextUI", "Vercel", "DaisyUI", "Framer Motion", "AWS", "TypeScript", "TailwindCSS", "Prisma", "MongoDB", "NextAuth"]
   }
 ]
