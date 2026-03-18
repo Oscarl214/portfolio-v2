@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 import {
   Card,
   CardHeader,
@@ -53,11 +54,18 @@ const ProjectCard = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
       {ProjectData.map((project, index) => {
         const isFeatured = index === 0;
+        const isInternalLink = project.link.startsWith('/');
 
         let liveBtn;
         if (project.link === '') {
           liveBtn = (
             <span className="icon-[tabler--error-404] text-2xl text-red-600"></span>
+          );
+        } else if (isInternalLink) {
+          liveBtn = (
+            <Link href={project.link}>
+              <span className="icon-[ph--file-text] md:hover:text-green-500 text-2xl"></span>
+            </Link>
           );
         } else {
           liveBtn = (
@@ -67,47 +75,57 @@ const ProjectCard = () => {
           );
         }
 
+        const cardContent = (
+          <Card className="p-5 rounded-md bg-transparent w-full border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-300">
+            <CardBody className="overflow-visible py-2 gap-3">
+              <Image
+                alt={project.title}
+                className={`rounded-sm w-full ${isFeatured ? 'max-h-[420px] object-cover' : ''}`}
+                src={project.image}
+                width={isFeatured ? 1200 : 800}
+              />
+
+              <CardHeader className="pb-0 pt-2 px-2 flex-col items-start gap-2 text-white">
+                <h4 className="font-extrabold text-xl text-green-500">
+                  {project.title}
+                </h4>
+                <p className="text-sm font-sans text-white/80 leading-relaxed">
+                  {project.shortDescription}
+                </p>
+              </CardHeader>
+
+              <div className="flex flex-wrap items-center gap-2 px-2">
+                {project.technologies.map((tech) => (
+                  <TechBadge key={tech} name={tech} />
+                ))}
+              </div>
+
+              <CardFooter className="flex flex-row gap-3 pt-1">
+                {project.github && (
+                  <Tooltip content="Github Repo">
+                    <a href={project.github} target="_blank">
+                      <span className="icon-[skill-icons--github-dark] text-2xl md:hover:text-green-500"></span>
+                    </a>
+                  </Tooltip>
+                )}
+                <Tooltip content={isInternalLink ? 'View case study' : 'Live Site'}>{liveBtn}</Tooltip>
+              </CardFooter>
+            </CardBody>
+          </Card>
+        );
+
         return (
           <div
             key={project.id}
             className={`w-full ${isFeatured ? 'md:col-span-2' : ''}`}
           >
-            <Card className="p-5 rounded-md bg-transparent w-full border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-300">
-              <CardBody className="overflow-visible py-2 gap-3">
-                <Image
-                  alt={project.title}
-                  className={`rounded-sm w-full ${isFeatured ? 'max-h-[420px] object-cover' : ''}`}
-                  src={project.image}
-                  width={isFeatured ? 1200 : 800}
-                />
-
-                <CardHeader className="pb-0 pt-2 px-2 flex-col items-start gap-2 text-white">
-                  <h4 className="font-extrabold text-xl text-green-500">
-                    {project.title}
-                  </h4>
-                  <p className="text-sm font-sans text-white/80 leading-relaxed">
-                    {project.shortDescription}
-                  </p>
-                </CardHeader>
-
-                <div className="flex flex-wrap items-center gap-2 px-2">
-                  {project.technologies.map((tech) => (
-                    <TechBadge key={tech} name={tech} />
-                  ))}
-                </div>
-
-                <CardFooter className="flex flex-row gap-3 pt-1">
-                  {project.github && (
-                    <Tooltip content="Github Repo">
-                      <a href={project.github} target="_blank">
-                        <span className="icon-[skill-icons--github-dark] text-2xl md:hover:text-green-500"></span>
-                      </a>
-                    </Tooltip>
-                  )}
-                  <Tooltip content="Live Site">{liveBtn}</Tooltip>
-                </CardFooter>
-              </CardBody>
-            </Card>
+            {isInternalLink ? (
+              <Link href={project.link} className="block">
+                {cardContent}
+              </Link>
+            ) : (
+              cardContent
+            )}
           </div>
         );
       })}
