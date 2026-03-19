@@ -25,6 +25,7 @@ const CalendlyForm = () => {
         height={150}
         width={150}
         className="text-center mb-5 object-cover"
+        style={{ width: 'auto', height: 'auto' }}
       />
     </div>
       <div className="w-full mx-auto" style={{ maxWidth: '1200px' }}>

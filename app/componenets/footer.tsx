@@ -28,10 +28,11 @@ const Footer = () => {
         <Image
           src={Logo}
           alt="Logo"
-          width="85"
-          height="85"
+          width={85}
+          height={85}
           className="cursor-pointer flex text-center justify-center"
           priority
+          style={{ width: 'auto', height: 'auto' }}
         />
         <p className="text-xs text-gray-300 font-sans">
           Developed with Next Js, Next UI, and Tailwind by Oscar Leal.

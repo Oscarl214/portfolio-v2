@@ -107,6 +107,8 @@ const LogoCarousel = ({ mode }: LogoCarouselProps) => {
                                 width={80}
                                 height={80}
                                 className="max-w-full max-h-full object-contain filter hover:grayscale-0 transition-all duration-300"
+                                style={{ width: 'auto', height: 'auto' }}
+                                priority={logo.src === '/martech/oracle.svg'}
                             />
                             <p className={`pointer-events-none absolute inset-0 flex items-center justify-center text-lg text-black ${mode==='dev' ? 'bg-black text-white': ' bg-[#FDFBD4] '} rounded opacity-0 transition-opacity duration-200 group-hover:opacity-100`}>{logo.alt}</p>
                         </div>

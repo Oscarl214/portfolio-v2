@@ -48,14 +48,14 @@ const Navigation = () => {
 
       <NavbarContent className="sm:hidden " justify="center">
         <NavbarBrand>
-          <Image src={Logo} alt="Logo" width="45" height="55" priority />
+          <Image src={Logo} alt="Logo" width={45} height={55} priority style={{ width: 'auto', height: 'auto' }} />
         </NavbarBrand>
       </NavbarContent>
 </Link>
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="hidden lg:flex">
 <Link href={'/'}>
-          <Image src={Logo} alt="Logo" width="45" height="55" priority />
+          <Image src={Logo} alt="Logo" width={45} height={55} priority style={{ width: 'auto', height: 'auto' }} />
       </Link>
         </NavbarBrand>
       </NavbarContent>

@@ -7,6 +7,7 @@ import { PageTransition } from '@/app/motionanimations/pagetransition';
 
 const VendeMasPage = () => {
   const [imgError, setImgError] = useState(false);
+  const [videoError, setVideoError] = useState(false);
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -73,6 +74,7 @@ const VendeMasPage = () => {
           <div className="mb-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             {/* App Walkthrough - iPhone-style frame */}
             <motion.div
+              ref={heroRef}
               initial="initial"
               animate={heroInView ? 'animate' : 'initial'}
               variants={fadeInUp}
@@ -86,13 +88,24 @@ const VendeMasPage = () => {
                   <div className="absolute top-2 left-1/2 -translate-x-1/2 h-5 w-24 rounded-full bg-black/80 flex items-center justify-center z-10">
                     <div className="h-2 w-10 rounded-full bg-gray-800" />
                   </div>
-                  {/* Video */}
-                  <video
-                    className="h-full w-full object-cover"
-                    src="/WALKTHROUGH.MP4"
-                    controls
-                    playsInline
-                  />
+                  {/* Video - explicitly fill container so it renders in embedded context */}
+                  {videoError ? (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-900/90 text-white p-4 text-center text-sm">
+                      <p className="font-medium mb-2">Video unavailable</p>
+                      <p className="text-white/80">Add WALKTHROUGH.MP4 to the public folder</p>
+                    </div>
+                  ) : (
+                    <div className="absolute inset-0">
+                      <video
+                        className="absolute inset-0 h-full w-full object-cover"
+                        src="/WALKTHROUGH.MP4"
+                        controls
+                        playsInline
+                        preload="auto"
+                        onError={() => setVideoError(true)}
+                      />
+                    </div>
+                  )}
                 </div>
                 <p className="mt-3 text-center text-xs text-gray-500">
                   Vende Más walkthrough recorded from the Expo mobile app.

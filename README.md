@@ -39,6 +39,13 @@ Welcome to my newest Portfolio! This portfolio was build using NextJs 14 and Tai
 
 https://www.osworld.dev/
 
+## Required Assets
+
+For the Vende Más project page to display correctly:
+
+- **`public/WALKTHROUGH.MP4`** – Video walkthrough of the app (MP4 with H.264 recommended)
+- **`public/vende-mas.jpg`** – Project thumbnail for the Vende Mas card on the Projects page
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

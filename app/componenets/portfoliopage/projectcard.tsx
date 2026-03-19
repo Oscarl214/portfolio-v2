@@ -62,10 +62,9 @@ const ProjectCard = () => {
             <span className="icon-[tabler--error-404] text-2xl text-red-600"></span>
           );
         } else if (isInternalLink) {
+          // Use span instead of Link to avoid nested <a> when card is wrapped in Link
           liveBtn = (
-            <Link href={project.link}>
-              <span className="icon-[ph--file-text] md:hover:text-green-500 text-2xl"></span>
-            </Link>
+            <span className="icon-[ph--file-text] md:hover:text-green-500 text-2xl cursor-pointer"></span>
           );
         } else {
           liveBtn = (
@@ -83,6 +82,8 @@ const ProjectCard = () => {
                 className={`rounded-sm w-full ${isFeatured ? 'max-h-[420px] object-cover' : ''}`}
                 src={project.image}
                 width={isFeatured ? 1200 : 800}
+                height={isFeatured ? 630 : 450}
+                style={{ width: 'auto', height: 'auto' }}
               />
 
               <CardHeader className="pb-0 pt-2 px-2 flex-col items-start gap-2 text-white">

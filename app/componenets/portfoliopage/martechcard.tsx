@@ -27,6 +27,7 @@ const MarTechCard: React.FC = () => {
                 width={500}
                 alt={project.title}
                 className="w-full h-full object-cover md:hover:scale-105 transition-transform duration-300"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
             

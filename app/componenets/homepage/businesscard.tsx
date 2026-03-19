@@ -70,7 +70,7 @@ const BussinessCard = () => {
       >
         <div className="relative w-52 h-60 rounded-md overflow-hidden shadow-md border-2 border-white/10">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20 z-10" />
-          <Image src={photo} height={400} width={400} className="w-full h-full object-cover" alt="Profile" />
+          <Image src={photo} height={400} width={400} className="w-full h-full object-cover" alt="Profile" style={{ width: 'auto', height: 'auto' }} />
         </div>
 
         <div className="flex flex-col items-center gap-2">
