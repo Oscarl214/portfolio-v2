@@ -4,7 +4,7 @@
     "title": "Vende Mas",
     "description": "A full-stack app built to help small businesses and sellers grow sales — with features for inventory, customer tracking, and sales insights. The project lives in its own repository; this case study covers the problem it solves, technical approach, and outcomes.",
     "shortDescription": "Sales and growth app for small businesses — inventory, customer tracking, and sales insights. Case study and technical overview.",
-    "image": "/vende-mas.jpg",
+    "image": "/VendeMasPic.png",
     "link": "/projects/vende-mas",
     "github": "",
     "technologies": ["Next.js", "React", "TypeScript", "TailwindCSS", "Framer Motion"]
