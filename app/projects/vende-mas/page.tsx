@@ -159,7 +159,7 @@ const VendeMasPage = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Guided growth journey</h3>
                     <p className="text-gray-600 text-sm">
                       The app tracks key milestones like creating a first post, sharing it, getting a first lead,
-                      and closing a booking, so business owners can see clear progress instead of vague "work on marketing" tasks.
+                      and closing a booking, so business owners can see clear progress instead of vague &quot;work on marketing&quot; tasks.
                     </p>
                   </motion.div>
                   <motion.div variants={fadeInUp}>
@@ -173,7 +173,7 @@ const VendeMasPage = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Onboarding & account flows</h3>
                     <p className="text-gray-600 text-sm">
                       An auth group, app group, and onboarding screens make sure new users land in the right place:
-                      welcome, sign up / sign in, profile setup, onboarding, then the main app tabs once they're ready.
+                      welcome, sign up / sign in, profile setup, onboarding, then the main app tabs once they&apos;re ready.
                     </p>
                   </motion.div>
                 </motion.div>
