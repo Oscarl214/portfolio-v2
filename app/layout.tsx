@@ -1,8 +1,7 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Providers from './providers';
 import { Open_Sans, Orbitron, Roboto } from 'next/font/google';
-import Head from 'next/head';
 import Navigation from './componenets/navbar';
 import Footer from './componenets/footer';
 import { Toaster } from 'react-hot-toast';
@@ -12,8 +11,47 @@ import FontWrapper from './componenets/FontWrapper';
 const Orbi = Orbitron({ subsets: ['latin'] });
 const Robo = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.osworld.dev'),
   title: 'Os Portfolio',
-  description: 'Newest personal portfolio',
+  description: 'Portfolio of Oscar Leal: projects, blog posts, and martech work.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://www.osworld.dev',
+    siteName: 'Os Portfolio',
+    title: 'Os Portfolio',
+    description: 'Portfolio of Oscar Leal: projects, blog posts, and martech work.',
+    images: [
+      {
+        url: 'https://newportv2.s3.us-east-2.amazonaws.com/MeLaptop.png',
+        width: 1200,
+        height: 630,
+        alt: 'Oscar Leal portfolio preview',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Os Portfolio',
+    description: 'Portfolio of Oscar Leal: projects, blog posts, and martech work.',
+    images: ['https://newportv2.s3.us-east-2.amazonaws.com/MeLaptop.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -23,16 +61,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      />
-
       <body className={`${Orbi.className} bg-background text-foreground`}>
         <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
-        <Head>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-        </Head>
         <QueryProvider>
           <Providers>
             <FontWrapper>

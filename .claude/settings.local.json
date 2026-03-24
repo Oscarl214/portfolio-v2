@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:UsersOwnerdevprojectsportfolio-v2/app -path */about* -type f)"
+    ]
+  }
+}
