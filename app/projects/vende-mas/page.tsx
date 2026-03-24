@@ -148,32 +148,32 @@ const VendeMasPage = () => {
                 transition={{ duration: 0.6, ease: 'easeOut' }}
                 className="bg-white rounded-md shadow-md p-8 border-2 border-gray-100"
               >
-                <h2 className=”text-2xl font-bold text-gray-900 mb-4”>What the App Covers</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">What the App Covers</h2>
                 <motion.div
                   variants={staggerContainer}
-                  initial=”initial”
-                  animate={featuresInView ? ‘animate’ : ‘initial’}
-                  className=”space-y-4”
+                  initial="initial"
+                  animate={featuresInView ? 'animate' : 'initial'}
+                  className="space-y-4"
                 >
                   <motion.div variants={fadeInUp}>
-                    <h3 className=”text-lg font-semibold text-gray-900 mb-2”>Guided growth journey</h3>
-                    <p className=”text-gray-600 text-sm”>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Guided growth journey</h3>
+                    <p className="text-gray-600 text-sm">
                       The app tracks key milestones like creating a first post, sharing it, getting a first lead,
-                      and closing a booking, so business owners can see clear progress instead of vague “work on marketing” tasks.
+                      and closing a booking, so business owners can see clear progress instead of vague "work on marketing" tasks.
                     </p>
                   </motion.div>
                   <motion.div variants={fadeInUp}>
-                    <h3 className=”text-lg font-semibold text-gray-900 mb-2”>Business profile as a system</h3>
-                    <p className=”text-gray-600 text-sm”>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Business profile as a system</h3>
+                    <p className="text-gray-600 text-sm">
                       A structured profile in Supabase captures business name, services, target customer, tone, languages,
                       booking preferences, and more, all of which can be reused across content, offers, and outreach.
                     </p>
                   </motion.div>
                   <motion.div variants={fadeInUp}>
-                    <h3 className=”text-lg font-semibold text-gray-900 mb-2”>Onboarding & account flows</h3>
-                    <p className=”text-gray-600 text-sm”>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Onboarding & account flows</h3>
+                    <p className="text-gray-600 text-sm">
                       An auth group, app group, and onboarding screens make sure new users land in the right place:
-                      welcome, sign up / sign in, profile setup, onboarding, then the main app tabs once they’re ready.
+                      welcome, sign up / sign in, profile setup, onboarding, then the main app tabs once they're ready.
                     </p>
                   </motion.div>
                 </motion.div>
