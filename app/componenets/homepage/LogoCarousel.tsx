@@ -7,35 +7,35 @@ interface LogoCarouselProps {
 const LogoCarousel = ({ mode }: LogoCarouselProps) => {
     const devLogos = [
         {
-            src: '/tech/react.svg',
+            src: '/tech/stack/react.svg',
             alt: 'React',
         },
         {
-          src: '/tech/ai.svg',
+          src: '/tech/stack/ai.svg',
           alt: 'AI',
       },
         {
-            src: '/tech/nextjs.svg',
+            src: '/tech/stack/nextjs.svg',
             alt: 'Next.js',
         },
         {
-            src: '/tech/tailwind.svg',
+            src: '/tech/stack/tailwind.svg',
             alt: 'Tailwind CSS',
         },
         {
-            src: '/tech/typescript.svg',
+            src: '/tech/stack/typescript.svg',
             alt: 'TypeScript',
         },
         {
-            src: '/tech/nodejs.svg',
+            src: '/tech/stack/nodejs.svg',
             alt: 'Node.js',
         },
         {
-            src: '/tech/git.svg',
+            src: '/tech/stack/git.svg',
             alt: 'Git',
         },
         {
-          src: '/tech/reactnative.svg',
+          src: '/tech/stack/reactnative.svg',
           alt: 'React Native',
       }
     ];

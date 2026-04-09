@@ -77,7 +77,7 @@ const ExtensionPage = () => {
         >
           <div className="text-center">
             <Image
-              src="/martech/extension-icon.png"
+              src="/martech/extension/extension-icon.png"
               alt="Extension Icon"
               height={120}
               width={120}

@@ -57,7 +57,7 @@ const Switcher = () => {
               />
             ) : (
               <Image 
-                src="/tech/dev.svg" 
+                src="/tech/mode/dev.svg" 
                 alt="Dev" 
                 width={24} 
                 height={24} 

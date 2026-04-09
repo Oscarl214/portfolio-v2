@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import NFLPreview from '@/public/martech/NFL_Preview_Email.gif'
-import JeansPreview from '@/public/martech/Jeans_Preview_Email.gif'
-import BlackFridayPreview from '@/public/martech/BFriday_Preview_Email.gif'
+import NFLPreview from '@/public/martech/abercrombie/NFL_Preview_Email.gif'
+import JeansPreview from '@/public/martech/abercrombie/Jeans_Preview_Email.gif'
+import BlackFridayPreview from '@/public/martech/abercrombie/BFriday_Preview_Email.gif'
 import Image from 'next/image'
 import { PageTransition } from '@/app/motionanimations/pagetransition'
 import { motion, useInView } from 'framer-motion'
@@ -87,7 +87,7 @@ const AbercrombiePage = () => {
             className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
-              src="/martech/A&F.jpg" 
+              src="/martech/abercrombie/A&F.jpg" 
               alt="Abercrombie & Fitch"
               height={1000}
               width={1000} 

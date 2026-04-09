@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-import B2S from '@/public/martech/HCO_B2S_Preview_Email.gif'
-import McClaren from '@/public/martech/HCO_Mclaren_Preview_Email.gif'
-import BlackFriday from '@/public/martech/HCO_BF_Preview_Email.gif'
+import B2S from '@/public/martech/hollister/HCO_B2S_Preview_Email.gif'
+import McClaren from '@/public/martech/hollister/HCO_Mclaren_Preview_Email.gif'
+import BlackFriday from '@/public/martech/hollister/HCO_BF_Preview_Email.gif'
 
 
 const HollisterPage = () => {
@@ -89,7 +89,7 @@ const HollisterPage = () => {
             className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
         >
           <Image
-            src="/martech/hollister.jpg" 
+            src="/martech/hollister/hollister.jpg" 
             alt="Hollister" 
             height={500}
             width={500}

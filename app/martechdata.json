@@ -4,7 +4,7 @@
     "title": "Denim Retention Campaign",
     "description": "As a growth engineer, led technical implementation and content development for a large-scale denim retention campaign targeting previous-year buyers. Engineered data integration systems, built audience segmentation workflows across CMS platforms, and architected multi-channel deployment spanning email, push notifications, in-app messaging, and media content to maximize retention and revenue.",
     "shortDescription": "Multi-channel retention campaign targeting previous-year denim buyers across email, push, in-app, and media.",
-    "image": "/martech/Denim.jpg",
+    "image": "/martech/denim/Denim.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications, In-App Messaging, Data Management, Audience Segmentation, CMS Integration",
     "link": "/martech/denim"
   },
@@ -13,7 +13,7 @@
     "title": "First Time Buyer Orchestration",
     "description": "As a growth engineer bridging marketing and technology, contributed to an orchestration project spanning multiple teams within martech and engineering departments. Worked on the first-time buyer journey automation system for both Abercrombie & Hollister brands, combining technical infrastructure with marketing strategy to drive repeat purchase behavior.",
     "shortDescription": "Cross-team orchestration automating the first-time buyer journey for Abercrombie & Hollister brands.",
-    "image": "/martech/Orchestration.png",
+    "image": "/martech/orchestration/Orchestration.png",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
     "link": "/martech/orchestration"
   },
@@ -22,7 +22,7 @@
     "title": "Email Campaign Execution",
     "description": "Engineered responsive HTML email templates and campaign workflows for Abercrombie Adults brand, ensuring cross-platform compatibility across 1M+ subscribers. Combined technical development with growth optimization strategies to maximize deliverability, engagement, and conversion rates.",
     "shortDescription": "Responsive HTML email campaigns for Abercrombie Adults reaching 1M+ subscribers.",
-    "image": "/martech/A&F.jpg",
+    "image": "/martech/abercrombie/A&F.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
     "link": "/martech/abercrombie"
   },
@@ -31,7 +31,7 @@
     "title": "Email Campaign Execution",
     "description": "Engineered responsive HTML email templates and campaign workflows for Hollister Brand, ensuring cross-platform compatibility across 1M+ subscribers. Applied growth engineering principles to optimize campaign performance, segment targeting, and deliverability for maximum business impact.",
     "shortDescription": "Responsive HTML email campaigns for Hollister Brand reaching 1M+ subscribers.",
-    "image": "/martech/hollister.jpg",
+    "image": "/martech/hollister/hollister.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing",
     "link": "/martech/hollister"
   },
@@ -40,7 +40,7 @@
     "title": "Promotional Push Content Optimization",
     "description": "As a growth engineer, built dynamic push notification systems for Abercrombie Adults & Kids, & HCO brands, ensuring cross-platform compatibility across 1M+ subscribers. Engineered coordinated timing workflows across email + app push channels to deliver a unified brand experience that maximizes engagement and conversion.",
     "shortDescription": "Dynamic push notification systems for A&F and HCO brands coordinated across email and app channels.",
-    "image": "/martech/Brands.jpg",
+    "image": "/martech/push/Brands.jpg",
     "technologies": "HTML, CSS, Email Marketing, Responsive Design, Cross-platform Testing, Push Notifications",
     "link": "/martech/push"
   },
@@ -49,8 +49,26 @@
     "title": "Internal Dev Team Tooling",
     "description": "As a growth engineer, I identified a team-wide productivity bottleneck and built an internal Chrome extension with vanilla JavaScript to streamline our dev team's campaign workflow. The tool provides one-click access to team resources, pre-validated CMS scripting templates, brand-specific email headers, and localized translations — reducing errors and speeding up campaign development.",
     "shortDescription": "Chrome extension I built to speed up the dev team's workflow with one-click CMS snippets and quick links.",
-    "image": "/martech/extensions-chrome.jpg",
+    "image": "/martech/extension/extensions-chrome.jpg",
     "technologies": "JavaScript, HTML, CSS, Chrome Extension APIs, Manifest V3, Clipboard API, Vite",
     "link": "/martech/extension"
+  },
+  {
+    "id": 7,
+    "title": "HCO X NCAA",
+    "description": "Led growth engineering execution for the Hollister x NCAA partnership by developing campaign-ready email and push experiences, building segmented audience workflows, and supporting ad hoc event messaging. Owned technical implementation across channels to align partnership storytelling with precise targeting, including a UT alma mater event push activation.",
+    "shortDescription": "Hollister x NCAA partnership campaign work across email, push, and targeted segmentation, including a UT ad hoc event activation.",
+    "image": "/martech/hco-ncaa/HOLL_NCAA-Banner.WEBP",
+    "technologies": "HTML, CSS, Email Marketing, Push Notifications, Audience Segmentation, Data Management, Cross-platform Testing, Cordial",
+    "link": "/martech/hco-ncaa"
+  },
+  {
+    "id": 8,
+    "title": "AF X NFL",
+    "description": "Led growth engineering execution for an AF x NFL collaboration campaign by building and launching email and push experiences tied to key football moments. Highlighted the CD LAMB event with zip code-based audience segmentation to target nearby fans, resulting in a successful Fort Worth location activation.",
+    "shortDescription": "AF x NFL collaboration campaign featuring CD LAMB event targeting with zip code segmentation and a successful Fort Worth activation.",
+    "image": "/martech/af-x-nfl/Abercrombie-Fitch-x-NFL-Feat.jpg",
+    "technologies": "HTML, CSS, Email Marketing, Push Notifications, Audience Segmentation, Zip Code Targeting, Data Management, Cross-platform Testing, Cordial",
+    "link": "/martech/af-x-nfl"
   }
 ]

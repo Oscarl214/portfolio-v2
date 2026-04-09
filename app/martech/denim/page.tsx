@@ -86,7 +86,7 @@ const DenimRetentionPage = () => {
             className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
-              src="/martech/Denim.jpg" 
+              src="/martech/denim/Denim.jpg" 
               alt="Denim Retention Campaign"
               height={1000}
               width={1000} 

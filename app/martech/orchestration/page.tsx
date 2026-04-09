@@ -86,7 +86,7 @@ const Orchestration = () => {
             className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
           >
             <Image
-              src="/martech/AF_V2.webp" 
+              src="/martech/orchestration/AF_V2.webp" 
               alt="First-Time Buyer Orchestration"
               height={1000}
               width={1000} 

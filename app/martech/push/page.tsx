@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-import IAM_Kids from '@/public/martech/IAM_Preview_Kids.gif'
-import IAM_Adults from '@/public/martech/IAM_Preview_Adults.gif'
-import IAM_HCO from '@/public/martech/IAM_Preview_HCO.gif'
+import IAM_Kids from '@/public/martech/push/IAM_Preview_Kids.gif'
+import IAM_Adults from '@/public/martech/push/IAM_Preview_Adults.gif'
+import IAM_HCO from '@/public/martech/push/IAM_Preview_HCO.gif'
 
 
 const PushPage = () => {
@@ -89,7 +89,7 @@ const PushPage = () => {
             className="bg-white rounded-md shadow-md overflow-hidden mb-8 border-2 border-gray-100"
         >
           <Image
-            src="/martech/Brands.jpg" 
+            src="/martech/push/Brands.jpg" 
             alt="Logos" 
             height={700}
             width={900}
