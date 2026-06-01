@@ -2,13 +2,13 @@ import React from 'react'
 import Stats from './Stats'
 import { Button } from '@nextui-org/react';
 import AbercrombieLogo from '@/public/AF.png'
+import CapitalOneLogo from '@/public/Capital_One_logo.png'
 import Image from 'next/image';
 import { IoArrowForward } from 'react-icons/io5';
 import Link from 'next/link';
 import LogoCarousel from './LogoCarousel';
 import FeaturedProject from './FeaturedProject';
 import { useMode } from '../../providers';
-import Logo from '@/public/ol-logo.png';
 
 const HomePageContent = () => {
   const { mode, isLoaded } = useMode();
@@ -75,14 +75,26 @@ const HomePageContent = () => {
     
     <div className="w-full">
       <p className="dark:text-gray-300 text-lg mb-2.5 font-semibold">
-        {mode === 'dev' ? 'Self-Employed: Growth Engineer & Developer' : 'Currently Employed at A&F as a Growth Engineer'}
+        Currently employed at Capital One as a Senior Front End &amp; Email Developer
       </p>
-      <Image src={mode==='dev' ? Logo : AbercrombieLogo.src} className='h-auto w-auto' alt="Thumbs Up Gif" height={75} width={75}/>
-      <p className="dark:text-gray-300 text-sm mt-2">
-        {/* {mode === 'dev' 
-          ? 'Full-Stack Developer at Abercrombie & Fitch'
-          : 'Marketing Technology Specialist at Abercrombie & Fitch'
-        } */}
+      <div className="flex items-center gap-6">
+        <Image
+          src={CapitalOneLogo}
+          className="h-auto w-auto"
+          alt="Capital One"
+          height={75}
+          width={75}
+        />
+        <Image
+          src={AbercrombieLogo}
+          className="h-auto w-auto opacity-35"
+          alt="Abercrombie & Fitch"
+          height={75}
+          width={75}
+        />
+      </div>
+      <p className="dark:text-gray-300 text-sm mt-2 opacity-70">
+        Previously Growth Engineer at Abercrombie &amp; Fitch
       </p>
     </div>
     </section>

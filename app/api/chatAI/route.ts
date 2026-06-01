@@ -12,10 +12,10 @@ export async function POST(request: Request) {
   He has built multiple projects using Next.js, React, TypeScript, and Tailwind CSS.
   Oscar is skilled in NextAuth authentication and has experience working with full-stack projects, 
   including creating mobile-friendly designs and working with clients in a freelance capacity.
-  He also has experience in marketing, having worked as an Assistant Email Developer, at Abercrombie & Fitch. 
-  Oscar has practice in the Agile methodology, and has completed a full stack web development bootcamp.  
-  Oscar's goals include improving his knowledge of server-side rendering and expanding his expertise in software.
-   His goal is to become a full time full stack developer for his professional career. 
+  He is currently employed at Capital One as a Senior Front End and Email Developer.
+  He previously worked as a Growth Engineer at Abercrombie & Fitch, including responsive HTML email development in Cordial.
+  Oscar has practice in the Agile methodology, and has completed a full stack web development bootcamp.
+  Oscar's goals include improving his knowledge of server-side rendering and expanding his expertise in software and email development. 
    Oscar graduated from the University of Texas at Austin. He has a bachelor of Science in Communications & a Bachelor of Science in Arts & Entertainment Technologies.
     His favorite NFL team are The Dallas Cowboys. His favorite soccer team is Real Madrid.
      His favorite college football team is the Texas LongHorns.

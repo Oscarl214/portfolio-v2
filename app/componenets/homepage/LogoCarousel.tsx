@@ -37,13 +37,17 @@ const LogoCarousel = ({ mode }: LogoCarouselProps) => {
         {
           src: '/tech/stack/reactnative.svg',
           alt: 'React Native',
-      }
+      },
+        {
+            src: '/martech/salesforce.svg',
+            alt: 'Salesforce · AMPscript',
+        },
     ];
 
     const martechLogos = [
         {
             src: '/martech/salesforce.svg',
-            alt: 'Salesforce Marketing Cloud',
+            alt: 'Salesforce · AMPscript',
         },
         {
             src: '/martech/oracle.svg',

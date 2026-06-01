@@ -102,7 +102,7 @@ const BussinessCard = () => {
   return (
     <div className="perspective-1000">
       <motion.div
-        className="relative w-[300px] h-[420px]"
+        className="relative w-[300px] h-[520px]"
         variants={cardVariants}
         animate={mode === 'dev' ? 'reset' : 'flip'}
         initial="initial"
@@ -114,7 +114,7 @@ const BussinessCard = () => {
           style={{ backfaceVisibility: 'hidden' }}
         >
           {mode === 'dev' && (
-            <CardContent photo={profilePic} title="Software Developer" contentKey="dev" />
+            <CardContent photo={profilePic} title="Senior Front End & Email Developer" contentKey="dev" />
           )}
         </div>
 
@@ -124,7 +124,7 @@ const BussinessCard = () => {
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
           {mode === 'martech' && (
-            <CardContent photo={martechPic} title="Marketing Operations Specialist" contentKey="martech" />
+            <CardContent photo={martechPic} title="Senior Front End & Email Developer" contentKey="martech" />
           )}
         </div>
       </motion.div>
